@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "csJZP2gDZiT8VqpkNQjed"
+uri = "file://richmond-property-website.tar.gz"
+type = "unspecified"
+title = "EV Richmond Property Group - Website Source Code"
