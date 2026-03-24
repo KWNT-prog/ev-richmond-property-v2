@@ -1,0 +1,30 @@
+packages:
+  "framer-motion": "For premium, smooth scroll animations and page transitions typical of luxury brands"
+  "clsx": "For constructing class names conditionally"
+  "tailwind-merge": "For merging tailwind classes safely"
+  "lucide-react": "For beautiful, consistent iconography"
+
+images:
+  - path: "artifacts/richmond-property/public/images/hero-bg.png"
+    description: "Extremely luxurious modern living room with large floor-to-ceiling windows overlooking a beautiful city skyline at sunset. Dark, moody, elegant lighting with warm gold accents."
+    aspect_ratio: "16:9"
+  - path: "artifacts/richmond-property/public/images/modern-villa.png"
+    description: "Exterior of an ultra-modern luxury multi-story villa with a glowing infinity pool at dusk. Warm architectural lighting, sophisticated design."
+    aspect_ratio: "16:9"
+  - path: "artifacts/richmond-property/public/images/penthouse-view.png"
+    description: "Interior of a high-end penthouse with opulent furniture, marble floors, and panoramic night views of a metropolis. Black and gold tones."
+    aspect_ratio: "16:9"
+  - path: "artifacts/richmond-property/public/images/luxury-apartment.png"
+    description: "Elegant, sophisticated master bedroom in a luxury apartment. Rich textures, velvet, dark navy walls with gold trim."
+    aspect_ratio: "16:9"
+  - path: "artifacts/richmond-property/public/images/about-team.png"
+    description: "Abstract architectural background with subtle gold lines on dark marble, representing a professional and established luxury brand foundation."
+    aspect_ratio: "16:9"
+  - path: "artifacts/richmond-property/public/images/istanbul-city.png"
+    description: "Cinematic, high-end shot of the Istanbul Bosphorus bridge at twilight with luxury yachts. Dramatic, moody, rich colors."
+    aspect_ratio: "16:9"
+
+notes:
+  - "The application uses a completely static data model for properties as requested."
+  - "Built-in i18n context handles EN, RU, and TR translations."
+  - "Using Framer Motion for sophisticated entrance animations."
