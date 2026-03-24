@@ -34,7 +34,7 @@ export default function Properties() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="flex flex-col sm:flex-row gap-4 bg-card p-4 rounded-xl border border-border/50 max-w-3xl shadow-lg"
+            className="flex flex-col sm:flex-row gap-4 bg-white p-4 rounded-xl border border-[#c9a96e]/15 max-w-3xl shadow-md"
           >
             <div className="flex-1">
               <select 

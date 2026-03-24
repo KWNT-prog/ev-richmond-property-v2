@@ -38,7 +38,7 @@ export function Navbar() {
       <header 
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4",
-          scrolled ? "bg-background/95 backdrop-blur-md shadow-lg shadow-black/50 py-3" : "bg-gradient-to-b from-black/80 to-transparent"
+          scrolled ? "bg-background/95 backdrop-blur-md shadow-lg shadow-black/5 py-3" : "bg-gradient-to-b from-white/90 to-transparent"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,7 +49,7 @@ export function Navbar() {
               <img 
                 src={`${import.meta.env.BASE_URL}logo.jpeg`} 
                 alt="EV Richmond Property Group" 
-                className="w-12 h-12 rounded-full border border-primary/50"
+                className="w-12 h-12 rounded-full border border-[#c9a96e]/50 shadow-sm"
               />
               <div className="hidden md:flex flex-col">
                 <span className="font-display font-bold text-lg tracking-widest text-foreground leading-tight">EV RICHMOND</span>
@@ -139,7 +139,7 @@ export function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-background/98 backdrop-blur-xl flex flex-col pt-24 px-6 lg:hidden"
+            className="fixed inset-0 z-40 bg-background/98 backdrop-blur-xl flex flex-col pt-24 px-6 lg:hidden shadow-xl"
           >
             <nav className="flex flex-col gap-6 text-center mt-10">
               {navLinks.map((link) => (

@@ -21,8 +21,8 @@ export default function Home() {
             alt="Luxury Real Estate" 
             className="w-full h-full object-cover scale-105 animate-[pulse_20s_ease-in-out_infinite_alternate]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/85 via-[#1a1a2e]/60 to-[#1a1a2e]/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a2e]/70 via-transparent to-[#1a1a2e]/20" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -32,27 +32,27 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.2 }}
             className="max-w-3xl"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm text-primary text-xs uppercase tracking-[0.2em] font-sans mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#c9a96e]/50 bg-[#c9a96e]/15 backdrop-blur-sm text-[#c9a96e] text-xs uppercase tracking-[0.2em] font-sans mb-6">
               <Crown className="w-3 h-3" />
               EV Richmond Property Group
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-medium text-foreground leading-[1.1] mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-medium text-white leading-[1.1] mb-6">
               {t('home.hero.title')}
             </h1>
             
-            <p className="text-lg md:text-xl text-foreground/80 font-sans max-w-2xl mb-10 leading-relaxed">
+            <p className="text-lg md:text-xl text-white/80 font-sans max-w-2xl mb-10 leading-relaxed">
               {t('home.hero.subtitle')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/properties">
-                <Button size="lg" className="w-full sm:w-auto text-black">
+                <Button size="lg" className="w-full sm:w-auto bg-[#c9a96e] hover:bg-[#b89555] text-white border-[#c9a96e]">
                   {t('home.hero.cta.view')}
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto bg-background/50 backdrop-blur-sm">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto border-white/40 text-white hover:bg-white/10 backdrop-blur-sm">
                   {t('home.hero.cta.contact')}
                 </Button>
               </Link>
@@ -64,7 +64,7 @@ export default function Home() {
       {/* Stats Section */}
       <section className="relative z-20 -mt-16 mb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="glass-panel rounded-2xl p-8 md:p-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-[#c9a96e]/20">
             {[
               { num: "500+", label: t('stats.properties') },
               { num: "10+", label: t('stats.years') },
@@ -152,7 +152,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.2 }}
-                className="bg-card border border-border/50 p-8 rounded-2xl text-center group hover:border-primary/50 transition-colors duration-300"
+                className="bg-white border border-[#c9a96e]/15 p-8 rounded-2xl text-center group hover:border-[#c9a96e]/40 shadow-sm hover:shadow-md transition-all duration-300"
               >
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <feature.icon className="w-8 h-8 text-primary" />
@@ -173,17 +173,17 @@ export default function Home() {
             alt="Villa" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/80" />
+          <div className="absolute inset-0 bg-[#1a1a2e]/85" />
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-display text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-display text-white mb-6">
             Ready to Find Your Dream Property?
           </h2>
-          <p className="text-lg text-foreground/80 font-sans mb-10">
+          <p className="text-lg text-white/80 font-sans mb-10">
             Our luxury real estate experts are ready to assist you in finding the perfect investment or home in Turkey.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="text-black bg-primary hover:bg-[#e6c14a]">
+            <Button size="lg" className="bg-[#c9a96e] hover:bg-[#b89555] text-white border-[#c9a96e]">
               Schedule a Consultation
             </Button>
           </Link>

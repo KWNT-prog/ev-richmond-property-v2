@@ -50,7 +50,7 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="lg:col-span-2 space-y-8"
           >
-            <div className="bg-card border border-border/50 p-8 rounded-2xl">
+            <div className="bg-white border border-[#c9a96e]/15 p-8 rounded-2xl shadow-sm">
               <h3 className="text-2xl font-display text-primary mb-8">Istanbul Headquarters</h3>
               
               <div className="space-y-6 font-sans">
@@ -96,7 +96,7 @@ export default function Contact() {
             transition={{ delay: 0.3 }}
             className="lg:col-span-3"
           >
-            <div className="bg-card border border-border/50 p-8 md:p-10 rounded-2xl">
+            <div className="bg-white border border-[#c9a96e]/15 p-8 md:p-10 rounded-2xl shadow-sm">
               <form onSubmit={handleSubmit} className="space-y-6 font-sans">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
