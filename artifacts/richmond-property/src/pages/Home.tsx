@@ -9,7 +9,7 @@ import { Shield, Building2, Crown, ChevronRight, Star } from 'lucide-react';
 
 export default function Home() {
   const { t } = useI18n();
-  const featuredProperties = properties.filter(p => p.featured).slice(0, 3);
+  const featuredProperties = properties;
 
   return (
     <div className="flex flex-col min-h-screen">
