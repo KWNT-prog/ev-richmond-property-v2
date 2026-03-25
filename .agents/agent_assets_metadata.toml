@@ -12,3 +12,9 @@ id = "Y-asDvpeC7_-lkHRtOJyj"
 uri = "file://ev-richmond-property.tar.gz"
 type = "unspecified"
 title = "EV Richmond Property Group - Full Project"
+
+[[outputs]]
+id = "UIjKZJOwI_pp4VY4M9oDC"
+uri = "file://ev-richmond-cloudflare-deploy.tar.gz"
+type = "unspecified"
+title = "EV Richmond - Cloudflare Deploy (Built Static Files)"
