@@ -54,7 +54,7 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="lg:col-span-2 space-y-6"
           >
-            <div className="bg-white border border-[#C9A96A]/15 p-8 rounded-2xl shadow-sm">
+            <div className="bg-white border border-[#C4A265]/15 p-8 rounded-2xl shadow-sm">
               <h3 className="text-2xl font-display text-primary mb-8">{t('contact.office.title')}</h3>
               
               <div className="space-y-6 font-sans">
@@ -92,7 +92,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white border border-[#C9A96A]/15 p-8 rounded-2xl shadow-sm">
+            <div className="bg-white border border-[#C4A265]/15 p-8 rounded-2xl shadow-sm">
               <h3 className="text-xl font-display text-primary mb-4">{t('contact.services.title')}</h3>
               <div className="space-y-3 font-sans text-sm text-muted-foreground">
                 <div className="flex items-center gap-3">
@@ -117,7 +117,7 @@ export default function Contact() {
             transition={{ delay: 0.3 }}
             className="lg:col-span-3"
           >
-            <div className="bg-white border border-[#C9A96A]/15 p-8 md:p-10 rounded-2xl shadow-sm">
+            <div className="bg-white border border-[#C4A265]/15 p-8 md:p-10 rounded-2xl shadow-sm">
               <h3 className="text-2xl font-display text-foreground mb-2">{t('contact.form.heading')}</h3>
               <p className="text-muted-foreground font-sans text-sm mb-8">{t('contact.form.subheading')}</p>
 
@@ -149,7 +149,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="border-t border-[#C9A96A]/10 pt-5">
+                <div className="border-t border-[#C4A265]/10 pt-5">
                   <p className="text-xs text-primary font-display uppercase tracking-wider mb-4">{t('contact.form.interestSection')}</p>
                   
                   <div className="space-y-2 mb-5">

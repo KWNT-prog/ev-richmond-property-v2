@@ -22,7 +22,7 @@ export function PropertyCard({ property, index = 0 }: PropertyCardProps) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
-        className="group relative bg-white rounded-xl overflow-hidden border border-[#C9A96A]/15 hover:border-[#C9A96A]/40 shadow-sm hover:shadow-lg transition-all duration-500 flex flex-col h-full cursor-pointer"
+        className="group relative bg-white rounded-xl overflow-hidden border border-[#C4A265]/15 hover:border-[#C4A265]/40 shadow-sm hover:shadow-lg transition-all duration-500 flex flex-col h-full cursor-pointer"
       >
         <div className="relative aspect-[4/3] overflow-hidden">
           <div className="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500 z-10" />

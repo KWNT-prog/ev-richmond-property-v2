@@ -75,11 +75,11 @@ export function Navbar() {
               <img 
                 src={`/logo.jpeg`} 
                 alt="EV Richmond Property Group" 
-                className="w-12 h-12 rounded-full border border-[#C9A96A]/50 shadow-sm"
+                className="w-12 h-12 rounded-full border border-[#C4A265]/50 shadow-sm"
               />
               <div className="hidden md:flex flex-col">
                 <span className={cn("font-display font-bold text-lg tracking-widest leading-tight", isOverDark ? "text-white" : "text-foreground")}>EV RICHMOND</span>
-                <span className={cn("font-sans text-[0.65rem] tracking-[0.2em] uppercase", isOverDark ? "text-[#C9A96A]" : "text-primary")}>Property Group</span>
+                <span className={cn("font-sans text-[0.65rem] tracking-[0.2em] uppercase", isOverDark ? "text-[#C4A265]" : "text-primary")}>Property Group</span>
               </div>
             </Link>
 
@@ -123,7 +123,7 @@ export function Navbar() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute right-0 mt-4 w-36 bg-white border border-[#C9A96A]/15 rounded-lg shadow-xl overflow-hidden"
+                      className="absolute right-0 mt-4 w-36 bg-white border border-[#C4A265]/15 rounded-lg shadow-xl overflow-hidden"
                       onClick={(e) => e.stopPropagation()}
                     >
                       {currencies.map((c) => (
@@ -161,7 +161,7 @@ export function Navbar() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute right-0 mt-4 w-32 bg-white border border-[#C9A96A]/15 rounded-lg shadow-xl overflow-hidden"
+                      className="absolute right-0 mt-4 w-32 bg-white border border-[#C4A265]/15 rounded-lg shadow-xl overflow-hidden"
                       onClick={(e) => e.stopPropagation()}
                     >
                       {languages.map((l) => (

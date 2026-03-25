@@ -58,33 +58,33 @@
 }
 
 :root {
-  --background: 0 0% 96%;
-  --foreground: 0 0% 23%;
+  --background: 30 20% 97%;
+  --foreground: 0 0% 20%;
 
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 23%;
+  --card-foreground: 0 0% 20%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 23%;
+  --popover-foreground: 0 0% 20%;
 
-  --primary: 40 47% 60%;
+  --primary: 38 50% 55%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 33 16% 78%;
-  --secondary-foreground: 0 0% 23%;
+  --secondary: 30 12% 92%;
+  --secondary-foreground: 0 0% 20%;
 
-  --muted: 0 0% 85%;
-  --muted-foreground: 0 0% 40%;
+  --muted: 30 8% 90%;
+  --muted-foreground: 0 0% 45%;
 
-  --accent: 0 0% 12%;
-  --accent-foreground: 0 0% 96%;
+  --accent: 0 0% 15%;
+  --accent-foreground: 30 20% 97%;
 
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 0 0% 85%;
-  --input: 0 0% 93%;
-  --ring: 40 47% 60%;
+  --border: 30 10% 88%;
+  --input: 30 8% 94%;
+  --ring: 38 50% 55%;
 
   --sidebar: 0 0% 94%;
   --sidebar-foreground: 0 0% 23%;
@@ -125,14 +125,14 @@
 
 @layer utilities {
   .text-gradient-gold {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#8b7340] via-[#C9A96A] to-[#8b7340];
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#9A7F45] via-[#C4A265] to-[#9A7F45];
   }
 
   .bg-gradient-gold {
-    @apply bg-gradient-to-r from-[#8b7340] via-[#C9A96A] to-[#8b7340];
+    @apply bg-gradient-to-r from-[#9A7F45] via-[#C4A265] to-[#9A7F45];
   }
 
   .glass-panel {
-    @apply bg-white/80 backdrop-blur-md border border-[#C9A96A]/20 shadow-xl;
+    @apply bg-white/80 backdrop-blur-md border border-[#C4A265]/20 shadow-xl;
   }
 }
