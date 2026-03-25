@@ -46,9 +46,21 @@ function AnimatedCounter({ target, suffix = '', duration = 2000 }: { target: num
   );
 }
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+  return isMobile;
+}
+
 export default function Home() {
   const { t } = useI18n();
   const featuredProperties = properties;
+  const isMobile = useIsMobile();
 
   const reviews = [
     { name: 'Aleksandr Petrov', location: t('review.1.location'), text: t('review.1.text'), rating: 5 },
@@ -59,24 +71,43 @@ export default function Home() {
     { name: 'Ahmed Al-Rashid', location: t('review.6.location'), text: t('review.6.text'), rating: 5 },
   ];
 
-  const [currentPage, setCurrentPage] = useState(0);
-  const [direction, setDirection] = useState(0);
-  const cardsPerPage = 3;
-  const totalPages = Math.ceil(reviews.length / cardsPerPage);
+  const reviewCardsPerPage = isMobile ? 1 : 3;
+  const [currentReviewPage, setCurrentReviewPage] = useState(0);
+  const [reviewDirection, setReviewDirection] = useState(0);
+  const totalReviewPages = Math.ceil(reviews.length / reviewCardsPerPage);
 
-  const goToPage = useCallback((page: number, dir?: number) => {
-    setDirection(dir ?? (page > currentPage ? 1 : -1));
-    setCurrentPage(page);
-  }, [currentPage]);
+  const goToReviewPage = useCallback((page: number, dir?: number) => {
+    setReviewDirection(dir ?? (page > currentReviewPage ? 1 : -1));
+    setCurrentReviewPage(page);
+  }, [currentReviewPage]);
+
+  useEffect(() => {
+    setCurrentReviewPage(0);
+  }, [isMobile]);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      goToPage((currentPage + 1) % totalPages, 1);
+      goToReviewPage((currentReviewPage + 1) % totalReviewPages, 1);
     }, 6000);
     return () => clearInterval(timer);
-  }, [currentPage, totalPages, goToPage]);
+  }, [currentReviewPage, totalReviewPages, goToReviewPage]);
 
-  const visibleReviews = reviews.slice(currentPage * cardsPerPage, currentPage * cardsPerPage + cardsPerPage);
+  const visibleReviews = reviews.slice(currentReviewPage * reviewCardsPerPage, currentReviewPage * reviewCardsPerPage + reviewCardsPerPage);
+
+  const propCardsPerPage = 3;
+  const [currentPropPage, setCurrentPropPage] = useState(0);
+  const [propDirection, setPropDirection] = useState(0);
+  const totalPropPages = Math.ceil(featuredProperties.length / propCardsPerPage);
+
+  const goToPropPage = useCallback((page: number, dir?: number) => {
+    setPropDirection(dir ?? (page > currentPropPage ? 1 : -1));
+    setCurrentPropPage(page);
+  }, [currentPropPage]);
+
+  const visibleProperties = featuredProperties.slice(currentPropPage * propCardsPerPage, currentPropPage * propCardsPerPage + propCardsPerPage);
+
+  const touchStartX = useRef(0);
+  const touchStartPropX = useRef(0);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -179,10 +210,60 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProperties.map((property, index) => (
-              <PropertyCard key={property.id} property={property} index={index} />
-            ))}
+          <div className="relative">
+            <button
+              onClick={() => goToPropPage((currentPropPage - 1 + totalPropPages) % totalPropPages, -1)}
+              className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#C4A265]/20 shadow-md flex items-center justify-center hover:bg-[#C4A265]/10 transition-colors hidden md:flex"
+            >
+              <ChevronLeft className="w-5 h-5 text-[#C4A265]" />
+            </button>
+
+            <button
+              onClick={() => goToPropPage((currentPropPage + 1) % totalPropPages, 1)}
+              className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#C4A265]/20 shadow-md flex items-center justify-center hover:bg-[#C4A265]/10 transition-colors hidden md:flex"
+            >
+              <ChevronRight className="w-5 h-5 text-[#C4A265]" />
+            </button>
+
+            <div
+              className="overflow-hidden"
+              onTouchStart={(e) => { touchStartPropX.current = e.touches[0].clientX; }}
+              onTouchEnd={(e) => {
+                const diff = touchStartPropX.current - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 50) {
+                  if (diff > 0) goToPropPage((currentPropPage + 1) % totalPropPages, 1);
+                  else goToPropPage((currentPropPage - 1 + totalPropPages) % totalPropPages, -1);
+                }
+              }}
+            >
+              <AnimatePresence mode="wait" custom={propDirection}>
+                <motion.div
+                  key={currentPropPage}
+                  custom={propDirection}
+                  initial={{ opacity: 0, x: propDirection > 0 ? 80 : -80 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: propDirection > 0 ? -80 : 80 }}
+                  transition={{ duration: 0.4, ease: 'easeInOut' }}
+                  className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                >
+                  {visibleProperties.map((property, index) => (
+                    <PropertyCard key={property.id} property={property} index={index} />
+                  ))}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
+            <div className="flex justify-center gap-2 mt-10">
+              {Array.from({ length: totalPropPages }).map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => goToPropPage(idx)}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    idx === currentPropPage ? 'w-8 bg-[#C4A265]' : 'w-2.5 bg-[#C4A265]/25 hover:bg-[#C4A265]/50'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -206,34 +287,44 @@ export default function Home() {
 
           <div className="relative">
             <button
-              onClick={() => goToPage((currentPage - 1 + totalPages) % totalPages, -1)}
-              className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#C4A265]/20 shadow-md flex items-center justify-center hover:bg-[#C4A265]/10 transition-colors"
+              onClick={() => goToReviewPage((currentReviewPage - 1 + totalReviewPages) % totalReviewPages, -1)}
+              className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#C4A265]/20 shadow-md flex items-center justify-center hover:bg-[#C4A265]/10 transition-colors hidden md:flex"
             >
               <ChevronLeft className="w-5 h-5 text-[#C4A265]" />
             </button>
 
             <button
-              onClick={() => goToPage((currentPage + 1) % totalPages, 1)}
-              className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#C4A265]/20 shadow-md flex items-center justify-center hover:bg-[#C4A265]/10 transition-colors"
+              onClick={() => goToReviewPage((currentReviewPage + 1) % totalReviewPages, 1)}
+              className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#C4A265]/20 shadow-md flex items-center justify-center hover:bg-[#C4A265]/10 transition-colors hidden md:flex"
             >
               <ChevronRight className="w-5 h-5 text-[#C4A265]" />
             </button>
 
-            <div className="overflow-hidden">
-              <AnimatePresence mode="wait" custom={direction}>
+            <div
+              className="overflow-hidden"
+              onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+              onTouchEnd={(e) => {
+                const diff = touchStartX.current - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 50) {
+                  if (diff > 0) goToReviewPage((currentReviewPage + 1) % totalReviewPages, 1);
+                  else goToReviewPage((currentReviewPage - 1 + totalReviewPages) % totalReviewPages, -1);
+                }
+              }}
+            >
+              <AnimatePresence mode="wait" custom={reviewDirection}>
                 <motion.div
-                  key={currentPage}
-                  custom={direction}
-                  initial={{ opacity: 0, x: direction > 0 ? 80 : -80 }}
+                  key={`${currentReviewPage}-${reviewCardsPerPage}`}
+                  custom={reviewDirection}
+                  initial={{ opacity: 0, x: reviewDirection > 0 ? 80 : -80 }}
                   animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: direction > 0 ? -80 : 80 }}
+                  exit={{ opacity: 0, x: reviewDirection > 0 ? -80 : 80 }}
                   transition={{ duration: 0.4, ease: 'easeInOut' }}
-                  className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                  className={isMobile ? "flex justify-center" : "grid grid-cols-3 gap-8"}
                 >
                   {visibleReviews.map((review, i) => (
                     <div
-                      key={`${currentPage}-${i}`}
-                      className="bg-white border border-[#C4A265]/15 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
+                      key={`${currentReviewPage}-${i}`}
+                      className="bg-white border border-[#C4A265]/15 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col w-full max-w-md"
                     >
                       <Quote className="w-8 h-8 text-[#C4A265]/30 mb-4" />
                       <p className="text-foreground/80 font-sans leading-relaxed text-[15px] flex-grow mb-6">
@@ -258,12 +349,12 @@ export default function Home() {
             </div>
 
             <div className="flex justify-center gap-2 mt-10">
-              {Array.from({ length: totalPages }).map((_, idx) => (
+              {Array.from({ length: totalReviewPages }).map((_, idx) => (
                 <button
                   key={idx}
-                  onClick={() => goToPage(idx)}
+                  onClick={() => goToReviewPage(idx)}
                   className={`h-2.5 rounded-full transition-all duration-300 ${
-                    idx === currentPage ? 'w-8 bg-[#C4A265]' : 'w-2.5 bg-[#C4A265]/25 hover:bg-[#C4A265]/50'
+                    idx === currentReviewPage ? 'w-8 bg-[#C4A265]' : 'w-2.5 bg-[#C4A265]/25 hover:bg-[#C4A265]/50'
                   }`}
                 />
               ))}
