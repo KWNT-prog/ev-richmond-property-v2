@@ -1,16 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { useI18n } from '@/lib/i18n';
-import { Menu, X, Phone, Globe } from 'lucide-react';
+import { useCurrency, Currency } from '@/lib/currency';
+import { Menu, X, Phone, Globe, DollarSign } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
+
+const currencies: { code: Currency; label: string; symbol: string }[] = [
+  { code: 'USD', label: 'USD ($)', symbol: '$' },
+  { code: 'EUR', label: 'EUR (€)', symbol: '€' },
+  { code: 'TRY', label: 'TRY (₺)', symbol: '₺' },
+  { code: 'GBP', label: 'GBP (£)', symbol: '£' },
+  { code: 'AED', label: 'AED (د.إ)', symbol: 'د.إ' },
+];
 
 export function Navbar() {
   const [location] = useLocation();
   const { t, lang, setLang } = useI18n();
+  const { currency, setCurrency } = useCurrency();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [currencyMenuOpen, setCurrencyMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +29,15 @@ export function Navbar() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = () => {
+      setLangMenuOpen(false);
+      setCurrencyMenuOpen(false);
+    };
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
   const navLinks = [
@@ -51,7 +71,6 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             
-            {/* Logo */}
             <Link href="/" className="flex items-center gap-3 z-50">
               <img 
                 src={`${import.meta.env.BASE_URL}logo.jpeg`} 
@@ -64,7 +83,6 @@ export function Navbar() {
               </div>
             </Link>
 
-            {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link 
@@ -82,20 +100,58 @@ export function Navbar() {
               ))}
             </nav>
 
-            {/* Desktop Actions */}
-            <div className="hidden lg:flex items-center gap-6">
+            <div className="hidden lg:flex items-center gap-4">
               <a href="tel:+905550000000" className={cn("flex items-center gap-2 hover:text-primary transition-colors", isOverDark ? "text-white" : "text-foreground")}>
                 <Phone className="w-4 h-4 text-primary" />
                 <span className="font-sans text-sm">+90 555 000 0000</span>
               </a>
 
-              {/* Language Switcher */}
+              <div className="w-px h-5 bg-current opacity-20" />
+
               <div className="relative">
                 <button 
-                  onClick={() => setLangMenuOpen(!langMenuOpen)}
-                  className={cn("flex items-center gap-2 text-sm font-display tracking-wider hover:text-primary transition-colors uppercase", isOverDark ? "text-white" : "text-foreground")}
+                  onClick={(e) => { e.stopPropagation(); setCurrencyMenuOpen(!currencyMenuOpen); setLangMenuOpen(false); }}
+                  className={cn("flex items-center gap-1.5 text-sm font-display tracking-wider hover:text-primary transition-colors uppercase", isOverDark ? "text-white" : "text-foreground")}
                 >
-                  <Globe className="w-4 h-4" />
+                  <DollarSign className="w-3.5 h-3.5" />
+                  {currency}
+                </button>
+                
+                <AnimatePresence>
+                  {currencyMenuOpen && (
+                    <motion.div 
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      className="absolute right-0 mt-4 w-36 bg-white border border-[#c9a96e]/15 rounded-lg shadow-xl overflow-hidden"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {currencies.map((c) => (
+                        <button
+                          key={c.code}
+                          onClick={() => {
+                            setCurrency(c.code);
+                            setCurrencyMenuOpen(false);
+                          }}
+                          className={cn(
+                            "w-full text-left px-4 py-2 text-sm font-sans hover:bg-primary/10 hover:text-primary transition-colors",
+                            currency === c.code ? "text-primary bg-primary/5" : "text-foreground"
+                          )}
+                        >
+                          {c.label}
+                        </button>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <div className="relative">
+                <button 
+                  onClick={(e) => { e.stopPropagation(); setLangMenuOpen(!langMenuOpen); setCurrencyMenuOpen(false); }}
+                  className={cn("flex items-center gap-1.5 text-sm font-display tracking-wider hover:text-primary transition-colors uppercase", isOverDark ? "text-white" : "text-foreground")}
+                >
+                  <Globe className="w-3.5 h-3.5" />
                   {lang}
                 </button>
                 
@@ -105,7 +161,8 @@ export function Navbar() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute right-0 mt-4 w-32 bg-card border border-border rounded-lg shadow-xl overflow-hidden"
+                      className="absolute right-0 mt-4 w-32 bg-white border border-[#c9a96e]/15 rounded-lg shadow-xl overflow-hidden"
+                      onClick={(e) => e.stopPropagation()}
                     >
                       {languages.map((l) => (
                         <button
@@ -128,7 +185,6 @@ export function Navbar() {
               </div>
             </div>
 
-            {/* Mobile Menu Toggle */}
             <button 
               className={cn("lg:hidden hover:text-primary z-50", isOverDark ? "text-white" : "text-foreground")}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -140,7 +196,6 @@ export function Navbar() {
         </div>
       </header>
 
-      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
@@ -167,7 +222,7 @@ export function Navbar() {
             </nav>
 
             <div className="mt-16 flex flex-col items-center gap-6">
-              <div className="flex gap-4">
+              <div className="flex gap-3">
                 {languages.map((l) => (
                   <button
                     key={l.code}
@@ -181,6 +236,21 @@ export function Navbar() {
                     )}
                   >
                     {l.code}
+                  </button>
+                ))}
+              </div>
+
+              <div className="flex gap-2 flex-wrap justify-center">
+                {currencies.map((c) => (
+                  <button
+                    key={c.code}
+                    onClick={() => setCurrency(c.code)}
+                    className={cn(
+                      "px-3 py-1 border rounded font-display text-sm uppercase",
+                      currency === c.code ? "border-primary text-primary bg-primary/10" : "border-border text-muted-foreground"
+                    )}
+                  >
+                    {c.code}
                   </button>
                 ))}
               </div>

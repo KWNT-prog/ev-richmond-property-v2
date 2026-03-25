@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { Bed, Bath, Square, MapPin } from 'lucide-react';
-import { formatPrice } from '@/lib/utils';
 import { Property } from '@/data/mock-data';
 import { useI18n } from '@/lib/i18n';
+import { useCurrency } from '@/lib/currency';
 import { motion } from 'framer-motion';
 
 interface PropertyCardProps {
@@ -13,6 +13,7 @@ interface PropertyCardProps {
 
 export function PropertyCard({ property, index = 0 }: PropertyCardProps) {
   const { t } = useI18n();
+  const { formatPrice } = useCurrency();
 
   return (
     <Link href={`/properties/${property.id}`}>

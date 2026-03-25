@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useRoute, Link } from 'wouter';
 import { useI18n } from '@/lib/i18n';
 import { properties } from '@/data/mock-data';
-import { formatPrice } from '@/lib/utils';
+import { useCurrency } from '@/lib/currency';
 import { motion } from 'framer-motion';
 import { 
   Bed, Bath, Square, MapPin, Calendar, Car, Layers, 
@@ -16,6 +16,7 @@ export default function PropertyDetail() {
   const { t } = useI18n();
   const [activeImage, setActiveImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const { formatPrice } = useCurrency();
 
   const property = properties.find(p => p.id === params?.id);
 
