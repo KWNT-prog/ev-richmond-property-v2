@@ -58,47 +58,47 @@
 }
 
 :root {
-  --background: 40 30% 96%;
-  --foreground: 220 25% 12%;
+  --background: 0 0% 96%;
+  --foreground: 0 0% 23%;
 
   --card: 0 0% 100%;
-  --card-foreground: 220 25% 12%;
+  --card-foreground: 0 0% 23%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 220 25% 12%;
+  --popover-foreground: 0 0% 23%;
 
-  --primary: 46 55% 42%;
+  --primary: 40 47% 60%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 40 20% 92%;
-  --secondary-foreground: 220 25% 12%;
+  --secondary: 33 16% 78%;
+  --secondary-foreground: 0 0% 23%;
 
-  --muted: 40 15% 93%;
-  --muted-foreground: 220 10% 45%;
+  --muted: 0 0% 85%;
+  --muted-foreground: 0 0% 40%;
 
-  --accent: 220 25% 15%;
-  --accent-foreground: 40 30% 96%;
+  --accent: 0 0% 12%;
+  --accent-foreground: 0 0% 96%;
 
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 40 15% 85%;
-  --input: 40 15% 90%;
-  --ring: 46 55% 42%;
+  --border: 0 0% 85%;
+  --input: 0 0% 93%;
+  --ring: 40 47% 60%;
 
-  --sidebar: 40 20% 94%;
-  --sidebar-foreground: 220 25% 12%;
-  --sidebar-border: 40 15% 85%;
-  --sidebar-primary: 46 55% 42%;
+  --sidebar: 0 0% 94%;
+  --sidebar-foreground: 0 0% 23%;
+  --sidebar-border: 0 0% 85%;
+  --sidebar-primary: 40 47% 60%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 40 20% 90%;
-  --sidebar-accent-foreground: 220 25% 12%;
-  --sidebar-ring: 46 55% 42%;
+  --sidebar-accent: 0 0% 90%;
+  --sidebar-accent-foreground: 0 0% 23%;
+  --sidebar-ring: 40 47% 60%;
 
-  --chart-1: 46 55% 42%;
-  --chart-2: 46 40% 55%;
-  --chart-3: 220 25% 30%;
-  --chart-4: 40 30% 70%;
+  --chart-1: 40 47% 60%;
+  --chart-2: 40 35% 50%;
+  --chart-3: 0 0% 30%;
+  --chart-4: 208 48% 79%;
   --chart-5: 0 62.8% 30.6%;
 
   --radius: 0.5rem;
@@ -125,14 +125,14 @@
 
 @layer utilities {
   .text-gradient-gold {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#8b7340] via-[#c9a96e] to-[#8b7340];
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#8b7340] via-[#C9A96A] to-[#8b7340];
   }
 
   .bg-gradient-gold {
-    @apply bg-gradient-to-r from-[#8b7340] via-[#c9a96e] to-[#8b7340];
+    @apply bg-gradient-to-r from-[#8b7340] via-[#C9A96A] to-[#8b7340];
   }
 
   .glass-panel {
-    @apply bg-white/80 backdrop-blur-md border border-[#c9a96e]/20 shadow-xl;
+    @apply bg-white/80 backdrop-blur-md border border-[#C9A96A]/20 shadow-xl;
   }
 }

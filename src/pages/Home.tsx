@@ -88,8 +88,8 @@ export default function Home() {
             alt="Luxury Real Estate" 
             className="w-full h-full object-cover scale-105 animate-[pulse_20s_ease-in-out_infinite_alternate]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/85 via-[#1a1a2e]/60 to-[#1a1a2e]/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a2e]/70 via-transparent to-[#1a1a2e]/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1E1E1E]/85 via-[#1E1E1E]/60 to-[#1E1E1E]/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1E1E1E]/70 via-transparent to-[#1E1E1E]/20" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -99,7 +99,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.2 }}
             className="max-w-3xl"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#c9a96e]/50 bg-[#c9a96e]/15 backdrop-blur-sm text-[#c9a96e] text-xs uppercase tracking-[0.2em] font-sans mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#C9A96A]/50 bg-[#C9A96A]/15 backdrop-blur-sm text-[#C9A96A] text-xs uppercase tracking-[0.2em] font-sans mb-6">
               <Crown className="w-3 h-3" />
               EV Richmond Property Group
             </div>
@@ -114,7 +114,7 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/properties">
-                <Button size="lg" className="w-full sm:w-auto bg-[#c9a96e] hover:bg-[#b89555] text-white border-[#c9a96e]">
+                <Button size="lg" className="w-full sm:w-auto bg-[#C9A96A] hover:bg-[#b89555] text-white border-[#C9A96A]">
                   {t('home.hero.cta.view')}
                 </Button>
               </Link>
@@ -131,7 +131,7 @@ export default function Home() {
       {/* Stats Section */}
       <section className="relative z-20 -mt-16 mb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="glass-panel rounded-2xl p-8 md:p-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-[#c9a96e]/20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-[#C9A96A]/20">
             {[
               { target: 500, suffix: '+', label: t('stats.properties') },
               { target: 10, suffix: '+', label: t('stats.years') },
@@ -207,16 +207,16 @@ export default function Home() {
           <div className="relative">
             <button
               onClick={() => goToPage((currentPage - 1 + totalPages) % totalPages, -1)}
-              className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#c9a96e]/20 shadow-md flex items-center justify-center hover:bg-[#c9a96e]/10 transition-colors"
+              className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#C9A96A]/20 shadow-md flex items-center justify-center hover:bg-[#C9A96A]/10 transition-colors"
             >
-              <ChevronLeft className="w-5 h-5 text-[#c9a96e]" />
+              <ChevronLeft className="w-5 h-5 text-[#C9A96A]" />
             </button>
 
             <button
               onClick={() => goToPage((currentPage + 1) % totalPages, 1)}
-              className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#c9a96e]/20 shadow-md flex items-center justify-center hover:bg-[#c9a96e]/10 transition-colors"
+              className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#C9A96A]/20 shadow-md flex items-center justify-center hover:bg-[#C9A96A]/10 transition-colors"
             >
-              <ChevronRight className="w-5 h-5 text-[#c9a96e]" />
+              <ChevronRight className="w-5 h-5 text-[#C9A96A]" />
             </button>
 
             <div className="overflow-hidden">
@@ -233,9 +233,9 @@ export default function Home() {
                   {visibleReviews.map((review, i) => (
                     <div
                       key={`${currentPage}-${i}`}
-                      className="bg-white border border-[#c9a96e]/15 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
+                      className="bg-white border border-[#C9A96A]/15 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
                     >
-                      <Quote className="w-8 h-8 text-[#c9a96e]/30 mb-4" />
+                      <Quote className="w-8 h-8 text-[#C9A96A]/30 mb-4" />
                       <p className="text-foreground/80 font-sans leading-relaxed text-[15px] flex-grow mb-6">
                         "{review.text}"
                       </p>
@@ -243,11 +243,11 @@ export default function Home() {
                         {Array.from({ length: 5 }).map((_, idx) => (
                           <Star
                             key={idx}
-                            className={`w-4 h-4 ${idx < review.rating ? 'text-[#c9a96e] fill-[#c9a96e]' : 'text-gray-300'}`}
+                            className={`w-4 h-4 ${idx < review.rating ? 'text-[#C9A96A] fill-[#C9A96A]' : 'text-gray-300'}`}
                           />
                         ))}
                       </div>
-                      <div className="border-t border-[#c9a96e]/10 pt-4">
+                      <div className="border-t border-[#C9A96A]/10 pt-4">
                         <p className="font-display text-foreground text-sm">{review.name}</p>
                         <p className="text-muted-foreground text-xs font-sans">{review.location}</p>
                       </div>
@@ -263,7 +263,7 @@ export default function Home() {
                   key={idx}
                   onClick={() => goToPage(idx)}
                   className={`h-2.5 rounded-full transition-all duration-300 ${
-                    idx === currentPage ? 'w-8 bg-[#c9a96e]' : 'w-2.5 bg-[#c9a96e]/25 hover:bg-[#c9a96e]/50'
+                    idx === currentPage ? 'w-8 bg-[#C9A96A]' : 'w-2.5 bg-[#C9A96A]/25 hover:bg-[#C9A96A]/50'
                   }`}
                 />
               ))}
@@ -304,7 +304,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.2 }}
-                className="bg-white border border-[#c9a96e]/15 p-8 rounded-2xl text-center group hover:border-[#c9a96e]/40 shadow-sm hover:shadow-md transition-all duration-300"
+                className="bg-white border border-[#C9A96A]/15 p-8 rounded-2xl text-center group hover:border-[#C9A96A]/40 shadow-sm hover:shadow-md transition-all duration-300"
               >
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <feature.icon className="w-8 h-8 text-primary" />
@@ -325,7 +325,7 @@ export default function Home() {
             alt="Villa" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#1a1a2e]/85" />
+          <div className="absolute inset-0 bg-[#1E1E1E]/85" />
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-display text-white mb-6">
@@ -335,7 +335,7 @@ export default function Home() {
             Our luxury real estate experts are ready to assist you in finding the perfect investment or home in Turkey.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-[#c9a96e] hover:bg-[#b89555] text-white border-[#c9a96e]">
+            <Button size="lg" className="bg-[#C9A96A] hover:bg-[#b89555] text-white border-[#C9A96A]">
               Schedule a Consultation
             </Button>
           </Link>
