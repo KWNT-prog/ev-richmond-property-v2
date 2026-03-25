@@ -26,7 +26,7 @@ export default function PropertyDetail() {
         <h1 className="text-3xl font-display text-foreground mb-4">{t('detail.notFound')}</h1>
         <p className="text-muted-foreground font-sans mb-8">{t('detail.notFoundDesc')}</p>
         <Link href="/properties">
-          <Button className="bg-[#C9A96A] hover:bg-[#b89555] text-white border-[#C9A96A]">
+          <Button className="bg-[#C4A265] hover:bg-[#b89555] text-white border-[#C4A265]">
             {t('detail.backToPortfolio')}
           </Button>
         </Link>
@@ -116,7 +116,7 @@ export default function PropertyDetail() {
               >
                 <div className="flex items-start justify-between flex-wrap gap-4 mb-4">
                   <div>
-                    <div className="inline-block bg-[#C9A96A]/10 text-[#C9A96A] px-3 py-1 rounded-full text-xs uppercase tracking-widest font-sans mb-3 border border-[#C9A96A]/20">
+                    <div className="inline-block bg-[#C4A265]/10 text-[#C4A265] px-3 py-1 rounded-full text-xs uppercase tracking-widest font-sans mb-3 border border-[#C4A265]/20">
                       {property.type}
                     </div>
                     <h1 className="text-3xl md:text-4xl font-display text-foreground">
@@ -124,21 +124,21 @@ export default function PropertyDetail() {
                     </h1>
                   </div>
                   <div className="flex gap-2">
-                    <button className="p-2 rounded-full border border-[#C9A96A]/20 hover:bg-[#C9A96A]/10 transition-colors">
-                      <Heart className="w-5 h-5 text-[#C9A96A]" />
+                    <button className="p-2 rounded-full border border-[#C4A265]/20 hover:bg-[#C4A265]/10 transition-colors">
+                      <Heart className="w-5 h-5 text-[#C4A265]" />
                     </button>
-                    <button className="p-2 rounded-full border border-[#C9A96A]/20 hover:bg-[#C9A96A]/10 transition-colors">
-                      <Share2 className="w-5 h-5 text-[#C9A96A]" />
+                    <button className="p-2 rounded-full border border-[#C4A265]/20 hover:bg-[#C4A265]/10 transition-colors">
+                      <Share2 className="w-5 h-5 text-[#C4A265]" />
                     </button>
                   </div>
                 </div>
 
                 <div className="flex items-center text-muted-foreground font-sans mb-6">
-                  <MapPin className="w-5 h-5 mr-2 text-[#C9A96A]" />
+                  <MapPin className="w-5 h-5 mr-2 text-[#C4A265]" />
                   {property.address}
                 </div>
 
-                <div className="text-4xl font-display text-[#C9A96A] mb-8">
+                <div className="text-4xl font-display text-[#C4A265] mb-8">
                   {formatPrice(property.price)}
                 </div>
               </motion.div>
@@ -157,8 +157,8 @@ export default function PropertyDetail() {
                   { icon: Car, value: property.parking, label: t('detail.parking') },
                   { icon: Layers, value: property.floors, label: t('detail.floors') },
                 ].map((stat, idx) => (
-                  <div key={idx} className="bg-white border border-[#C9A96A]/15 rounded-xl p-4 text-center shadow-sm">
-                    <stat.icon className="w-5 h-5 text-[#C9A96A] mx-auto mb-2" />
+                  <div key={idx} className="bg-white border border-[#C4A265]/15 rounded-xl p-4 text-center shadow-sm">
+                    <stat.icon className="w-5 h-5 text-[#C4A265] mx-auto mb-2" />
                     <div className="text-lg font-display text-foreground">{stat.value}</div>
                     <div className="text-xs text-muted-foreground font-sans uppercase tracking-wider">{stat.label}</div>
                   </div>
@@ -185,8 +185,8 @@ export default function PropertyDetail() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {property.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center gap-3 font-sans text-[15px]">
-                      <div className="w-6 h-6 rounded-full bg-[#C9A96A]/10 flex items-center justify-center flex-shrink-0">
-                        <Check className="w-3.5 h-3.5 text-[#C9A96A]" />
+                      <div className="w-6 h-6 rounded-full bg-[#C4A265]/10 flex items-center justify-center flex-shrink-0">
+                        <Check className="w-3.5 h-3.5 text-[#C4A265]" />
                       </div>
                       <span className="text-foreground/80">{feature}</span>
                     </div>
@@ -202,7 +202,7 @@ export default function PropertyDetail() {
               className="lg:col-span-1"
             >
               <div className="sticky top-28 space-y-6">
-                <div className="bg-white border border-[#C9A96A]/15 rounded-2xl p-8 shadow-sm">
+                <div className="bg-white border border-[#C4A265]/15 rounded-2xl p-8 shadow-sm">
                   <h3 className="text-xl font-display text-foreground mb-2">{t('detail.interested')}</h3>
                   <p className="text-sm text-muted-foreground font-sans mb-6">{t('detail.interestedDesc')}</p>
 
@@ -210,39 +210,39 @@ export default function PropertyDetail() {
                     <input
                       type="text"
                       placeholder={t('contact.form.name')}
-                      className="w-full bg-[#f5f0e8] border border-[#C9A96A]/15 rounded-lg px-4 py-3 text-sm font-sans focus:outline-none focus:border-[#C9A96A]/40"
+                      className="w-full bg-[#f5f0e8] border border-[#C4A265]/15 rounded-lg px-4 py-3 text-sm font-sans focus:outline-none focus:border-[#C4A265]/40"
                     />
                     <input
                       type="email"
                       placeholder={t('contact.form.email')}
-                      className="w-full bg-[#f5f0e8] border border-[#C9A96A]/15 rounded-lg px-4 py-3 text-sm font-sans focus:outline-none focus:border-[#C9A96A]/40"
+                      className="w-full bg-[#f5f0e8] border border-[#C4A265]/15 rounded-lg px-4 py-3 text-sm font-sans focus:outline-none focus:border-[#C4A265]/40"
                     />
                     <input
                       type="tel"
                       placeholder={t('contact.form.phone')}
-                      className="w-full bg-[#f5f0e8] border border-[#C9A96A]/15 rounded-lg px-4 py-3 text-sm font-sans focus:outline-none focus:border-[#C9A96A]/40"
+                      className="w-full bg-[#f5f0e8] border border-[#C4A265]/15 rounded-lg px-4 py-3 text-sm font-sans focus:outline-none focus:border-[#C4A265]/40"
                     />
                     <textarea
                       rows={3}
                       placeholder={t('contact.form.message')}
-                      className="w-full bg-[#f5f0e8] border border-[#C9A96A]/15 rounded-lg px-4 py-3 text-sm font-sans focus:outline-none focus:border-[#C9A96A]/40 resize-none"
+                      className="w-full bg-[#f5f0e8] border border-[#C4A265]/15 rounded-lg px-4 py-3 text-sm font-sans focus:outline-none focus:border-[#C4A265]/40 resize-none"
                       defaultValue={`I am interested in ${property.title}`}
                     />
-                    <Button className="w-full bg-[#C9A96A] hover:bg-[#b89555] text-white border-[#C9A96A]">
+                    <Button className="w-full bg-[#C4A265] hover:bg-[#b89555] text-white border-[#C4A265]">
                       {t('detail.sendInquiry')}
                     </Button>
                   </form>
                 </div>
 
-                <div className="bg-white border border-[#C9A96A]/15 rounded-2xl p-8 shadow-sm">
+                <div className="bg-white border border-[#C4A265]/15 rounded-2xl p-8 shadow-sm">
                   <h3 className="text-lg font-display text-foreground mb-4">{t('detail.contactDirect')}</h3>
                   <div className="space-y-4 font-sans">
-                    <a href="tel:+905550000000" className="flex items-center gap-3 text-muted-foreground hover:text-[#C9A96A] transition-colors">
-                      <Phone className="w-5 h-5 text-[#C9A96A]" />
+                    <a href="tel:+905550000000" className="flex items-center gap-3 text-muted-foreground hover:text-[#C4A265] transition-colors">
+                      <Phone className="w-5 h-5 text-[#C4A265]" />
                       <span className="text-sm">+90 555 000 0000</span>
                     </a>
-                    <a href="mailto:info@evrichmond.com" className="flex items-center gap-3 text-muted-foreground hover:text-[#C9A96A] transition-colors">
-                      <Mail className="w-5 h-5 text-[#C9A96A]" />
+                    <a href="mailto:info@evrichmond.com" className="flex items-center gap-3 text-muted-foreground hover:text-[#C4A265] transition-colors">
+                      <Mail className="w-5 h-5 text-[#C4A265]" />
                       <span className="text-sm">info@evrichmond.com</span>
                     </a>
                   </div>
@@ -254,14 +254,14 @@ export default function PropertyDetail() {
 
         {similarProperties.length > 0 && (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
-            <div className="border-t border-[#C9A96A]/15 pt-16">
+            <div className="border-t border-[#C4A265]/15 pt-16">
               <h2 className="text-3xl font-display text-foreground mb-10">{t('detail.similar')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {similarProperties.map((p) => (
                   <Link key={p.id} href={`/properties/${p.id}`}>
                     <motion.div 
                       whileHover={{ y: -4 }}
-                      className="bg-white rounded-xl overflow-hidden border border-[#C9A96A]/15 hover:border-[#C9A96A]/40 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
+                      className="bg-white rounded-xl overflow-hidden border border-[#C4A265]/15 hover:border-[#C4A265]/40 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
                     >
                       <div className="relative aspect-[4/3] overflow-hidden">
                         <img
@@ -269,18 +269,18 @@ export default function PropertyDetail() {
                           alt={p.title}
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                         />
-                        <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-[#C9A96A] font-display text-xs border border-[#C9A96A]/20">
+                        <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-[#C4A265] font-display text-xs border border-[#C4A265]/20">
                           {p.type}
                         </div>
                       </div>
                       <div className="p-5">
                         <div className="flex items-center text-muted-foreground text-xs mb-1.5 font-sans">
-                          <MapPin className="w-3 h-3 mr-1 text-[#C9A96A]" />
+                          <MapPin className="w-3 h-3 mr-1 text-[#C4A265]" />
                           {p.location}
                         </div>
                         <h3 className="font-display text-foreground text-lg mb-2">{p.title}</h3>
-                        <div className="text-xl font-display text-[#C9A96A]">{formatPrice(p.price)}</div>
-                        <div className="flex items-center gap-4 mt-3 pt-3 border-t border-[#C9A96A]/10 text-muted-foreground text-xs font-sans">
+                        <div className="text-xl font-display text-[#C4A265]">{formatPrice(p.price)}</div>
+                        <div className="flex items-center gap-4 mt-3 pt-3 border-t border-[#C4A265]/10 text-muted-foreground text-xs font-sans">
                           <span className="flex items-center gap-1"><Bed className="w-3 h-3" /> {p.bedrooms}</span>
                           <span className="flex items-center gap-1"><Bath className="w-3 h-3" /> {p.bathrooms}</span>
                           <span className="flex items-center gap-1"><Square className="w-3 h-3" /> {p.area} m²</span>
@@ -326,7 +326,7 @@ export default function PropertyDetail() {
               <button
                 key={idx}
                 onClick={(e) => { e.stopPropagation(); setActiveImage(idx); }}
-                className={`w-2.5 h-2.5 rounded-full transition-colors ${idx === activeImage ? 'bg-[#C9A96A]' : 'bg-white/40'}`}
+                className={`w-2.5 h-2.5 rounded-full transition-colors ${idx === activeImage ? 'bg-[#C4A265]' : 'bg-white/40'}`}
               />
             ))}
           </div>

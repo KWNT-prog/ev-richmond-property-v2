@@ -45,13 +45,13 @@ export default function Properties() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="flex flex-col sm:flex-row gap-4 bg-white p-4 rounded-xl border border-[#C9A96A]/15 max-w-4xl shadow-md"
+            className="flex flex-col sm:flex-row gap-4 bg-white p-4 rounded-xl border border-[#C4A265]/15 max-w-4xl shadow-md"
           >
             <div className="flex-1">
               <select 
                 value={filterLocation}
                 onChange={(e) => setFilterLocation(e.target.value)}
-                className="w-full bg-[#f5f0e8] text-foreground border border-[#C9A96A]/15 rounded-lg px-4 py-3 focus:outline-none focus:border-[#C9A96A]/40 appearance-none cursor-pointer font-sans text-sm"
+                className="w-full bg-[#f5f0e8] text-foreground border border-[#C4A265]/15 rounded-lg px-4 py-3 focus:outline-none focus:border-[#C4A265]/40 appearance-none cursor-pointer font-sans text-sm"
               >
                 <option value="All">{t('properties.filter.all')}</option>
                 {locations.map(loc => (
@@ -63,7 +63,7 @@ export default function Properties() {
               <select 
                 value={filterType}
                 onChange={(e) => setFilterType(e.target.value)}
-                className="w-full bg-[#f5f0e8] text-foreground border border-[#C9A96A]/15 rounded-lg px-4 py-3 focus:outline-none focus:border-[#C9A96A]/40 appearance-none cursor-pointer font-sans text-sm"
+                className="w-full bg-[#f5f0e8] text-foreground border border-[#C4A265]/15 rounded-lg px-4 py-3 focus:outline-none focus:border-[#C4A265]/40 appearance-none cursor-pointer font-sans text-sm"
               >
                 <option value="All">{t('properties.filter.type')}</option>
                 {propertyTypes.map(type => (
@@ -75,7 +75,7 @@ export default function Properties() {
               <select 
                 value={filterPrice}
                 onChange={(e) => setFilterPrice(e.target.value)}
-                className="w-full bg-[#f5f0e8] text-foreground border border-[#C9A96A]/15 rounded-lg px-4 py-3 focus:outline-none focus:border-[#C9A96A]/40 appearance-none cursor-pointer font-sans text-sm"
+                className="w-full bg-[#f5f0e8] text-foreground border border-[#C4A265]/15 rounded-lg px-4 py-3 focus:outline-none focus:border-[#C4A265]/40 appearance-none cursor-pointer font-sans text-sm"
               >
                 <option value="All">{t('properties.filter.price')}</option>
                 <option value="under2">{t('properties.filter.price.under2')}</option>
@@ -83,7 +83,7 @@ export default function Properties() {
                 <option value="over5">{t('properties.filter.price.over5')}</option>
               </select>
             </div>
-            <div className="flex items-center justify-center bg-[#C9A96A] hover:bg-[#b89555] text-white rounded-lg px-6 py-3 font-sans text-sm font-medium cursor-pointer transition-colors">
+            <div className="flex items-center justify-center bg-[#C4A265] hover:bg-[#b89555] text-white rounded-lg px-6 py-3 font-sans text-sm font-medium cursor-pointer transition-colors">
               <Search className="w-4 h-4 mr-2" />
               Search
             </div>
@@ -99,7 +99,7 @@ export default function Properties() {
           {hasActiveFilters && (
             <button 
               onClick={clearFilters}
-              className="text-[#C9A96A] hover:text-[#b89555] text-sm font-sans flex items-center gap-1 transition-colors"
+              className="text-[#C4A265] hover:text-[#b89555] text-sm font-sans flex items-center gap-1 transition-colors"
             >
               <SlidersHorizontal className="w-4 h-4" />
               Clear Filters
@@ -119,7 +119,7 @@ export default function Properties() {
             <p className="text-muted-foreground font-sans">Try adjusting your filters to see more results.</p>
             <button 
               onClick={clearFilters}
-              className="mt-6 text-[#C9A96A] hover:underline font-sans"
+              className="mt-6 text-[#C4A265] hover:underline font-sans"
             >
               Clear Filters
             </button>
