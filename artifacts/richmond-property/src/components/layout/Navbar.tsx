@@ -33,12 +33,19 @@ export function Navbar() {
     { code: 'tr', label: 'Türkçe' },
   ];
 
+  const isHome = location === '/';
+  const isOverDark = isHome && !scrolled;
+
   return (
     <>
       <header 
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4",
-          scrolled ? "bg-background/95 backdrop-blur-md shadow-lg shadow-black/5 py-3" : "bg-gradient-to-b from-white/90 to-transparent"
+          scrolled 
+            ? "bg-background/95 backdrop-blur-md shadow-lg shadow-black/5 py-3" 
+            : isHome 
+              ? "bg-gradient-to-b from-black/40 to-transparent" 
+              : "bg-background/95 backdrop-blur-md shadow-lg shadow-black/5"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,8 +59,8 @@ export function Navbar() {
                 className="w-12 h-12 rounded-full border border-[#c9a96e]/50 shadow-sm"
               />
               <div className="hidden md:flex flex-col">
-                <span className="font-display font-bold text-lg tracking-widest text-foreground leading-tight">EV RICHMOND</span>
-                <span className="font-sans text-[0.65rem] tracking-[0.2em] text-primary uppercase">Property Group</span>
+                <span className={cn("font-display font-bold text-lg tracking-widest leading-tight", isOverDark ? "text-white" : "text-foreground")}>EV RICHMOND</span>
+                <span className={cn("font-sans text-[0.65rem] tracking-[0.2em] uppercase", isOverDark ? "text-[#c9a96e]" : "text-primary")}>Property Group</span>
               </div>
             </Link>
 
@@ -65,7 +72,9 @@ export function Navbar() {
                   href={link.href}
                   className={cn(
                     "font-display text-sm uppercase tracking-wider transition-colors hover:text-primary",
-                    location === link.href ? "text-primary border-b border-primary pb-1" : "text-foreground/90"
+                    location === link.href 
+                      ? "text-primary border-b border-primary pb-1" 
+                      : isOverDark ? "text-white/90" : "text-foreground/90"
                   )}
                 >
                   {link.label}
@@ -75,7 +84,7 @@ export function Navbar() {
 
             {/* Desktop Actions */}
             <div className="hidden lg:flex items-center gap-6">
-              <a href="tel:+905550000000" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors">
+              <a href="tel:+905550000000" className={cn("flex items-center gap-2 hover:text-primary transition-colors", isOverDark ? "text-white" : "text-foreground")}>
                 <Phone className="w-4 h-4 text-primary" />
                 <span className="font-sans text-sm">+90 555 000 0000</span>
               </a>
@@ -84,7 +93,7 @@ export function Navbar() {
               <div className="relative">
                 <button 
                   onClick={() => setLangMenuOpen(!langMenuOpen)}
-                  className="flex items-center gap-2 text-sm font-display tracking-wider hover:text-primary transition-colors uppercase"
+                  className={cn("flex items-center gap-2 text-sm font-display tracking-wider hover:text-primary transition-colors uppercase", isOverDark ? "text-white" : "text-foreground")}
                 >
                   <Globe className="w-4 h-4" />
                   {lang}
@@ -121,7 +130,7 @@ export function Navbar() {
 
             {/* Mobile Menu Toggle */}
             <button 
-              className="lg:hidden text-foreground hover:text-primary z-50"
+              className={cn("lg:hidden hover:text-primary z-50", isOverDark ? "text-white" : "text-foreground")}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
