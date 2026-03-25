@@ -62,7 +62,7 @@ export default function PropertyDetail() {
               onClick={() => setLightboxOpen(true)}
             >
               <img
-                src={`${import.meta.env.BASE_URL}images/${galleryImages[0]}`}
+                src={`/images/${galleryImages[0]}`}
                 alt={property.title}
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
               />
@@ -80,7 +80,7 @@ export default function PropertyDetail() {
                   onClick={() => { setActiveImage(idx + 1); setLightboxOpen(true); }}
                 >
                   <img
-                    src={`${import.meta.env.BASE_URL}images/${img}`}
+                    src={`/images/${img}`}
                     alt={`${property.title} - ${idx + 2}`}
                     className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                   />
@@ -96,7 +96,7 @@ export default function PropertyDetail() {
                   onClick={() => setLightboxOpen(true)}
                 >
                   <img
-                    src={`${import.meta.env.BASE_URL}images/${galleryImages[0]}`}
+                    src={`/images/${galleryImages[0]}`}
                     alt={property.title}
                     className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                   />
@@ -265,7 +265,7 @@ export default function PropertyDetail() {
                     >
                       <div className="relative aspect-[4/3] overflow-hidden">
                         <img
-                          src={`${import.meta.env.BASE_URL}images/${p.image}`}
+                          src={`/images/${p.image}`}
                           alt={p.title}
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                         />
@@ -316,7 +316,7 @@ export default function PropertyDetail() {
             <ChevronRight className="w-10 h-10" />
           </button>
           <img
-            src={`${import.meta.env.BASE_URL}images/${galleryImages[activeImage]}`}
+            src={`/images/${galleryImages[activeImage]}`}
             alt={property.title}
             className="max-w-[90vw] max-h-[85vh] object-contain"
             onClick={(e) => e.stopPropagation()}

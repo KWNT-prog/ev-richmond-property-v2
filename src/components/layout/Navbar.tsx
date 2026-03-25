@@ -73,7 +73,7 @@ export function Navbar() {
             
             <Link href="/" className="flex items-center gap-3 z-50">
               <img 
-                src={`${import.meta.env.BASE_URL}logo.jpeg`} 
+                src={`/logo.jpeg`} 
                 alt="EV Richmond Property Group" 
                 className="w-12 h-12 rounded-full border border-[#c9a96e]/50 shadow-sm"
               />

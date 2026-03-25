@@ -84,7 +84,7 @@ export default function Home() {
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
+            src={`/images/hero-bg.png`}
             alt="Luxury Real Estate" 
             className="w-full h-full object-cover scale-105 animate-[pulse_20s_ease-in-out_infinite_alternate]"
           />
@@ -275,7 +275,7 @@ export default function Home() {
       {/* Why Choose Us */}
       <section className="py-24 bg-secondary/50 relative overflow-hidden">
         <div className="absolute right-0 top-0 w-1/2 h-full opacity-10">
-          <img src={`${import.meta.env.BASE_URL}images/about-team.png`} alt="" className="w-full h-full object-cover" />
+          <img src={`/images/about-team.png`} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent to-secondary/50" />
         </div>
         
@@ -321,7 +321,7 @@ export default function Home() {
       <section className="py-24 relative">
         <div className="absolute inset-0 z-0">
           <img 
-            src={`${import.meta.env.BASE_URL}images/modern-villa.png`}
+            src={`/images/modern-villa.png`}
             alt="Villa" 
             className="w-full h-full object-cover"
           />

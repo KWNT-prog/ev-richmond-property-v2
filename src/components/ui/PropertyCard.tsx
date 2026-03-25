@@ -27,7 +27,7 @@ export function PropertyCard({ property, index = 0 }: PropertyCardProps) {
         <div className="relative aspect-[4/3] overflow-hidden">
           <div className="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
           <img 
-            src={`${import.meta.env.BASE_URL}images/${property.image}`} 
+            src={`/images/${property.image}`} 
             alt={property.title}
             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
           />

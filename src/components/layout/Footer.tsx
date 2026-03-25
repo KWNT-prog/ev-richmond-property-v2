@@ -16,7 +16,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
               <img 
-                src={`${import.meta.env.BASE_URL}logo.jpeg`} 
+                src={`/logo.jpeg`} 
                 alt="EV Richmond Property Group" 
                 className="w-12 h-12 rounded-full border border-primary/50"
               />
