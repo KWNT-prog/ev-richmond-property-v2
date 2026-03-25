@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { useI18n } from '@/lib/i18n';
 import { useCurrency, Currency } from '@/lib/currency';
-import { Menu, X, Phone, Globe, DollarSign } from 'lucide-react';
+import { Menu, X, Phone, Globe, DollarSign, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -22,6 +22,8 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
   const [currencyMenuOpen, setCurrencyMenuOpen] = useState(false);
+  const [mobileLangOpen, setMobileLangOpen] = useState(false);
+  const [mobileCurrencyOpen, setMobileCurrencyOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -221,44 +223,95 @@ export function Navbar() {
               ))}
             </nav>
 
-            <div className="mt-16 flex flex-col items-center gap-6">
-              <div className="flex gap-3">
-                {languages.map((l) => (
-                  <button
-                    key={l.code}
-                    onClick={() => {
-                      setLang(l.code as 'en'|'ru'|'tr');
-                      setMobileMenuOpen(false);
-                    }}
-                    className={cn(
-                      "px-3 py-1 border rounded font-display text-sm uppercase",
-                      lang === l.code ? "border-primary text-primary bg-primary/10" : "border-border text-muted-foreground"
-                    )}
-                  >
-                    {l.code}
-                  </button>
-                ))}
+            <div className="mt-12 flex flex-col items-center gap-4 w-full max-w-xs mx-auto">
+              <div className="relative w-full">
+                <button
+                  onClick={() => { setMobileLangOpen(!mobileLangOpen); setMobileCurrencyOpen(false); }}
+                  className="w-full flex items-center justify-between px-4 py-3 border border-border rounded-xl bg-white font-display text-sm uppercase tracking-wider text-foreground"
+                >
+                  <span className="flex items-center gap-2">
+                    <Globe className="w-4 h-4 text-primary" />
+                    {languages.find(l => l.code === lang)?.label}
+                  </span>
+                  <ChevronDown className={cn("w-4 h-4 transition-transform", mobileLangOpen && "rotate-180")} />
+                </button>
+                <AnimatePresence>
+                  {mobileLangOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="overflow-hidden w-full mt-1 bg-white border border-border rounded-xl shadow-lg"
+                    >
+                      {languages.map((l) => (
+                        <button
+                          key={l.code}
+                          onClick={() => {
+                            setLang(l.code as 'en'|'ru'|'tr');
+                            setMobileLangOpen(false);
+                          }}
+                          className={cn(
+                            "w-full text-left px-4 py-3 text-sm font-sans transition-colors",
+                            lang === l.code ? "text-primary bg-primary/5" : "text-foreground hover:bg-primary/5"
+                          )}
+                        >
+                          {l.label}
+                        </button>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
-              <div className="flex gap-2 flex-wrap justify-center">
-                {currencies.map((c) => (
-                  <button
-                    key={c.code}
-                    onClick={() => setCurrency(c.code)}
-                    className={cn(
-                      "px-3 py-1 border rounded font-display text-sm uppercase",
-                      currency === c.code ? "border-primary text-primary bg-primary/10" : "border-border text-muted-foreground"
-                    )}
-                  >
-                    {c.code}
-                  </button>
-                ))}
+              <div className="relative w-full">
+                <button
+                  onClick={() => { setMobileCurrencyOpen(!mobileCurrencyOpen); setMobileLangOpen(false); }}
+                  className="w-full flex items-center justify-between px-4 py-3 border border-border rounded-xl bg-white font-display text-sm uppercase tracking-wider text-foreground"
+                >
+                  <span className="flex items-center gap-2">
+                    <DollarSign className="w-4 h-4 text-primary" />
+                    {currencies.find(c => c.code === currency)?.label}
+                  </span>
+                  <ChevronDown className={cn("w-4 h-4 transition-transform", mobileCurrencyOpen && "rotate-180")} />
+                </button>
+                <AnimatePresence>
+                  {mobileCurrencyOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="overflow-hidden w-full mt-1 bg-white border border-border rounded-xl shadow-lg"
+                    >
+                      {currencies.map((c) => (
+                        <button
+                          key={c.code}
+                          onClick={() => {
+                            setCurrency(c.code);
+                            setMobileCurrencyOpen(false);
+                          }}
+                          className={cn(
+                            "w-full text-left px-4 py-3 text-sm font-sans transition-colors",
+                            currency === c.code ? "text-primary bg-primary/5" : "text-foreground hover:bg-primary/5"
+                          )}
+                        >
+                          {c.label}
+                        </button>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
-              
-              <a href="tel:+905550000000" className="flex items-center gap-2 text-primary mt-4">
+
+              <a href="tel:+905550000000" className="flex items-center gap-2 text-primary mt-2">
                 <Phone className="w-5 h-5" />
-                <span className="font-sans text-lg">+90 555 000 0000</span>
+                <span className="font-sans text-base">+90 555 000 0000</span>
               </a>
+
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="w-full mt-2">
+                <button className="w-full py-3 bg-[#C4A265] hover:bg-[#b89555] text-white font-display text-sm uppercase tracking-wider rounded-xl transition-colors">
+                  {t('nav.contact')}
+                </button>
+              </Link>
             </div>
           </motion.div>
         )}
