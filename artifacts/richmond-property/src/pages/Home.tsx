@@ -5,7 +5,7 @@ import { PropertyCard } from '@/components/ui/PropertyCard';
 import { properties } from '@/data/mock-data';
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
-import { Shield, Building2, Crown, ChevronRight, Star } from 'lucide-react';
+import { Shield, Building2, Crown, ChevronRight, Star, Quote } from 'lucide-react';
 
 export default function Home() {
   const { t } = useI18n();
@@ -115,6 +115,92 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProperties.map((property, index) => (
               <PropertyCard key={property.id} property={property} index={index} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Client Reviews */}
+      <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-display text-foreground mb-4">
+              {t('section.reviews.title')}
+            </h2>
+            <p className="text-muted-foreground font-sans max-w-xl mx-auto">
+              {t('section.reviews.subtitle')}
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'Aleksandr Petrov',
+                location: t('review.1.location'),
+                text: t('review.1.text'),
+                rating: 5,
+              },
+              {
+                name: 'Mehmet Yılmaz',
+                location: t('review.2.location'),
+                text: t('review.2.text'),
+                rating: 5,
+              },
+              {
+                name: 'Elena Sokolova',
+                location: t('review.3.location'),
+                text: t('review.3.text'),
+                rating: 5,
+              },
+              {
+                name: 'Fatih Demir',
+                location: t('review.4.location'),
+                text: t('review.4.text'),
+                rating: 5,
+              },
+              {
+                name: 'Olga Ivanova',
+                location: t('review.5.location'),
+                text: t('review.5.text'),
+                rating: 4,
+              },
+              {
+                name: 'Ahmed Al-Rashid',
+                location: t('review.6.location'),
+                text: t('review.6.text'),
+                rating: 5,
+              },
+            ].map((review, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white border border-[#c9a96e]/15 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
+              >
+                <Quote className="w-8 h-8 text-[#c9a96e]/30 mb-4" />
+                <p className="text-foreground/80 font-sans leading-relaxed text-[15px] flex-grow mb-6">
+                  "{review.text}"
+                </p>
+                <div className="flex items-center gap-1 mb-4">
+                  {Array.from({ length: 5 }).map((_, idx) => (
+                    <Star
+                      key={idx}
+                      className={`w-4 h-4 ${idx < review.rating ? 'text-[#c9a96e] fill-[#c9a96e]' : 'text-gray-300'}`}
+                    />
+                  ))}
+                </div>
+                <div className="border-t border-[#c9a96e]/10 pt-4">
+                  <p className="font-display text-foreground text-sm">{review.name}</p>
+                  <p className="text-muted-foreground text-xs font-sans">{review.location}</p>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

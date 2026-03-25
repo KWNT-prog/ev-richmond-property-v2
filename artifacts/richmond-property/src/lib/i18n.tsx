@@ -59,6 +59,28 @@ const translations: Translations = {
   'property.baths': { en: 'Baths', ru: 'Ванные', tr: 'Banyo' },
   'property.sqm': { en: 'sqm', ru: 'кв.м', tr: 'm²' },
 
+  // Reviews
+  'section.reviews.title': { en: 'What Our Clients Say', ru: 'Отзывы Наших Клиентов', tr: 'Müşterilerimiz Ne Diyor' },
+  'section.reviews.subtitle': { en: 'Trusted by clients from around the world for premium real estate services in Turkey.', ru: 'Нам доверяют клиенты со всего мира в сфере премиальной недвижимости в Турции.', tr: "Türkiye'de premium gayrimenkul hizmetlerinde dünya genelinden müşteriler tarafından güveniliyor." },
+  
+  'review.1.location': { en: 'Moscow, Russia', ru: 'Москва, Россия', tr: 'Moskova, Rusya' },
+  'review.1.text': { en: 'EV Richmond made our dream of owning a Bosphorus villa a reality. Their team handled everything from property selection to citizenship paperwork. Truly exceptional service.', ru: 'EV Richmond воплотили нашу мечту о вилле на Босфоре в реальность. Их команда занималась всем — от выбора объекта до оформления гражданства. Поистине исключительный сервис.', tr: 'EV Richmond, Boğaz\'da villa sahibi olma hayalimizi gerçeğe dönüştürdü. Ekipleri mülk seçiminden vatandaşlık evraklarına kadar her şeyi halletti. Gerçekten olağanüstü hizmet.' },
+  
+  'review.2.location': { en: 'Istanbul, Turkey', ru: 'Стамбул, Турция', tr: 'İstanbul, Türkiye' },
+  'review.2.text': { en: 'Professional, knowledgeable, and always available. They found us the perfect penthouse in Antalya within our budget. The after-sale support has been outstanding.', ru: 'Профессиональные, компетентные и всегда на связи. Они нашли нам идеальный пентхаус в Анталии в рамках нашего бюджета. Послепродажная поддержка была великолепной.', tr: 'Profesyonel, bilgili ve her zaman ulaşılabilir. Bütçemize uygun mükemmel bir Antalya penthouse\'u buldular. Satış sonrası destek olağanüstüydü.' },
+  
+  'review.3.location': { en: 'Saint Petersburg, Russia', ru: 'Санкт-Петербург, Россия', tr: 'Saint Petersburg, Rusya' },
+  'review.3.text': { en: 'As a first-time international buyer, I was nervous about the process. The Richmond team guided me through every step in Russian, making the entire experience seamless and stress-free.', ru: 'Как покупатель недвижимости за рубежом в первый раз, я нервничала. Команда Richmond провела меня через каждый этап на русском языке, сделав весь процесс простым и безстрессовым.', tr: 'İlk kez uluslararası mülk alan biri olarak süreç konusunda endişeliydim. Richmond ekibi her adımda bana rehberlik etti ve tüm deneyimi sorunsuz hale getirdi.' },
+  
+  'review.4.location': { en: 'Ankara, Turkey', ru: 'Анкара, Турция', tr: 'Ankara, Türkiye' },
+  'review.4.text': { en: 'We invested in two properties through EV Richmond and the returns have exceeded our expectations. Their market knowledge and investment advice is second to none.', ru: 'Мы инвестировали в два объекта через EV Richmond, и доходность превзошла наши ожидания. Их знание рынка и инвестиционные консультации не имеют себе равных.', tr: 'EV Richmond aracılığıyla iki mülke yatırım yaptık ve getiriler beklentilerimizi aştı. Piyasa bilgileri ve yatırım tavsiyeleri eşsiz.' },
+  
+  'review.5.location': { en: 'Moscow, Russia', ru: 'Москва, Россия', tr: 'Moskova, Rusya' },
+  'review.5.text': { en: 'The attention to detail and personalized approach sets Richmond apart. They understood exactly what we were looking for and delivered beyond our expectations.', ru: 'Внимание к деталям и персональный подход выделяют Richmond. Они точно поняли, что мы ищем, и превзошли наши ожидания.', tr: 'Detaylara gösterilen özen ve kişiselleştirilmiş yaklaşım Richmond\'ı farklı kılıyor. Tam olarak ne aradığımızı anladılar ve beklentilerimizi aştılar.' },
+  
+  'review.6.location': { en: 'Dubai, UAE', ru: 'Дубай, ОАЭ', tr: 'Dubai, BAE' },
+  'review.6.text': { en: 'Investing in Turkish real estate from Dubai was made effortless by the EV Richmond team. Their multilingual support and deep market expertise made all the difference.', ru: 'Инвестирование в турецкую недвижимость из Дубая стало лёгким благодаря команде EV Richmond. Их многоязычная поддержка и глубокая экспертиза рынка сыграли решающую роль.', tr: "Dubai'den Türk gayrimenkulüne yatırım yapmak EV Richmond ekibi sayesinde zahmetsiz oldu. Çok dilli destekleri ve derin piyasa uzmanlıkları büyük fark yarattı." },
+
   // Property Detail
   'detail.backToPortfolio': { en: 'Back to Portfolio', ru: 'Назад к Портфолио', tr: 'Portföye Dön' },
   'detail.description': { en: 'Description', ru: 'Описание', tr: 'Açıklama' },
