@@ -1,15 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useI18n } from '@/lib/i18n';
 import { Button } from '@/components/ui/Button';
 import { PropertyCard } from '@/components/ui/PropertyCard';
 import { properties } from '@/data/mock-data';
 import { Link } from 'wouter';
-import { motion } from 'framer-motion';
-import { Shield, Building2, Crown, ChevronRight, Star, Quote } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Shield, Building2, Crown, ChevronRight, ChevronLeft, Star, Quote } from 'lucide-react';
 
 export default function Home() {
   const { t } = useI18n();
   const featuredProperties = properties;
+
+  const reviews = [
+    { name: 'Aleksandr Petrov', location: t('review.1.location'), text: t('review.1.text'), rating: 5 },
+    { name: 'Mehmet Yılmaz', location: t('review.2.location'), text: t('review.2.text'), rating: 5 },
+    { name: 'Elena Sokolova', location: t('review.3.location'), text: t('review.3.text'), rating: 5 },
+    { name: 'Fatih Demir', location: t('review.4.location'), text: t('review.4.text'), rating: 5 },
+    { name: 'Olga Ivanova', location: t('review.5.location'), text: t('review.5.text'), rating: 4 },
+    { name: 'Ahmed Al-Rashid', location: t('review.6.location'), text: t('review.6.text'), rating: 5 },
+  ];
+
+  const [currentPage, setCurrentPage] = useState(0);
+  const [direction, setDirection] = useState(0);
+  const cardsPerPage = 3;
+  const totalPages = Math.ceil(reviews.length / cardsPerPage);
+
+  const goToPage = useCallback((page: number, dir?: number) => {
+    setDirection(dir ?? (page > currentPage ? 1 : -1));
+    setCurrentPage(page);
+  }, [currentPage]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      goToPage((currentPage + 1) % totalPages, 1);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [currentPage, totalPages, goToPage]);
+
+  const visibleReviews = reviews.slice(currentPage * cardsPerPage, currentPage * cardsPerPage + cardsPerPage);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -137,71 +165,70 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Aleksandr Petrov',
-                location: t('review.1.location'),
-                text: t('review.1.text'),
-                rating: 5,
-              },
-              {
-                name: 'Mehmet Yılmaz',
-                location: t('review.2.location'),
-                text: t('review.2.text'),
-                rating: 5,
-              },
-              {
-                name: 'Elena Sokolova',
-                location: t('review.3.location'),
-                text: t('review.3.text'),
-                rating: 5,
-              },
-              {
-                name: 'Fatih Demir',
-                location: t('review.4.location'),
-                text: t('review.4.text'),
-                rating: 5,
-              },
-              {
-                name: 'Olga Ivanova',
-                location: t('review.5.location'),
-                text: t('review.5.text'),
-                rating: 4,
-              },
-              {
-                name: 'Ahmed Al-Rashid',
-                location: t('review.6.location'),
-                text: t('review.6.text'),
-                rating: 5,
-              },
-            ].map((review, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="bg-white border border-[#c9a96e]/15 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
-              >
-                <Quote className="w-8 h-8 text-[#c9a96e]/30 mb-4" />
-                <p className="text-foreground/80 font-sans leading-relaxed text-[15px] flex-grow mb-6">
-                  "{review.text}"
-                </p>
-                <div className="flex items-center gap-1 mb-4">
-                  {Array.from({ length: 5 }).map((_, idx) => (
-                    <Star
-                      key={idx}
-                      className={`w-4 h-4 ${idx < review.rating ? 'text-[#c9a96e] fill-[#c9a96e]' : 'text-gray-300'}`}
-                    />
+          <div className="relative">
+            <button
+              onClick={() => goToPage((currentPage - 1 + totalPages) % totalPages, -1)}
+              className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#c9a96e]/20 shadow-md flex items-center justify-center hover:bg-[#c9a96e]/10 transition-colors"
+            >
+              <ChevronLeft className="w-5 h-5 text-[#c9a96e]" />
+            </button>
+
+            <button
+              onClick={() => goToPage((currentPage + 1) % totalPages, 1)}
+              className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#c9a96e]/20 shadow-md flex items-center justify-center hover:bg-[#c9a96e]/10 transition-colors"
+            >
+              <ChevronRight className="w-5 h-5 text-[#c9a96e]" />
+            </button>
+
+            <div className="overflow-hidden">
+              <AnimatePresence mode="wait" custom={direction}>
+                <motion.div
+                  key={currentPage}
+                  custom={direction}
+                  initial={{ opacity: 0, x: direction > 0 ? 80 : -80 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: direction > 0 ? -80 : 80 }}
+                  transition={{ duration: 0.4, ease: 'easeInOut' }}
+                  className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                >
+                  {visibleReviews.map((review, i) => (
+                    <div
+                      key={`${currentPage}-${i}`}
+                      className="bg-white border border-[#c9a96e]/15 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
+                    >
+                      <Quote className="w-8 h-8 text-[#c9a96e]/30 mb-4" />
+                      <p className="text-foreground/80 font-sans leading-relaxed text-[15px] flex-grow mb-6">
+                        "{review.text}"
+                      </p>
+                      <div className="flex items-center gap-1 mb-4">
+                        {Array.from({ length: 5 }).map((_, idx) => (
+                          <Star
+                            key={idx}
+                            className={`w-4 h-4 ${idx < review.rating ? 'text-[#c9a96e] fill-[#c9a96e]' : 'text-gray-300'}`}
+                          />
+                        ))}
+                      </div>
+                      <div className="border-t border-[#c9a96e]/10 pt-4">
+                        <p className="font-display text-foreground text-sm">{review.name}</p>
+                        <p className="text-muted-foreground text-xs font-sans">{review.location}</p>
+                      </div>
+                    </div>
                   ))}
-                </div>
-                <div className="border-t border-[#c9a96e]/10 pt-4">
-                  <p className="font-display text-foreground text-sm">{review.name}</p>
-                  <p className="text-muted-foreground text-xs font-sans">{review.location}</p>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
+            <div className="flex justify-center gap-2 mt-10">
+              {Array.from({ length: totalPages }).map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => goToPage(idx)}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    idx === currentPage ? 'w-8 bg-[#c9a96e]' : 'w-2.5 bg-[#c9a96e]/25 hover:bg-[#c9a96e]/50'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
