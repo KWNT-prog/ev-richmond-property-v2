@@ -6,3 +6,9 @@ id = "csJZP2gDZiT8VqpkNQjed"
 uri = "file://richmond-property-website.tar.gz"
 type = "unspecified"
 title = "EV Richmond Property Group - Website Source Code"
+
+[[outputs]]
+id = "Y-asDvpeC7_-lkHRtOJyj"
+uri = "file://ev-richmond-property.tar.gz"
+type = "unspecified"
+title = "EV Richmond Property Group - Full Project"
