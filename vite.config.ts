@@ -4,7 +4,6 @@ import { defineConfig } from "vite";
   import path from "path";
 
   export default defineConfig({
-    base: "/",
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -15,6 +14,16 @@ import { defineConfig } from "vite";
     build: {
       outDir: "dist",
       emptyOutDir: true,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            vendor: ['react', 'react-dom'],
+            router: ['wouter'],
+            ui: ['framer-motion', 'lucide-react'],
+            query: ['@tanstack/react-query'],
+          },
+        },
+      },
     },
   });
   

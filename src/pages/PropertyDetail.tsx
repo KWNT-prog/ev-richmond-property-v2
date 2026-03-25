@@ -61,7 +61,7 @@ export default function PropertyDetail() {
               className="relative aspect-[4/3] cursor-pointer group"
               onClick={() => setLightboxOpen(true)}
             >
-              <img
+              <img loading="lazy"
                 src={`/images/${galleryImages[0]}`}
                 alt={property.title}
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
@@ -79,7 +79,7 @@ export default function PropertyDetail() {
                   className="relative aspect-[4/3] cursor-pointer group"
                   onClick={() => { setActiveImage(idx + 1); setLightboxOpen(true); }}
                 >
-                  <img
+                  <img loading="lazy"
                     src={`/images/${img}`}
                     alt={`${property.title} - ${idx + 2}`}
                     className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
@@ -95,7 +95,7 @@ export default function PropertyDetail() {
                   className="relative aspect-[4/3] cursor-pointer group"
                   onClick={() => setLightboxOpen(true)}
                 >
-                  <img
+                  <img loading="lazy"
                     src={`/images/${galleryImages[0]}`}
                     alt={property.title}
                     className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
@@ -264,7 +264,7 @@ export default function PropertyDetail() {
                       className="bg-white rounded-xl overflow-hidden border border-[#C4A265]/15 hover:border-[#C4A265]/40 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
                     >
                       <div className="relative aspect-[4/3] overflow-hidden">
-                        <img
+                        <img loading="lazy"
                           src={`/images/${p.image}`}
                           alt={p.title}
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -315,7 +315,7 @@ export default function PropertyDetail() {
           >
             <ChevronRight className="w-10 h-10" />
           </button>
-          <img
+          <img loading="lazy"
             src={`/images/${galleryImages[activeImage]}`}
             alt={property.title}
             className="max-w-[90vw] max-h-[85vh] object-contain"

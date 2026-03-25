@@ -12,7 +12,7 @@ export default function About() {
       <section className="relative py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <img 
-            src={`/images/about-team.png`}
+            src={`/images/about-team.jpg`}
             alt="About Richmond" 
             className="w-full h-full object-cover"
           />
@@ -75,7 +75,7 @@ export default function About() {
               className="relative aspect-square lg:aspect-[4/5] rounded-2xl overflow-hidden border-2 border-primary/20 p-2"
             >
               <img 
-                src={`/images/luxury-apartment.png`}
+                src={`/images/luxury-apartment.jpg`}
                 alt="Luxury Interior" 
                 className="w-full h-full object-cover rounded-xl"
               />
