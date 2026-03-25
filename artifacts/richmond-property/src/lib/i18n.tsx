@@ -59,6 +59,26 @@ const translations: Translations = {
   'property.baths': { en: 'Baths', ru: 'Ванные', tr: 'Banyo' },
   'property.sqm': { en: 'sqm', ru: 'кв.м', tr: 'm²' },
 
+  // Property Detail
+  'detail.backToPortfolio': { en: 'Back to Portfolio', ru: 'Назад к Портфолио', tr: 'Portföye Dön' },
+  'detail.description': { en: 'Description', ru: 'Описание', tr: 'Açıklama' },
+  'detail.features': { en: 'Property Features', ru: 'Характеристики', tr: 'Mülk Özellikleri' },
+  'detail.yearBuilt': { en: 'Year', ru: 'Год', tr: 'Yıl' },
+  'detail.parking': { en: 'Parking', ru: 'Парковка', tr: 'Otopark' },
+  'detail.floors': { en: 'Floors', ru: 'Этажи', tr: 'Kat' },
+  'detail.interested': { en: 'Interested in this property?', ru: 'Интересует этот объект?', tr: 'Bu mülkle ilgileniyor musunuz?' },
+  'detail.interestedDesc': { en: 'Fill out the form and our team will contact you within 24 hours.', ru: 'Заполните форму, и наша команда свяжется с вами в течение 24 часов.', tr: 'Formu doldurun, ekibimiz 24 saat içinde sizinle iletişime geçsin.' },
+  'detail.sendInquiry': { en: 'Send Inquiry', ru: 'Отправить Запрос', tr: 'Talep Gönder' },
+  'detail.contactDirect': { en: 'Or contact us directly', ru: 'Или свяжитесь напрямую', tr: 'Veya doğrudan iletişime geçin' },
+  'detail.similar': { en: 'Similar Properties', ru: 'Похожие Объекты', tr: 'Benzer Mülkler' },
+  'detail.notFound': { en: 'Property Not Found', ru: 'Объект не найден', tr: 'Mülk Bulunamadı' },
+  'detail.notFoundDesc': { en: 'The property you are looking for does not exist or has been removed.', ru: 'Объект, который вы ищете, не существует или был удалён.', tr: 'Aradığınız mülk mevcut değil veya kaldırılmış.' },
+  'properties.filter.price': { en: 'All Prices', ru: 'Все Цены', tr: 'Tüm Fiyatlar' },
+  'properties.filter.price.under2': { en: 'Under $2M', ru: 'До $2М', tr: '$2M Altı' },
+  'properties.filter.price.2to5': { en: '$2M - $5M', ru: '$2М - $5М', tr: '$2M - $5M' },
+  'properties.filter.price.over5': { en: 'Over $5M', ru: 'Свыше $5М', tr: '$5M Üzeri' },
+  'properties.results': { en: 'properties found', ru: 'объектов найдено', tr: 'mülk bulundu' },
+
   // Contact
   'contact.title': { en: 'Get in Touch', ru: 'Свяжитесь с Нами', tr: 'İletişime Geçin' },
   'contact.form.name': { en: 'Full Name', ru: 'Полное Имя', tr: 'Ad Soyad' },

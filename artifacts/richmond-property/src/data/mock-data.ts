@@ -2,13 +2,20 @@ export interface Property {
   id: string;
   title: string;
   location: string;
+  address: string;
   price: number;
   bedrooms: number;
   bathrooms: number;
   area: number;
   type: string;
   image: string;
+  gallery: string[];
   featured?: boolean;
+  description: string;
+  features: string[];
+  yearBuilt: number;
+  parking: number;
+  floors: number;
 }
 
 export const properties: Property[] = [
@@ -16,70 +23,178 @@ export const properties: Property[] = [
     id: '1',
     title: 'Bosphorus View Mansion',
     location: 'Istanbul',
+    address: 'Bebek, Beşiktaş, Istanbul',
     price: 8500000,
     bedrooms: 6,
     bathrooms: 5,
     area: 950,
     type: 'Villa',
     image: 'istanbul-city.png',
+    gallery: ['istanbul-city.png', 'luxury-apartment.png', 'penthouse-view.png'],
     featured: true,
+    yearBuilt: 2022,
+    parking: 3,
+    floors: 3,
+    description: 'An extraordinary waterfront mansion situated on the shores of the Bosphorus, offering breathtaking panoramic views of the strait and the Asian continent. This architectural masterpiece features floor-to-ceiling windows, Italian marble flooring, a private dock, infinity pool, and meticulously landscaped gardens spanning nearly 1,000 square meters of refined living space.',
+    features: [
+      'Private Bosphorus waterfront',
+      'Infinity pool with strait views',
+      'Italian marble throughout',
+      'Smart home automation',
+      'Private boat dock',
+      'Wine cellar & tasting room',
+      'Home cinema',
+      'Landscaped gardens',
+      'Security & concierge 24/7',
+      'Underfloor heating'
+    ],
   },
   {
     id: '2',
     title: 'Azure Infinity Penthouse',
     location: 'Antalya',
+    address: 'Konyaaltı, Antalya',
     price: 3200000,
     bedrooms: 4,
     bathrooms: 4,
     area: 420,
     type: 'Penthouse',
     image: 'penthouse-view.png',
+    gallery: ['penthouse-view.png', 'luxury-apartment.png', 'modern-villa.png'],
     featured: true,
+    yearBuilt: 2023,
+    parking: 2,
+    floors: 2,
+    description: 'A stunning duplex penthouse perched atop a prestigious residential tower in Konyaaltı, offering unobstructed Mediterranean Sea views from every room. The open-concept living area features double-height ceilings, a designer kitchen by Bulthaup, and a wraparound terrace perfect for entertaining. Residents enjoy exclusive access to a rooftop pool, spa, and private beach club.',
+    features: [
+      'Panoramic Mediterranean views',
+      'Wraparound terrace',
+      'Double-height ceilings',
+      'Bulthaup designer kitchen',
+      'Private rooftop pool access',
+      'Spa & wellness center',
+      'Private beach club',
+      'Concierge service',
+      'Climate control system',
+      'Premium sound system'
+    ],
   },
   {
     id: '3',
     title: 'Yalıkavak Modern Estate',
     location: 'Bodrum',
+    address: 'Yalıkavak, Bodrum, Muğla',
     price: 5400000,
     bedrooms: 5,
     bathrooms: 6,
     area: 680,
     type: 'Villa',
     image: 'modern-villa.png',
+    gallery: ['modern-villa.png', 'hero-bg.png', 'istanbul-city.png'],
     featured: true,
+    yearBuilt: 2024,
+    parking: 4,
+    floors: 2,
+    description: 'A contemporary architectural gem nestled in the exclusive Yalıkavak marina district of Bodrum. This ultra-modern villa blends minimalist design with the warmth of natural stone and wood, featuring an Olympic-length infinity pool overlooking the Aegean Sea, outdoor entertainment areas, and a separate guest pavilion. Steps away from the renowned Yalıkavak Marina and its world-class restaurants.',
+    features: [
+      'Aegean Sea panoramic views',
+      'Olympic infinity pool',
+      'Guest pavilion',
+      'Outdoor BBQ kitchen',
+      'Natural stone finishes',
+      'Floor-to-ceiling glazing',
+      'Landscaped olive grove',
+      'Smart lighting system',
+      'Electric car charging',
+      'Near Yalıkavak Marina'
+    ],
   },
   {
     id: '4',
     title: 'Nişantaşı Luxury Residence',
     location: 'Istanbul',
+    address: 'Nişantaşı, Şişli, Istanbul',
     price: 1850000,
     bedrooms: 3,
     bathrooms: 3,
     area: 240,
     type: 'Apartment',
     image: 'luxury-apartment.png',
+    gallery: ['luxury-apartment.png', 'penthouse-view.png', 'hero-bg.png'],
+    yearBuilt: 2021,
+    parking: 2,
+    floors: 1,
+    description: 'An impeccably designed luxury apartment in the heart of Nişantaşı, Istanbul\'s most prestigious shopping and cultural district. This residence features herringbone oak floors, custom millwork, a gourmet kitchen with Gaggenau appliances, and generous ceiling heights. Located within a boutique building offering a private fitness center, valet parking, and 24-hour security.',
+    features: [
+      'Prime Nişantaşı location',
+      'Herringbone oak floors',
+      'Gaggenau appliances',
+      'Custom millwork',
+      'Private fitness center',
+      'Valet parking',
+      '24-hour security',
+      'High ceilings',
+      'Walking distance to luxury shops',
+      'Central heating & cooling'
+    ],
   },
   {
     id: '5',
     title: 'Göktürk Forest Villa',
-    location: 'Göktürk',
+    location: 'Istanbul',
+    address: 'Göktürk, Eyüpsultan, Istanbul',
     price: 4100000,
     bedrooms: 5,
     bathrooms: 4,
     area: 550,
     type: 'Villa',
     image: 'hero-bg.png',
+    gallery: ['hero-bg.png', 'modern-villa.png', 'about-team.png'],
+    yearBuilt: 2023,
+    parking: 3,
+    floors: 3,
+    description: 'A magnificent forest villa set within the prestigious Göktürk neighborhood, where nature meets luxury in perfect harmony. Surrounded by mature trees and lush gardens, this estate offers complete privacy while remaining minutes from Istanbul\'s finest international schools and shopping centers. The property features a heated indoor pool, home gym, and a grand salon with a cathedral ceiling.',
+    features: [
+      'Surrounded by forest',
+      'Heated indoor pool',
+      'Home gym & sauna',
+      'Cathedral ceiling salon',
+      'Private garden 2000m²',
+      'Near international schools',
+      'Triple garage',
+      'Guest suite',
+      'Solar energy system',
+      'Advanced security system'
+    ],
   },
   {
     id: '6',
     title: 'Marina View Residence',
     location: 'Bodrum',
+    address: 'Turgutreis, Bodrum, Muğla',
     price: 2100000,
     bedrooms: 3,
     bathrooms: 2,
     area: 190,
     type: 'Residence',
     image: 'penthouse-view.png',
+    gallery: ['penthouse-view.png', 'modern-villa.png', 'luxury-apartment.png'],
+    yearBuilt: 2024,
+    parking: 1,
+    floors: 1,
+    description: 'A sophisticated seafront residence in the charming Turgutreis district of Bodrum, offering mesmerizing sunset views over the Aegean islands. This thoughtfully designed apartment features an open-plan living area flowing onto a generous balcony, a sleek modern kitchen, and premium finishes throughout. Part of an exclusive complex with a shared infinity pool, fitness center, and direct beach access.',
+    features: [
+      'Aegean sunset views',
+      'Direct beach access',
+      'Shared infinity pool',
+      'Modern open-plan design',
+      'Generous balcony',
+      'Fitness center',
+      'Secure gated complex',
+      'Storage unit included',
+      'Close to Turgutreis market',
+      'Year-round living'
+    ],
   }
 ];
 
