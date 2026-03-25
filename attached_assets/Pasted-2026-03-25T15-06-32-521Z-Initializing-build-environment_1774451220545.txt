@@ -1,0 +1,38 @@
+2026-03-25T15:06:32.521Z	Initializing build environment...
+2026-03-25T15:06:32.521Z	Initializing build environment...
+2026-03-25T15:06:33.938Z	Success: Finished initializing build environment
+2026-03-25T15:06:35.727Z	Cloning repository...
+2026-03-25T15:06:37.356Z	No build output detected to cache. Skipping.
+2026-03-25T15:06:37.356Z	No dependencies detected to cache. Skipping.
+2026-03-25T15:06:37.360Z	Detected the following tools from environment: bun@1.2.15, nodejs@22.16.0
+2026-03-25T15:06:37.362Z	Installing project dependencies: bun install
+2026-03-25T15:06:37.667Z	bun install v1.2.15 (df017990)
+2026-03-25T15:06:37.745Z	Resolving dependencies
+2026-03-25T15:06:39.677Z	Resolved, downloaded and extracted [562]
+2026-03-25T15:06:39.679Z	error: Workspace dependency "@workspace/api-client-react" not found
+2026-03-25T15:06:39.679Z	
+2026-03-25T15:06:39.679Z	Searched in "./*"
+2026-03-25T15:06:39.679Z	
+2026-03-25T15:06:39.679Z	Workspace documentation: https://bun.sh/docs/install/workspaces
+2026-03-25T15:06:39.679Z	
+2026-03-25T15:06:39.680Z	error: @replit/vite-plugin-cartographer@catalog: failed to resolve
+2026-03-25T15:06:39.680Z	error: @replit/vite-plugin-dev-banner@catalog: failed to resolve
+2026-03-25T15:06:39.680Z	error: @replit/vite-plugin-runtime-error-modal@catalog: failed to resolve
+2026-03-25T15:06:39.680Z	error: @tailwindcss/vite@catalog: failed to resolve
+2026-03-25T15:06:39.680Z	error: @tanstack/react-query@catalog: failed to resolve
+2026-03-25T15:06:39.680Z	error: @types/node@catalog: failed to resolve
+2026-03-25T15:06:39.680Z	error: @types/react@catalog: failed to resolve
+2026-03-25T15:06:39.681Z	error: @types/react-dom@catalog: failed to resolve
+2026-03-25T15:06:39.681Z	error: @vitejs/plugin-react@catalog: failed to resolve
+2026-03-25T15:06:39.681Z	error: @workspace/api-client-react@workspace:* failed to resolve
+2026-03-25T15:06:39.681Z	error: class-variance-authority@catalog: failed to resolve
+2026-03-25T15:06:39.681Z	error: clsx@catalog: failed to resolve
+2026-03-25T15:06:39.681Z	error: framer-motion@catalog: failed to resolve
+2026-03-25T15:06:39.681Z	error: lucide-react@catalog: failed to resolve
+2026-03-25T15:06:39.681Z	error: react@catalog: failed to resolve
+2026-03-25T15:06:39.681Z	error: react-dom@catalog: failed to resolve
+2026-03-25T15:06:39.681Z	error: tailwind-merge@catalog: failed to resolve
+2026-03-25T15:06:39.682Z	error: tailwindcss@catalog: failed to resolve
+2026-03-25T15:06:39.682Z	error: vite@catalog: failed to resolve
+2026-03-25T15:06:39.682Z	error: zod@catalog: failed to resolve
+2026-03-25T15:06:39.710Z	Failed: error occurred while installing tools or dependencies
