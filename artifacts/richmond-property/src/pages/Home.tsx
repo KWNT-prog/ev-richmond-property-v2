@@ -1,11 +1,50 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useI18n } from '@/lib/i18n';
 import { Button } from '@/components/ui/Button';
 import { PropertyCard } from '@/components/ui/PropertyCard';
 import { properties } from '@/data/mock-data';
 import { Link } from 'wouter';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { Shield, Building2, Crown, ChevronRight, ChevronLeft, Star, Quote } from 'lucide-react';
+
+function AnimatedCounter({ target, suffix = '', duration = 2000 }: { target: number; suffix?: string; duration?: number }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
+  const hasAnimated = useRef(false);
+
+  useEffect(() => {
+    if (!isInView || hasAnimated.current) return;
+    hasAnimated.current = true;
+
+    const steps = 60;
+    const increment = target / steps;
+    const stepDuration = duration / steps;
+    let current = 0;
+    let step = 0;
+
+    const timer = setInterval(() => {
+      step++;
+      const progress = step / steps;
+      const eased = 1 - Math.pow(1 - progress, 3);
+      current = Math.round(eased * target);
+      setCount(current);
+
+      if (step >= steps) {
+        setCount(target);
+        clearInterval(timer);
+      }
+    }, stepDuration);
+
+    return () => clearInterval(timer);
+  }, [isInView, target, duration]);
+
+  return (
+    <div ref={ref} className="text-3xl md:text-4xl font-display text-primary mb-2">
+      {count.toLocaleString()}{suffix}
+    </div>
+  );
+}
 
 export default function Home() {
   const { t } = useI18n();
@@ -94,10 +133,10 @@ export default function Home() {
         <div className="glass-panel rounded-2xl p-8 md:p-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-[#c9a96e]/20">
             {[
-              { num: "500+", label: t('stats.properties') },
-              { num: "10+", label: t('stats.years') },
-              { num: "1000+", label: t('stats.clients') },
-              { num: "5", label: t('stats.cities') }
+              { target: 500, suffix: '+', label: t('stats.properties') },
+              { target: 10, suffix: '+', label: t('stats.years') },
+              { target: 1000, suffix: '+', label: t('stats.clients') },
+              { target: 5, suffix: '', label: t('stats.cities') }
             ].map((stat, i) => (
               <motion.div 
                 key={i}
@@ -107,7 +146,7 @@ export default function Home() {
                 transition={{ delay: i * 0.1 }}
                 className="text-center px-4"
               >
-                <div className="text-3xl md:text-4xl font-display text-primary mb-2">{stat.num}</div>
+                <AnimatedCounter target={stat.target} suffix={stat.suffix} duration={2000} />
                 <div className="text-sm font-sans text-muted-foreground uppercase tracking-widest">{stat.label}</div>
               </motion.div>
             ))}
