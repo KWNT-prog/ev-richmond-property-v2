@@ -73,16 +73,12 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             
-            <Link href="/" className="flex items-center gap-3 z-50">
+            <Link href="/" className="flex items-center z-50">
               <img 
-                src={`${import.meta.env.BASE_URL}logo.jpeg`} 
+                src={`${import.meta.env.BASE_URL}logo.png`} 
                 alt="EV Richmond Property Group" 
-                className="w-12 h-12 rounded-full border border-[#C4A265]/50 shadow-sm"
+                className="h-14 w-auto"
               />
-              <div className="hidden md:flex flex-col">
-                <span className={cn("font-display font-bold text-lg tracking-widest leading-tight", isOverDark ? "text-white" : "text-foreground")}>EV RICHMOND</span>
-                <span className={cn("font-sans text-[0.65rem] tracking-[0.2em] uppercase", isOverDark ? "text-[#C4A265]" : "text-primary")}>Property Group</span>
-              </div>
             </Link>
 
             <nav className="hidden lg:flex items-center gap-8">

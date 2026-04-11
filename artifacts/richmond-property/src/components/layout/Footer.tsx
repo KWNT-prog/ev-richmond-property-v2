@@ -14,16 +14,12 @@ export function Footer() {
           
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-6">
+            <Link href="/" className="flex items-center mb-6">
               <img 
-                src={`${import.meta.env.BASE_URL}logo.jpeg`} 
+                src={`${import.meta.env.BASE_URL}logo.png`} 
                 alt="EV Richmond Property Group" 
-                className="w-12 h-12 rounded-full border border-primary/50"
+                className="h-16 w-auto"
               />
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-lg tracking-widest text-white leading-tight">EV RICHMOND</span>
-                <span className="font-sans text-[0.65rem] tracking-[0.2em] text-[#C4A265] uppercase">Property Group</span>
-              </div>
             </Link>
             <p className="text-white/60 text-sm font-sans mb-6 leading-relaxed">
               {t('footer.desc')}
