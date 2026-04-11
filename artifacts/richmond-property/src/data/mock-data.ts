@@ -39,8 +39,8 @@ export const properties: Property[] = [
     bathrooms: 3,
     area: 950,
     type: 'Residence',
-    image: 'istanbul-city.jpg',
-    gallery: ['istanbul-city.jpg', 'luxury-apartment.jpg', 'penthouse-view.jpg'],
+    image: 'rotana-hero.jpg',
+    gallery: ['rotana-hero.jpg', 'rotana-blocka.jpg', 'rotana-blockb.jpg', 'rotana-pool.jpg', 'rotana-courtyard.jpg', 'rotana-layout.jpg'],
     featured: true,
     yearBuilt: 2025,
     parking: 2,
@@ -60,19 +60,19 @@ export const properties: Property[] = [
     ],
     blocks: [
       {
-        name: 'A-Block',
+        name: 'A-Block (New Stage)',
         floors: 30,
-        units: 408,
+        units: 400,
         layouts: '1+1, 2+1',
-        status: 'Ready — May 2025',
-        details: 'Ready Tapu, eligible for citizenship'
+        status: 'Delivered 2026',
+        details: 'Storage included, parking available, eligible for citizenship'
       },
       {
         name: 'B-Block',
         floors: 44,
         units: 565,
         layouts: '1+1, 2+1, 3+1, 4+1',
-        status: 'Delivered & operational',
+        status: 'Delivered (4 years ago)',
         details: 'Panoramic views: Bosphorus, city & forest'
       },
       {
