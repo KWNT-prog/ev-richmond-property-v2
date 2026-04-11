@@ -48,6 +48,7 @@ export function PropertyCard({ property, index = 0 }: PropertyCardProps) {
           
           <div className="mt-auto">
             <div className="text-2xl font-display text-primary mb-4">
+              <span className="text-sm text-muted-foreground font-sans mr-1">{t('price.from')}</span>
               {formatPrice(property.price)}
             </div>
             

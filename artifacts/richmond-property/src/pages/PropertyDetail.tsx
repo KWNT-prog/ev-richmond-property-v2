@@ -139,6 +139,7 @@ export default function PropertyDetail() {
                 </div>
 
                 <div className="text-4xl font-display text-[#C4A265] mb-8">
+                  <span className="text-base text-muted-foreground font-sans mr-1">{t('price.from')}</span>
                   {formatPrice(property.price)}
                 </div>
               </motion.div>
@@ -176,6 +177,30 @@ export default function PropertyDetail() {
                 </p>
               </motion.div>
 
+              {property.blocks && property.blocks.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.25 }}
+                >
+                  <h2 className="text-2xl font-display text-foreground mb-6">{t('detail.blocks')}</h2>
+                  <div className="grid grid-cols-1 gap-4">
+                    {property.blocks.map((block, idx) => (
+                      <div key={idx} className="bg-white border border-[#C4A265]/15 rounded-xl p-6 shadow-sm">
+                        <h3 className="font-display text-lg text-foreground mb-3">{block.name}</h3>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm font-sans">
+                          <div><span className="text-muted-foreground">{t('detail.floors')}:</span> <span className="text-foreground font-medium">{block.floors}</span></div>
+                          <div><span className="text-muted-foreground">{t('detail.units')}:</span> <span className="text-foreground font-medium">{block.units}</span></div>
+                          <div><span className="text-muted-foreground">{t('detail.layouts')}:</span> <span className="text-foreground font-medium">{block.layouts}</span></div>
+                          <div><span className="text-muted-foreground">{t('detail.status')}:</span> <span className="text-[#C4A265] font-medium">{block.status}</span></div>
+                        </div>
+                        <p className="text-muted-foreground text-sm mt-3 font-sans">{block.details}</p>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -193,6 +218,24 @@ export default function PropertyDetail() {
                   ))}
                 </div>
               </motion.div>
+
+              {property.nearby && property.nearby.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.35 }}
+                >
+                  <h2 className="text-2xl font-display text-foreground mb-6">{t('detail.nearby')}</h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {property.nearby.map((item, idx) => (
+                      <div key={idx} className="flex items-center gap-3 font-sans text-[15px]">
+                        <MapPin className="w-4 h-4 text-[#C4A265] flex-shrink-0" />
+                        <span className="text-foreground/80">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
             </div>
 
             <motion.div

@@ -38,8 +38,9 @@ const translations: Translations = {
   'stats.cities': { en: 'Cities', ru: 'Городов', tr: 'Şehir' },
 
   // Sections
-  'section.featured.title': { en: 'Featured Properties', ru: 'Рекомендуемые Объекты', tr: 'Öne Çıkan Projeler' },
-  'section.featured.subtitle': { en: 'A curated selection of our most prestigious listings.', ru: 'Тщательно отобранные самые престижные объекты.', tr: 'En prestijli portföyümüzden özenle seçilmiş mülkler.' },
+  'section.featured.title': { en: 'Featured Projects', ru: 'Рекомендуемые Проекты', tr: 'Öne Çıkan Projeler' },
+  'section.featured.subtitle': { en: 'A curated selection of our most prestigious development projects.', ru: 'Тщательно отобранные самые престижные девелоперские проекты.', tr: 'En prestijli geliştirme projelerimizden özenle seçilmiş seçki.' },
+  'price.from': { en: 'from', ru: 'от', tr: 'başlayan' },
   
   'section.why.title': { en: 'Why Choose Richmond', ru: 'Почему Выбирают Richmond', tr: 'Neden Richmond?' },
   'why.1.title': { en: 'Citizenship Programs', ru: 'Программы Гражданства', tr: 'Vatandaşlık Programları' },
@@ -92,7 +93,12 @@ const translations: Translations = {
   'detail.interestedDesc': { en: 'Fill out the form and our team will contact you within 24 hours.', ru: 'Заполните форму, и наша команда свяжется с вами в течение 24 часов.', tr: 'Formu doldurun, ekibimiz 24 saat içinde sizinle iletişime geçsin.' },
   'detail.sendInquiry': { en: 'Send Inquiry', ru: 'Отправить Запрос', tr: 'Talep Gönder' },
   'detail.contactDirect': { en: 'Or contact us directly', ru: 'Или свяжитесь напрямую', tr: 'Veya doğrudan iletişime geçin' },
-  'detail.similar': { en: 'Similar Properties', ru: 'Похожие Объекты', tr: 'Benzer Mülkler' },
+  'detail.blocks': { en: 'Project Blocks', ru: 'Блоки Проекта', tr: 'Proje Blokları' },
+  'detail.units': { en: 'Units', ru: 'Квартир', tr: 'Daire' },
+  'detail.layouts': { en: 'Layouts', ru: 'Планировки', tr: 'Planlar' },
+  'detail.status': { en: 'Status', ru: 'Статус', tr: 'Durum' },
+  'detail.nearby': { en: 'Location & Proximity', ru: 'Локация и Близость', tr: 'Konum ve Yakınlık' },
+  'detail.similar': { en: 'Similar Projects', ru: 'Похожие Проекты', tr: 'Benzer Projeler' },
   'detail.notFound': { en: 'Property Not Found', ru: 'Объект не найден', tr: 'Mülk Bulunamadı' },
   'detail.notFoundDesc': { en: 'The property you are looking for does not exist or has been removed.', ru: 'Объект, который вы ищете, не существует или был удалён.', tr: 'Aradığınız mülk mevcut değil veya kaldırılmış.' },
   'properties.filter.price': { en: 'All Prices', ru: 'Все Цены', tr: 'Tüm Fiyatlar' },
