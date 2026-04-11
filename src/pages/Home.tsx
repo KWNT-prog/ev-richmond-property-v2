@@ -5,7 +5,7 @@ import { PropertyCard } from '@/components/ui/PropertyCard';
 import { properties } from '@/data/mock-data';
 import { Link } from 'wouter';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { Shield, Building2, Crown, ChevronRight, ChevronLeft, Star, Quote } from 'lucide-react';
+import { Shield, Building2, Crown, ChevronRight, ChevronLeft, Star, Quote, CheckCircle, Briefcase, Scale, GraduationCap, Gift, KeyRound, FileText, Home as HomeIcon, Receipt, FileCheck, Ban, Key, Plug } from 'lucide-react';
 
 function AnimatedCounter({ target, suffix = '', duration = 2000 }: { target: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0);
@@ -405,6 +405,211 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-24 bg-[#2A2A2A]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-display text-white mb-4">{t('section.team.title')}</h2>
+            <div className="w-24 h-1 bg-[#C4A265] mx-auto" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { photo: 'team-sales-manager.jpg', title: t('team.1.name'), name: '' },
+              { photo: 'team-portfolio-manager.jpg', title: t('team.2.name'), name: '' },
+              { photo: 'team-ceo.jpg', title: t('team.3.name'), name: 'Melena Vidina' },
+              { photo: 'team-lawyer.jpg', title: t('team.4.name'), name: '' },
+            ].map((member, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.15 }}
+                className="bg-[#1E1E1E] rounded-2xl overflow-hidden border border-[#C4A265]/15 group hover:border-[#C4A265]/40 transition-all duration-300"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={`/images/${member.photo}`}
+                    alt={member.title}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-5 text-center">
+                  {member.name && (
+                    <>
+                      <p className="font-display text-white text-lg">{member.name}</p>
+                      <div className="w-12 h-0.5 bg-[#C4A265] mx-auto my-2" />
+                    </>
+                  )}
+                  <p className="text-[#C4A265] text-xs uppercase tracking-[0.15em] font-sans">{member.title}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Company Section */}
+      <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-display text-foreground mb-4">{t('section.about.title')}</h2>
+            <div className="w-24 h-1 bg-[#C4A265] mx-auto" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="flex flex-col justify-center"
+            >
+              <div className="border-l-2 border-[#C4A265] pl-8">
+                <p className="text-2xl md:text-3xl font-display italic text-foreground/80 leading-relaxed">
+                  "{t('section.about.quote')}"
+                </p>
+              </div>
+              <p className="mt-8 text-[#C4A265] font-display text-lg">— Melena Vidina, CEO</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <p className="text-foreground/80 font-sans leading-relaxed">{t('section.about.text1')}</p>
+              <div className="w-16 h-0.5 bg-[#C4A265]/40" />
+              <p className="text-foreground/80 font-sans leading-relaxed">{t('section.about.text2')}</p>
+              <div className="w-16 h-0.5 bg-[#C4A265]/40" />
+              <p className="text-foreground/80 font-sans leading-relaxed">{t('section.about.text3')}</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-24 bg-secondary/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-display text-foreground mb-4">{t('section.services.title')}</h2>
+            <div className="w-24 h-1 bg-[#C4A265] mx-auto" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: Briefcase, text: t('services.1') },
+              { icon: HomeIcon, text: t('services.2') },
+              { icon: FileCheck, text: t('services.3') },
+              { icon: GraduationCap, text: t('services.4') },
+              { icon: Gift, text: t('services.5') },
+              { icon: KeyRound, text: t('services.6') },
+              { icon: FileText, text: t('services.7') },
+            ].map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white border border-[#C4A265]/15 rounded-2xl p-6 flex items-start gap-4 group hover:border-[#C4A265]/40 shadow-sm hover:shadow-md transition-all duration-300"
+              >
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#C4A265]/10 flex items-center justify-center">
+                  <service.icon className="w-5 h-5 text-[#C4A265]" />
+                </div>
+                <p className="text-foreground/80 font-sans leading-relaxed text-sm pt-2">{service.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Property Management Section */}
+      <section className="py-24 bg-[#2A2A2A]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-display text-white mb-4">{t('section.propMgmt.title')}</h2>
+            <div className="w-24 h-1 bg-[#C4A265] mx-auto" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            {[
+              { icon: FileCheck, text: t('propMgmt.1') },
+              { icon: Receipt, text: t('propMgmt.2') },
+              { icon: FileText, text: t('propMgmt.3') },
+              { icon: Ban, text: t('propMgmt.4') },
+              { icon: Key, text: t('propMgmt.5') },
+              { icon: Plug, text: t('propMgmt.6') },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="flex items-center gap-4 p-4 border border-[#C4A265]/15 rounded-xl hover:border-[#C4A265]/40 transition-colors"
+              >
+                <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#C4A265]" />
+                <p className="text-white/80 font-sans text-sm">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <p className="text-2xl font-display italic text-[#C4A265] mb-4">
+              "{t('propMgmt.tagline')}"
+            </p>
+            <p className="text-white/50 font-sans text-sm uppercase tracking-widest">
+              {t('propMgmt.footer')}
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Additional Services Badge */}
+      <section className="py-16 bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="relative bg-[#2A2A2A] border-2 border-[#C4A265]/50 rounded-2xl p-10 md:p-14 text-center"
+          >
+            <div className="absolute inset-3 border border-[#C4A265]/20 rounded-xl pointer-events-none" />
+            <p className="text-xl md:text-2xl font-display text-white leading-relaxed relative z-10">
+              {t('section.additionalBadge')}
+            </p>
+          </motion.div>
         </div>
       </section>
 
