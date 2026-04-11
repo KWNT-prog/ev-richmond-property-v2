@@ -213,6 +213,20 @@ const translations: Translations = {
   // Additional Services Badge
   'section.additionalBadge': { en: 'Additional notary and lawyer services of our company', ru: 'Дополнительные услуги нотариуса и юриста нашей компании', tr: 'Şirketimizin ek noter ve avukat hizmetleri' },
 
+  // About Page
+  'about.hero.title': { en: 'About', ru: 'О', tr: 'Hakkında' },
+  'about.hero.titleAccent': { en: 'Our Company', ru: 'Компании', tr: 'Şirketimiz' },
+  'about.hero.subtitle': {
+    en: 'EV Richmond Property Group — your trusted partner in premium real estate and investment consulting in Turkey, Dubai and London.',
+    ru: 'EV Richmond Property Group — ваш надежный партнер в сфере премиальной недвижимости и инвестиционного консалтинга в Турции, Дубае и Лондоне.',
+    tr: 'EV Richmond Property Group — Türkiye, Dubai ve Londra\'da premium gayrimenkul ve yatırım danışmanlığında güvenilir ortağınız.'
+  },
+  'about.story.title': { en: 'Our Story', ru: 'Наша История', tr: 'Hikayemiz' },
+  'about.values.1': { en: 'Finance education & MBI business school diploma', ru: 'Финансовое образование и диплом бизнес-школы MBI', tr: 'Finans eğitimi ve MBI işletme okulu diploması' },
+  'about.values.2': { en: 'Turkish citizenship, 15+ years in Istanbul', ru: 'Турецкое гражданство, более 15 лет в Стамбуле', tr: 'Türk vatandaşlığı, İstanbul\'da 15+ yıl' },
+  'about.values.3': { en: 'Projects in Istanbul, Dubai & London', ru: 'Проекты в Стамбуле, Дубае и Лондоне', tr: 'İstanbul, Dubai ve Londra\'da projeler' },
+  'about.values.4': { en: 'Full legal, insurance & education support', ru: 'Полная юридическая, страховая и образовательная поддержка', tr: 'Tam hukuki, sigorta ve eğitim desteği' },
+
   // Footer
   'footer.desc': { en: 'Your trusted partner in luxury real estate and investment in Turkey.', ru: 'Ваш надежный партнер в элитной недвижимости и инвестициях в Турции.', tr: "Türkiye'de lüks gayrimenkul ve yatırımda güvenilir ortağınız." },
   'footer.rights': { en: 'All rights reserved.', ru: 'Все права защищены.', tr: 'Tüm hakları saklıdır.' }
