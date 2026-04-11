@@ -1,0 +1,60 @@
+Add the following sections to the existing landing page:
+1. TEAM SECTION — «Наша команда»
+Add 4 team member cards in a grid layout using these photos and titles:
+
+Photo 2 (woman in black dress, white collar): Менеджер отдела продаж
+Photo 3 (man in brown cardigan): Портфолио менеджер
+Photo 4 (woman in white suit, armchair): Основательница компании / CEO — Melena Vidina
+Photo 5 (woman in grey blazer): Присяжная переводчица / Юрист
+
+Card style: dark background, gold name underline, job title in small caps gold text, photo takes upper 70% of card.
+
+2. ABOUT SECTION — «О компании»
+Add a section with this text:
+
+Компания основана в 2022 году. Руководитель Melena Vidina имеет финансовое образование и диплом бизнес-школы MBI. Имеет турецкое гражданство и более 15 лет живёт в Стамбуле.
+Мы работаем с ведущими девелоперскими проектами Стамбула, Дубая и Лондона, предлагая клиентам тщательно отобранные объекты с высоким инвестиционным потенциалом.
+Мы также предлагаем комплексное сопровождение клиентов, включая юридическую поддержку при оформлении ВНЖ и гражданства, помощь в вопросах страхования, образования для детей, а также содействие в нотариальных процедурах.
+
+Layout: split — large italic serif quote on left, text on right. Gold divider line.
+
+3. SERVICES SECTION — «Спектр услуг»
+Create an elegant services grid with these 7 items as individual cards with gold icon/number:
+
+Персональный подбор инвестиционных проектов премиум-класса
+Недвижимость под гражданство от $400 000 с оформлением для всей семьи
+Комплексное оформление ВНЖ
+Сопровождение студенческих виз
+Юридическое сопровождение сделок дарения
+Переоформление прав собственности «под ключ»
+Нотариальные переводы с гарантией точности и конфиденциальности
+
+
+4. PROPERTY MANAGEMENT SECTION — «Управление недвижимостью»
+Add a dark-background section listing these services with gold bullet points:
+
+Оформление прав собственности
+Оплата налога на недвижимость
+Обновление документов после получения гражданства
+Снятие ограничения «не для продажи»
+Сдача недвижимости в аренду
+Подключение и отключение коммунальных услуг
+
+Tagline at bottom in gold: «Доверьте нам заботу о вашей недвижимости»
+Footer note: Профессиональный сервис • Индивидуальный подход
+
+5. ADDITIONAL SERVICES BADGE
+Add a highlighted banner/ribbon section:
+
+«Дополнительные услуги нотариуса и юриста нашей компании»
+
+Style: centered, gold border frame, dark background, elegant serif typography.
+
+STYLE RULES FOR ALL NEW SECTIONS:
+
+Match existing page dark luxury aesthetic
+Gold: #C9A96E for all accents, borders, bullets
+Headings: Cormorant Garamond serif, light weight
+Body: Montserrat, small tracking
+Fade-in on scroll animations using Intersection Observer
+Mobile responsive

@@ -159,6 +159,60 @@ const translations: Translations = {
   'contact.toast.title': { en: 'Inquiry Sent Successfully', ru: 'Запрос Успешно Отправлен', tr: 'Başvuru Başarıyla Gönderildi' },
   'contact.toast.desc': { en: 'One of our luxury property consultants will contact you within 24 hours.', ru: 'Один из наших консультантов по элитной недвижимости свяжется с вами в течение 24 часов.', tr: 'Lüks mülk danışmanlarımızdan biri 24 saat içinde sizinle iletişime geçecektir.' },
   
+  // Team
+  'section.team.title': { en: 'Our Team', ru: 'Наша Команда', tr: 'Ekibimiz' },
+  'team.1.name': { en: 'Sales Manager', ru: 'Менеджер отдела продаж', tr: 'Satış Müdürü' },
+  'team.2.name': { en: 'Portfolio Manager', ru: 'Портфолио менеджер', tr: 'Portföy Yöneticisi' },
+  'team.3.name': { en: 'Founder & CEO', ru: 'Основательница компании / CEO', tr: 'Kurucu & CEO' },
+  'team.4.name': { en: 'Sworn Translator / Lawyer', ru: 'Присяжная переводчица / Юрист', tr: 'Yeminli Tercüman / Avukat' },
+
+  // About Company
+  'section.about.title': { en: 'About the Company', ru: 'О Компании', tr: 'Şirket Hakkında' },
+  'section.about.quote': {
+    en: 'We build trust through premium real estate and personalized service.',
+    ru: 'Мы строим доверие через премиальную недвижимость и персональный сервис.',
+    tr: 'Premium gayrimenkul ve kişiselleştirilmiş hizmet ile güven inşa ediyoruz.'
+  },
+  'section.about.text1': {
+    en: 'The company was founded in 2022. Director Melena Vidina holds a finance degree and an MBI business school diploma. She has Turkish citizenship and has been living in Istanbul for over 15 years.',
+    ru: 'Компания основана в 2022 году. Руководитель Melena Vidina имеет финансовое образование и диплом бизнес-школы MBI. Имеет турецкое гражданство и более 15 лет живёт в Стамбуле.',
+    tr: 'Şirket 2022 yılında kurulmuştur. Yönetici Melena Vidina finans eğitimine ve MBI işletme okulu diplomasına sahiptir. Türk vatandaşlığına sahip olup 15 yılı aşkın süredir İstanbul\'da yaşamaktadır.'
+  },
+  'section.about.text2': {
+    en: 'We work with leading development projects in Istanbul, Dubai and London, offering clients carefully selected properties with high investment potential.',
+    ru: 'Мы работаем с ведущими девелоперскими проектами Стамбула, Дубая и Лондона, предлагая клиентам тщательно отобранные объекты с высоким инвестиционным потенциалом.',
+    tr: 'İstanbul, Dubai ve Londra\'daki önde gelen geliştirme projeleriyle çalışıyor, müşterilerimize yüksek yatırım potansiyeline sahip özenle seçilmiş mülkler sunuyoruz.'
+  },
+  'section.about.text3': {
+    en: 'We also offer comprehensive client support, including legal assistance for residence permits and citizenship, help with insurance, children\'s education, and assistance with notarial procedures.',
+    ru: 'Мы также предлагаем комплексное сопровождение клиентов, включая юридическую поддержку при оформлении ВНЖ и гражданства, помощь в вопросах страхования, образования для детей, а также содействие в нотариальных процедурах.',
+    tr: 'Ayrıca oturma izni ve vatandaşlık için hukuki destek, sigorta, çocukların eğitimi ve noter işlemleri konusunda yardım dahil kapsamlı müşteri desteği sunuyoruz.'
+  },
+
+  // Services
+  'section.services.title': { en: 'Our Services', ru: 'Спектр Услуг', tr: 'Hizmetlerimiz' },
+  'services.1': { en: 'Personalized selection of premium investment projects', ru: 'Персональный подбор инвестиционных проектов премиум-класса', tr: 'Premium yatırım projelerinin kişiselleştirilmiş seçimi' },
+  'services.2': { en: 'Citizenship property from $400,000 with processing for the whole family', ru: 'Недвижимость под гражданство от $400 000 с оформлением для всей семьи', tr: 'Tüm aile için işlem yapılarak 400.000$\'dan başlayan vatandaşlık mülkü' },
+  'services.3': { en: 'Comprehensive residence permit processing', ru: 'Комплексное оформление ВНЖ', tr: 'Kapsamlı oturma izni işlemleri' },
+  'services.4': { en: 'Student visa assistance', ru: 'Сопровождение студенческих виз', tr: 'Öğrenci vizesi desteği' },
+  'services.5': { en: 'Legal support for gift transactions', ru: 'Юридическое сопровождение сделок дарения', tr: 'Bağış işlemleri için hukuki destek' },
+  'services.6': { en: 'Turnkey property title transfer', ru: 'Переоформление прав собственности «под ключ»', tr: 'Anahtar teslimi tapu devri' },
+  'services.7': { en: 'Notarized translations with guaranteed accuracy and confidentiality', ru: 'Нотариальные переводы с гарантией точности и конфиденциальности', tr: 'Doğruluk ve gizlilik garantili noter onaylı çeviriler' },
+
+  // Property Management
+  'section.propMgmt.title': { en: 'Property Management', ru: 'Управление Недвижимостью', tr: 'Mülk Yönetimi' },
+  'propMgmt.1': { en: 'Title deed registration', ru: 'Оформление прав собственности', tr: 'Tapu tescili' },
+  'propMgmt.2': { en: 'Property tax payment', ru: 'Оплата налога на недвижимость', tr: 'Emlak vergisi ödemesi' },
+  'propMgmt.3': { en: 'Document updates after citizenship', ru: 'Обновление документов после получения гражданства', tr: 'Vatandaşlık sonrası belge güncelleme' },
+  'propMgmt.4': { en: 'Removal of "not for sale" restriction', ru: 'Снятие ограничения «не для продажи»', tr: '"Satılık değil" kısıtlamasının kaldırılması' },
+  'propMgmt.5': { en: 'Property rental management', ru: 'Сдача недвижимости в аренду', tr: 'Mülk kiralama yönetimi' },
+  'propMgmt.6': { en: 'Utility connection and disconnection', ru: 'Подключение и отключение коммунальных услуг', tr: 'Hizmet bağlantısı ve kesintisi' },
+  'propMgmt.tagline': { en: 'Trust us with the care of your property', ru: 'Доверьте нам заботу о вашей недвижимости', tr: 'Mülkünüzün bakımını bize emanet edin' },
+  'propMgmt.footer': { en: 'Professional service \u2022 Individual approach', ru: 'Профессиональный сервис \u2022 Индивидуальный подход', tr: 'Profesyonel hizmet \u2022 Bireysel yaklaşım' },
+
+  // Additional Services Badge
+  'section.additionalBadge': { en: 'Additional notary and lawyer services of our company', ru: 'Дополнительные услуги нотариуса и юриста нашей компании', tr: 'Şirketimizin ek noter ve avukat hizmetleri' },
+
   // Footer
   'footer.desc': { en: 'Your trusted partner in luxury real estate and investment in Turkey.', ru: 'Ваш надежный партнер в элитной недвижимости и инвестициях в Турции.', tr: "Türkiye'de lüks gayrimenkul ve yatırımda güvenilir ortağınız." },
   'footer.rights': { en: 'All rights reserved.', ru: 'Все права защищены.', tr: 'Tüm hakları saklıdır.' }
