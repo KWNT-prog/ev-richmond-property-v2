@@ -409,7 +409,7 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-[#2A2A2A]">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -417,15 +417,15 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-display text-white mb-4">{t('section.team.title')}</h2>
+            <h2 className="text-4xl font-display text-foreground mb-4">{t('section.team.title')}</h2>
             <div className="w-24 h-1 bg-[#C4A265] mx-auto" />
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
+              { photo: 'team-ceo.jpg', title: t('team.3.name'), name: 'Melena Vidina' },
               { photo: 'team-sales-manager.jpg', title: t('team.1.name'), name: '' },
               { photo: 'team-portfolio-manager.jpg', title: t('team.2.name'), name: '' },
-              { photo: 'team-ceo.jpg', title: t('team.3.name'), name: 'Melena Vidina' },
               { photo: 'team-lawyer.jpg', title: t('team.4.name'), name: '' },
             ].map((member, i) => (
               <motion.div
@@ -434,7 +434,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
-                className="bg-[#1E1E1E] rounded-2xl overflow-hidden border border-[#C4A265]/15 group hover:border-[#C4A265]/40 transition-all duration-300"
+                className="bg-white rounded-2xl overflow-hidden border border-[#C4A265]/15 group hover:border-[#C4A265]/40 shadow-sm hover:shadow-md transition-all duration-300"
               >
                 <div className="aspect-[3/4] overflow-hidden">
                   <img
@@ -447,7 +447,7 @@ export default function Home() {
                 <div className="p-5 text-center">
                   {member.name && (
                     <>
-                      <p className="font-display text-white text-lg">{member.name}</p>
+                      <p className="font-display text-foreground text-lg">{member.name}</p>
                       <div className="w-12 h-0.5 bg-[#C4A265] mx-auto my-2" />
                     </>
                   )}
