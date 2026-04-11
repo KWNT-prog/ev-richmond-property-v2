@@ -1,5 +1,40 @@
 uploads = []
-generated = []
+
+[[generated]]
+id = "A1V8-1zEFQG9KDO9_TD4m"
+uri = "file://artifacts/richmond-property/public/images/rotana-tower-night.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "zBY22z9k7uYCbMgl6J6AH"
+uri = "file://artifacts/richmond-property/public/images/rotana-pool-area.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "SBZScOLbqJcL0DoRFJCtr"
+uri = "file://artifacts/richmond-property/public/images/rotana-interior.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ZSZVjZzDgLikPQBSOC7N3"
+uri = "file://artifacts/richmond-property/public/images/rotana-garden.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "dSmZQldyxgYi1waHx5yMg"
+uri = "file://artifacts/richmond-property/public/images/rotana-istanbul-view.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "XdjQikk9mWnOU27NkeXem"
+uri = "file://artifacts/richmond-property/public/images/rotana-amenities.png"
+type = "image"
+title = "generated_image"
 
 [[outputs]]
 id = "csJZP2gDZiT8VqpkNQjed"
@@ -18,3 +53,153 @@ id = "UIjKZJOwI_pp4VY4M9oDC"
 uri = "file://ev-richmond-cloudflare-deploy.tar.gz"
 type = "unspecified"
 title = "EV Richmond - Cloudflare Deploy (Built Static Files)"
+
+[[outputs]]
+id = "onMRW8wh0wJ-1ki0IA2ro"
+uri = "file://attached_assets/stock_images/istanbul_tower_night_1.jpg"
+type = "image"
+title = "luxury modern residential tower skyscraper Istanbul night city skyline"
+
+[[outputs]]
+id = "MQZMsBLoFaYofob0gdND-"
+uri = "file://attached_assets/stock_images/istanbul_tower_night_2.jpg"
+type = "image"
+title = "luxury modern residential tower skyscraper Istanbul night city skyline"
+
+[[outputs]]
+id = "pR9YmraOAuXxNKYvXJn6W"
+uri = "file://attached_assets/stock_images/istanbul_tower_night_3.jpg"
+type = "image"
+title = "luxury modern residential tower skyscraper Istanbul night city skyline"
+
+[[outputs]]
+id = "KjNYtxFOvkxOAUqXuFw0D"
+uri = "file://attached_assets/stock_images/luxury_pool_residence_1.jpg"
+type = "image"
+title = "luxury swimming pool modern apartment building rooftop terrace lounge chairs"
+
+[[outputs]]
+id = "5j9GOZ9vn0HYnvU2P6hlS"
+uri = "file://attached_assets/stock_images/luxury_pool_residence_2.jpg"
+type = "image"
+title = "luxury swimming pool modern apartment building rooftop terrace lounge chairs"
+
+[[outputs]]
+id = "zQGVNH9Z-O_6D5Ap-iaRW"
+uri = "file://attached_assets/stock_images/luxury_pool_residence_3.jpg"
+type = "image"
+title = "luxury swimming pool modern apartment building rooftop terrace lounge chairs"
+
+[[outputs]]
+id = "3ceWGQaBTUwHNZZYHWaJh"
+uri = "file://attached_assets/stock_images/luxury_interior_1.jpg"
+type = "image"
+title = "modern luxury apartment interior living room contemporary design high ceiling"
+
+[[outputs]]
+id = "OeCpOBtvgrI0jPAaWg9Mt"
+uri = "file://attached_assets/stock_images/luxury_interior_2.jpg"
+type = "image"
+title = "modern luxury apartment interior living room contemporary design high ceiling"
+
+[[outputs]]
+id = "ShtjpglYG1I7uCFnLAgXz"
+uri = "file://attached_assets/stock_images/luxury_interior_3.jpg"
+type = "image"
+title = "modern luxury apartment interior living room contemporary design high ceiling"
+
+[[outputs]]
+id = "ICB8SGfd-u8zwyQk2rsY7"
+uri = "file://attached_assets/stock_images/istanbul_bosphorus_1.jpg"
+type = "image"
+title = "Istanbul Bosphorus bridge night view cityscape panoramic"
+
+[[outputs]]
+id = "s2dSGr24qirdrTl8Jo_bn"
+uri = "file://attached_assets/stock_images/istanbul_bosphorus_2.jpg"
+type = "image"
+title = "Istanbul Bosphorus bridge night view cityscape panoramic"
+
+[[outputs]]
+id = "KaegfNMas1t0s8-lr4rYF"
+uri = "file://attached_assets/stock_images/residence_courtyard_1.jpg"
+type = "image"
+title = "luxury apartment building courtyard garden modern architecture landscaping"
+
+[[outputs]]
+id = "r0y-snxFwbEvhnlHS2l0n"
+uri = "file://attached_assets/stock_images/residence_courtyard_2.jpg"
+type = "image"
+title = "luxury apartment building courtyard garden modern architecture landscaping"
+
+[[outputs]]
+id = "1tqKk1glVmwmg83DHNQli"
+uri = "file://attached_assets/stock_images/glass_tower_1.jpg"
+type = "image"
+title = "modern glass skyscraper tower twilight dusk exterior luxury residential high rise urban"
+
+[[outputs]]
+id = "DaSdhifCzO808jCbo1CjP"
+uri = "file://attached_assets/stock_images/glass_tower_2.jpg"
+type = "image"
+title = "modern glass skyscraper tower twilight dusk exterior luxury residential high rise urban"
+
+[[outputs]]
+id = "Y2xLwnZ9opNPfN4Sho0O5"
+uri = "file://attached_assets/stock_images/glass_tower_3.jpg"
+type = "image"
+title = "modern glass skyscraper tower twilight dusk exterior luxury residential high rise urban"
+
+[[outputs]]
+id = "smQTbKMiSQdag1URUx8Aw"
+uri = "file://attached_assets/stock_images/rooftop_pool_1.jpg"
+type = "image"
+title = "luxury rooftop infinity pool modern highrise apartment complex sunbeds urban skyline"
+
+[[outputs]]
+id = "RLQH9VMDyHMjzgdxlP13-"
+uri = "file://attached_assets/stock_images/rooftop_pool_2.jpg"
+type = "image"
+title = "luxury rooftop infinity pool modern highrise apartment complex sunbeds urban skyline"
+
+[[outputs]]
+id = "-LXTWm-2QZx2iVO4aIZCu"
+uri = "file://attached_assets/stock_images/rooftop_pool_3.jpg"
+type = "image"
+title = "luxury rooftop infinity pool modern highrise apartment complex sunbeds urban skyline"
+
+[[outputs]]
+id = "UgFsZYhh8_hV9KkSrENSS"
+uri = "file://attached_assets/stock_images/penthouse_interior_1.jpg"
+type = "image"
+title = "luxury penthouse apartment interior panoramic city view modern elegant living room"
+
+[[outputs]]
+id = "GGK0jo2klyacrv3t37xhW"
+uri = "file://attached_assets/stock_images/penthouse_interior_2.jpg"
+type = "image"
+title = "luxury penthouse apartment interior panoramic city view modern elegant living room"
+
+[[outputs]]
+id = "l7ImNxhVjIwFYtn14WkKy"
+uri = "file://attached_assets/stock_images/penthouse_interior_3.jpg"
+type = "image"
+title = "luxury penthouse apartment interior panoramic city view modern elegant living room"
+
+[[outputs]]
+id = "t_I9mN8o9Ftc83l64OkEx"
+uri = "file://attached_assets/stock_images/istanbul_skyline_1.jpg"
+type = "image"
+title = "Istanbul skyline aerial view modern buildings night lights Sisli Bomonti district"
+
+[[outputs]]
+id = "Es0m2LiYC2y08n9W1zB8r"
+uri = "file://attached_assets/stock_images/istanbul_skyline_2.jpg"
+type = "image"
+title = "Istanbul skyline aerial view modern buildings night lights Sisli Bomonti district"
+
+[[outputs]]
+id = "rhixLhN1tqtR4B9BlwkCl"
+uri = "file://attached_assets/stock_images/istanbul_skyline_3.jpg"
+type = "image"
+title = "Istanbul skyline aerial view modern buildings night lights Sisli Bomonti district"
