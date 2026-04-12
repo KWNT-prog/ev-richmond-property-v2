@@ -190,7 +190,7 @@ export default function PropertyDetail() {
                         <h3 className="font-display text-lg text-foreground mb-3">{block.name}</h3>
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm font-sans">
                           <div><span className="text-muted-foreground">{t('detail.floors')}:</span> <span className="text-foreground font-medium">{block.floors}</span></div>
-                          <div><span className="text-muted-foreground">{t('detail.units')}:</span> <span className="text-foreground font-medium">{block.units}</span></div>
+                          {block.units > 0 && <div><span className="text-muted-foreground">{t('detail.units')}:</span> <span className="text-foreground font-medium">{block.units}</span></div>}
                           <div><span className="text-muted-foreground">{t('detail.layouts')}:</span> <span className="text-foreground font-medium">{block.layouts}</span></div>
                           <div><span className="text-muted-foreground">{t('detail.status')}:</span> <span className="text-[#C4A265] font-medium">{block.status}</span></div>
                         </div>

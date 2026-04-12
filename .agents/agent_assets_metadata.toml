@@ -36,6 +36,42 @@ uri = "file://artifacts/richmond-property/public/images/rotana-amenities.png"
 type = "image"
 title = "generated_image"
 
+[[generated]]
+id = "LcIyJeonvKpo2-EbCol2A"
+uri = "file://attached_assets/generated_images/generated_image_0.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "5wky5B4RXzyeBd3g_i4n0"
+uri = "file://attached_assets/generated_images/generated_image_1.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "PfFjanXZCXw6G5_iX_C2L"
+uri = "file://attached_assets/generated_images/generated_image_2.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "t4iMahBTfWLnEz7dMXdXY"
+uri = "file://attached_assets/generated_images/generated_image_3.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "S9Sa04IGuljkibIYKpa0v"
+uri = "file://attached_assets/generated_images/generated_image_4.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "TAlAx_lX9Mi34rJd3lus7"
+uri = "file://attached_assets/generated_images/generated_image_5.png"
+type = "image"
+title = "generated_image"
+
 [[outputs]]
 id = "csJZP2gDZiT8VqpkNQjed"
 uri = "file://richmond-property-website.tar.gz"
