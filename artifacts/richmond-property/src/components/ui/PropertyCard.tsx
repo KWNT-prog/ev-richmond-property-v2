@@ -12,7 +12,7 @@ interface PropertyCardProps {
 }
 
 export function PropertyCard({ property, index = 0 }: PropertyCardProps) {
-  const { t } = useI18n();
+  const { t, lt } = useI18n();
   const { formatPrice } = useCurrency();
 
   return (
@@ -32,7 +32,7 @@ export function PropertyCard({ property, index = 0 }: PropertyCardProps) {
             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
           />
           <div className="absolute top-4 right-4 z-20 bg-background/80 backdrop-blur-md px-3 py-1 rounded border border-primary/30 text-primary font-display text-sm font-semibold">
-            {property.type}
+            {t(`type.${property.type}`)}
           </div>
         </div>
         

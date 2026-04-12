@@ -233,21 +233,28 @@ const translations: Translations = {
   'about.values.3': { en: 'Projects in Istanbul, Dubai & London', ru: 'Проекты в Стамбуле, Дубае и Лондоне', tr: 'İstanbul, Dubai ve Londra\'da projeler' },
   'about.values.4': { en: 'Full legal, insurance & education support', ru: 'Полная юридическая, страховая и образовательная поддержка', tr: 'Tam hukuki, sigorta ve eğitim desteği' },
 
+  'type.Residence': { en: 'Residence', ru: 'Резиденция', tr: 'Rezidans' },
+  'type.Villa': { en: 'Villa', ru: 'Вилла', tr: 'Villa' },
+
   // Footer
   'footer.desc': { en: 'Your trusted partner in luxury real estate and investment in Turkey.', ru: 'Ваш надежный партнер в элитной недвижимости и инвестициях в Турции.', tr: "Türkiye'de lüks gayrimenkul ve yatırımda güvenilir ortağınız." },
   'footer.rights': { en: 'All rights reserved.', ru: 'Все права защищены.', tr: 'Tüm hakları saklıdır.' }
 };
 
+interface LocalizedText { en: string; ru: string; tr: string }
+
 interface I18nContextType {
   lang: Language;
   setLang: (lang: Language) => void;
   t: (key: string) => string;
+  lt: (obj: LocalizedText | string) => string;
 }
 
 const I18nContext = createContext<I18nContextType>({
   lang: 'en',
   setLang: () => {},
   t: (key: string) => key,
+  lt: (obj: LocalizedText | string) => typeof obj === 'string' ? obj : obj.en,
 });
 
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
@@ -261,8 +268,13 @@ export const I18nProvider = ({ children }: { children: ReactNode }) => {
     return key;
   };
 
+  const lt = (obj: LocalizedText | string): string => {
+    if (typeof obj === 'string') return obj;
+    return obj[lang] || obj.en;
+  };
+
   return (
-    <I18nContext.Provider value={{ lang, setLang, t }}>
+    <I18nContext.Provider value={{ lang, setLang, t, lt }}>
       {children}
     </I18nContext.Provider>
   );

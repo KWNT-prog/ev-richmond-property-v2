@@ -67,7 +67,7 @@ export default function Properties() {
               >
                 <option value="All">{t('properties.filter.type')}</option>
                 {propertyTypes.map(type => (
-                  <option key={type} value={type}>{type}</option>
+                  <option key={type} value={type}>{t(`type.${type}`)}</option>
                 ))}
               </select>
             </div>

@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/Button';
 
 export default function PropertyDetail() {
   const [, params] = useRoute('/properties/:id');
-  const { t } = useI18n();
+  const { t, lt } = useI18n();
   const [activeImage, setActiveImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const { formatPrice } = useCurrency();
@@ -117,7 +117,7 @@ export default function PropertyDetail() {
                 <div className="flex items-start justify-between flex-wrap gap-4 mb-4">
                   <div>
                     <div className="inline-block bg-[#C4A265]/10 text-[#C4A265] px-3 py-1 rounded-full text-xs uppercase tracking-widest font-sans mb-3 border border-[#C4A265]/20">
-                      {property.type}
+                      {t(`type.${property.type}`)}
                     </div>
                     <h1 className="text-3xl md:text-4xl font-display text-foreground">
                       {property.title}
@@ -135,7 +135,7 @@ export default function PropertyDetail() {
 
                 <div className="flex items-center text-muted-foreground font-sans mb-6">
                   <MapPin className="w-5 h-5 mr-2 text-[#C4A265]" />
-                  {property.address}
+                  {lt(property.address)}
                 </div>
 
                 <div className="text-4xl font-display text-[#C4A265] mb-8">
@@ -173,7 +173,7 @@ export default function PropertyDetail() {
               >
                 <h2 className="text-2xl font-display text-foreground mb-4">{t('detail.description')}</h2>
                 <p className="text-muted-foreground font-sans leading-relaxed text-[15px]">
-                  {property.description}
+                  {lt(property.description)}
                 </p>
               </motion.div>
 
@@ -187,14 +187,14 @@ export default function PropertyDetail() {
                   <div className="grid grid-cols-1 gap-4">
                     {property.blocks.map((block, idx) => (
                       <div key={idx} className="bg-white border border-[#C4A265]/15 rounded-xl p-6 shadow-sm">
-                        <h3 className="font-display text-lg text-foreground mb-3">{block.name}</h3>
+                        <h3 className="font-display text-lg text-foreground mb-3">{lt(block.name)}</h3>
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm font-sans">
                           <div><span className="text-muted-foreground">{t('detail.floors')}:</span> <span className="text-foreground font-medium">{block.floors}</span></div>
                           {block.units > 0 && <div><span className="text-muted-foreground">{t('detail.units')}:</span> <span className="text-foreground font-medium">{block.units}</span></div>}
                           <div><span className="text-muted-foreground">{t('detail.layouts')}:</span> <span className="text-foreground font-medium">{block.layouts}</span></div>
-                          <div><span className="text-muted-foreground">{t('detail.status')}:</span> <span className="text-[#C4A265] font-medium">{block.status}</span></div>
+                          <div><span className="text-muted-foreground">{t('detail.status')}:</span> <span className="text-[#C4A265] font-medium">{lt(block.status)}</span></div>
                         </div>
-                        <p className="text-muted-foreground text-sm mt-3 font-sans">{block.details}</p>
+                        <p className="text-muted-foreground text-sm mt-3 font-sans">{lt(block.details)}</p>
                       </div>
                     ))}
                   </div>
@@ -213,7 +213,7 @@ export default function PropertyDetail() {
                       <div className="w-6 h-6 rounded-full bg-[#C4A265]/10 flex items-center justify-center flex-shrink-0">
                         <Check className="w-3.5 h-3.5 text-[#C4A265]" />
                       </div>
-                      <span className="text-foreground/80">{feature}</span>
+                      <span className="text-foreground/80">{lt(feature)}</span>
                     </div>
                   ))}
                 </div>
@@ -230,7 +230,7 @@ export default function PropertyDetail() {
                     {property.nearby.map((item, idx) => (
                       <div key={idx} className="flex items-center gap-3 font-sans text-[15px]">
                         <MapPin className="w-4 h-4 text-[#C4A265] flex-shrink-0" />
-                        <span className="text-foreground/80">{item}</span>
+                        <span className="text-foreground/80">{lt(item)}</span>
                       </div>
                     ))}
                   </div>
@@ -313,7 +313,7 @@ export default function PropertyDetail() {
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                         />
                         <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-[#C4A265] font-display text-xs border border-[#C4A265]/20">
-                          {p.type}
+                          {t(`type.${p.type}`)}
                         </div>
                       </div>
                       <div className="p-5">
