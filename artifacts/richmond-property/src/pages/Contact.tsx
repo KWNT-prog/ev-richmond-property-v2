@@ -161,10 +161,17 @@ export default function Contact() {
                       <option value="investment">{t('contact.form.interest.investment')}</option>
                       <option value="rental">{t('contact.form.interest.rental')}</option>
                       <option value="management">{t('contact.form.interest.management')}</option>
+                      <option value="residencePermit">{t('contact.form.interest.residencePermit')}</option>
+                      <option value="studentVisa">{t('contact.form.interest.studentVisa')}</option>
+                      <option value="titleTransfer">{t('contact.form.interest.titleTransfer')}</option>
+                      <option value="giftTransaction">{t('contact.form.interest.giftTransaction')}</option>
+                      <option value="notarizedTranslation">{t('contact.form.interest.notarizedTranslation')}</option>
+                      <option value="notary">{t('contact.form.interest.notary')}</option>
+                      <option value="legal">{t('contact.form.interest.legal')}</option>
                     </select>
                   </div>
 
-                  {(interestType === 'purchase' || interestType === 'rental' || interestType === 'investment') && (
+                  {(['purchase', 'rental', 'investment', 'management', 'titleTransfer'].includes(interestType)) && (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                       <div className="space-y-2">
                         <label className={labelClass}>{t('contact.form.propertyType')}</label>
@@ -183,11 +190,10 @@ export default function Contact() {
                         <select className={selectClass}>
                           <option value="">{t('contact.form.location.any')}</option>
                           <option value="istanbul">Istanbul</option>
-                          <option value="antalya">Antalya</option>
                           <option value="bodrum">Bodrum</option>
+                          <option value="batumi">Batumi</option>
+                          <option value="antalya">Antalya</option>
                           <option value="alanya">Alanya</option>
-                          <option value="fethiye">Fethiye</option>
-                          <option value="kalkan">Kalkan</option>
                           <option value="other">{t('contact.form.location.other')}</option>
                         </select>
                       </div>
@@ -207,18 +213,20 @@ export default function Contact() {
                     </div>
                   )}
 
-                  <div className="space-y-2 mb-5">
-                    <label className={labelClass}>{t('contact.form.budget')}</label>
-                    <select className={selectClass}>
-                      <option value="">{t('contact.form.budget.placeholder')}</option>
-                      <option value="under-500k">{t('contact.form.budget.under500')}</option>
-                      <option value="500k-1m">{t('contact.form.budget.500to1m')}</option>
-                      <option value="1m-3m">{t('contact.form.budget.1to3m')}</option>
-                      <option value="3m-5m">{t('contact.form.budget.3to5m')}</option>
-                      <option value="5m-10m">{t('contact.form.budget.5to10m')}</option>
-                      <option value="over-10m">{t('contact.form.budget.over10m')}</option>
-                    </select>
-                  </div>
+                  {(['purchase', 'citizenship', 'investment', 'rental', 'management', 'titleTransfer'].includes(interestType)) && (
+                    <div className="space-y-2 mb-5">
+                      <label className={labelClass}>{t('contact.form.budget')}</label>
+                      <select className={selectClass}>
+                        <option value="">{t('contact.form.budget.placeholder')}</option>
+                        <option value="under-500k">{t('contact.form.budget.under500')}</option>
+                        <option value="500k-1m">{t('contact.form.budget.500to1m')}</option>
+                        <option value="1m-3m">{t('contact.form.budget.1to3m')}</option>
+                        <option value="3m-5m">{t('contact.form.budget.3to5m')}</option>
+                        <option value="5m-10m">{t('contact.form.budget.5to10m')}</option>
+                        <option value="over-10m">{t('contact.form.budget.over10m')}</option>
+                      </select>
+                    </div>
+                  )}
                 </div>
                 
                 <div className="space-y-2">
