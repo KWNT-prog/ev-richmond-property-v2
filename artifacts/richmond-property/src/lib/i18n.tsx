@@ -204,6 +204,8 @@ const translations: Translations = {
   'services.5': { en: 'Legal support for gift transactions', ru: 'Юридическое сопровождение сделок дарения', tr: 'Bağış işlemleri için hukuki destek' },
   'services.6': { en: 'Turnkey property title transfer', ru: 'Переоформление прав собственности «под ключ»', tr: 'Anahtar teslimi tapu devri' },
   'services.7': { en: 'Notarized translations with guaranteed accuracy and confidentiality', ru: 'Нотариальные переводы с гарантией точности и конфиденциальности', tr: 'Doğruluk ve gizlilik garantili noter onaylı çeviriler' },
+  'services.8': { en: 'Professional notary services', ru: 'Профессиональные нотариальные услуги', tr: 'Profesyonel noter hizmetleri' },
+  'services.9': { en: 'Legal consultation and lawyer services', ru: 'Юридические консультации и услуги адвоката', tr: 'Hukuki danışmanlık ve avukatlık hizmetleri' },
 
   // Property Management
   'section.propMgmt.title': { en: 'Property Management', ru: 'Управление Недвижимостью', tr: 'Mülk Yönetimi' },
@@ -216,8 +218,6 @@ const translations: Translations = {
   'propMgmt.tagline': { en: 'Trust us with the care of your property', ru: 'Доверьте нам заботу о вашей недвижимости', tr: 'Mülkünüzün bakımını bize emanet edin' },
   'propMgmt.footer': { en: 'Professional service \u2022 Individual approach', ru: 'Профессиональный сервис \u2022 Индивидуальный подход', tr: 'Profesyonel hizmet \u2022 Bireysel yaklaşım' },
 
-  // Additional Services Badge
-  'section.additionalBadge': { en: 'Additional notary and lawyer services of our company', ru: 'Дополнительные услуги нотариуса и юриста нашей компании', tr: 'Şirketimizin ek noter ve avukat hizmetleri' },
 
   // About Page
   'about.hero.title': { en: 'About', ru: 'О', tr: 'Hakkında' },

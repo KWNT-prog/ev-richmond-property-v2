@@ -5,7 +5,7 @@ import { PropertyCard } from '@/components/ui/PropertyCard';
 import { properties } from '@/data/mock-data';
 import { Link } from 'wouter';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { Shield, Building2, Crown, ChevronRight, ChevronLeft, Star, Quote, CheckCircle, Briefcase, Scale, GraduationCap, Gift, KeyRound, FileText, Home as HomeIcon, Receipt, FileCheck, Ban, Key, Plug } from 'lucide-react';
+import { Shield, Building2, Crown, ChevronRight, ChevronLeft, Star, Quote, CheckCircle, Briefcase, Scale, GraduationCap, Gift, KeyRound, FileText, Home as HomeIcon, Receipt, FileCheck, Ban, Key, Plug, Stamp, Gavel } from 'lucide-react';
 
 function AnimatedCounter({ target, suffix = '', duration = 2000 }: { target: number; suffix?: string; duration?: number }) {
   const [count, setCount] = useState(0);
@@ -525,6 +525,8 @@ export default function Home() {
               { icon: Gift, text: t('services.5') },
               { icon: KeyRound, text: t('services.6') },
               { icon: FileText, text: t('services.7') },
+              { icon: Stamp, text: t('services.8') },
+              { icon: Gavel, text: t('services.9') },
             ].map((service, i) => (
               <motion.div
                 key={i}
@@ -596,22 +598,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Additional Services Badge */}
-      <section className="py-16 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="relative bg-[#2A2A2A] border-2 border-[#C4A265]/50 rounded-2xl p-10 md:p-14 text-center"
-          >
-            <div className="absolute inset-3 border border-[#C4A265]/20 rounded-xl pointer-events-none" />
-            <p className="text-xl md:text-2xl font-display text-white leading-relaxed relative z-10">
-              {t('section.additionalBadge')}
-            </p>
-          </motion.div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-24 relative">

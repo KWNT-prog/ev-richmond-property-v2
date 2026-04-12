@@ -1,7 +1,7 @@
 import React from 'react';
 import { useI18n } from '@/lib/i18n';
 import { motion } from 'framer-motion';
-import { CheckCircle2, Briefcase, FileCheck, GraduationCap, Gift, KeyRound, FileText, Receipt, Ban, Key, Plug } from 'lucide-react';
+import { CheckCircle2, Briefcase, FileCheck, GraduationCap, Gift, KeyRound, FileText, Receipt, Ban, Key, Plug, Stamp, Gavel } from 'lucide-react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/Button';
 
@@ -23,6 +23,8 @@ export default function About() {
     { icon: Gift, text: t('services.5') },
     { icon: KeyRound, text: t('services.6') },
     { icon: FileText, text: t('services.7') },
+    { icon: Stamp, text: t('services.8') },
+    { icon: Gavel, text: t('services.9') },
   ];
 
   const propMgmt = [
@@ -230,23 +232,6 @@ export default function About() {
             </p>
             <p className="text-white/50 font-sans text-sm uppercase tracking-widest">
               {t('propMgmt.footer')}
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Additional Services Badge */}
-      <section className="py-16 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="relative bg-[#2A2A2A] border-2 border-[#C4A265]/50 rounded-2xl p-10 md:p-14 text-center"
-          >
-            <div className="absolute inset-3 border border-[#C4A265]/20 rounded-xl pointer-events-none" />
-            <p className="text-xl md:text-2xl font-display text-white leading-relaxed relative z-10">
-              {t('section.additionalBadge')}
             </p>
           </motion.div>
         </div>
