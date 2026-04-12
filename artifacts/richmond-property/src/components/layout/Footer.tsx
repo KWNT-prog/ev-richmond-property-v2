@@ -12,7 +12,6 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
-          {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center mb-6">
               <img 
@@ -37,9 +36,8 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
-            <h4 className="font-display text-lg text-white mb-6">Quick Links</h4>
+            <h4 className="font-display text-lg text-white mb-6">{t('footer.quickLinks')}</h4>
             <ul className="space-y-4 font-sans text-sm text-white/60">
               <li><Link href="/" className="hover:text-[#C4A265] transition-colors">{t('nav.home')}</Link></li>
               <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">{t('nav.properties')}</Link></li>
@@ -48,24 +46,21 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Properties */}
           <div>
-            <h4 className="font-display text-lg text-white mb-6">Locations</h4>
+            <h4 className="font-display text-lg text-white mb-6">{t('footer.locations')}</h4>
             <ul className="space-y-4 font-sans text-sm text-white/60">
               <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Istanbul</Link></li>
               <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Bodrum</Link></li>
-              <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Antalya</Link></li>
-              <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Göktürk</Link></li>
+              <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Batumi</Link></li>
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
-            <h4 className="font-display text-lg text-white mb-6">Contact Info</h4>
+            <h4 className="font-display text-lg text-white mb-6">{t('footer.contactInfo')}</h4>
             <ul className="space-y-4 font-sans text-sm text-white/60">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#C4A265] shrink-0 mt-0.5" />
-                <span>Zorlu Center, Istanbul<br/>Turkey</span>
+                <span className="whitespace-pre-line">{t('footer.address')}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#C4A265] shrink-0" />
@@ -83,8 +78,8 @@ export function Footer() {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans text-white/40">
           <p>&copy; {currentYear} EV Richmond Property Group. {t('footer.rights')}</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-[#C4A265]">Privacy Policy</a>
-            <a href="#" className="hover:text-[#C4A265]">Terms of Service</a>
+            <Link href="/privacy" className="hover:text-[#C4A265] transition-colors">{t('footer.privacy')}</Link>
+            <Link href="/terms" className="hover:text-[#C4A265] transition-colors">{t('footer.terms')}</Link>
           </div>
         </div>
       </div>

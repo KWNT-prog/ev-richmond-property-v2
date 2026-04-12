@@ -238,7 +238,96 @@ const translations: Translations = {
 
   // Footer
   'footer.desc': { en: 'Your trusted partner in luxury real estate and investment in Turkey.', ru: 'Ваш надежный партнер в элитной недвижимости и инвестициях в Турции.', tr: "Türkiye'de lüks gayrimenkul ve yatırımda güvenilir ortağınız." },
-  'footer.rights': { en: 'All rights reserved.', ru: 'Все права защищены.', tr: 'Tüm hakları saklıdır.' }
+  'footer.quickLinks': { en: 'Quick Links', ru: 'Быстрые ссылки', tr: 'Hızlı Bağlantılar' },
+  'footer.locations': { en: 'Locations', ru: 'Локации', tr: 'Lokasyonlar' },
+  'footer.contactInfo': { en: 'Contact Info', ru: 'Контактная информация', tr: 'İletişim Bilgileri' },
+  'footer.address': { en: 'Zorlu Center, Istanbul\nTurkey', ru: 'Зорлу Центр, Стамбул\nТурция', tr: 'Zorlu Center, İstanbul\nTürkiye' },
+  'footer.privacy': { en: 'Privacy Policy', ru: 'Политика конфиденциальности', tr: 'Gizlilik Politikası' },
+  'footer.terms': { en: 'Terms of Service', ru: 'Условия использования', tr: 'Hizmet Şartları' },
+  'footer.rights': { en: 'All rights reserved.', ru: 'Все права защищены.', tr: 'Tüm hakları saklıdır.' },
+
+  // Privacy Policy page
+  'privacy.title': { en: 'Privacy Policy', ru: 'Политика конфиденциальности', tr: 'Gizlilik Politikası' },
+  'privacy.intro': {
+    en: 'EV Richmond Property Group ("we", "us", "our") is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website and real estate services.',
+    ru: 'EV Richmond Property Group («мы», «нас», «наш») обязуется защищать ваши персональные данные. Настоящая Политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу информацию при использовании нашего сайта и услуг в сфере недвижимости.',
+    tr: 'EV Richmond Property Group ("biz", "bize", "bizim") kişisel verilerinizi korumayı taahhüt eder. Bu Gizlilik Politikası, web sitemizi ve gayrimenkul hizmetlerimizi kullandığınızda bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.'
+  },
+  'privacy.section1.title': { en: 'Information We Collect', ru: 'Информация, которую мы собираем', tr: 'Topladığımız Bilgiler' },
+  'privacy.section1.body': {
+    en: 'We collect personal information you provide directly, including your name, email address, phone number, and property preferences when you submit inquiry forms. We also collect technical data such as IP address, browser type, and browsing patterns through cookies and analytics tools.',
+    ru: 'Мы собираем личную информацию, которую вы предоставляете напрямую, включая ваше имя, адрес электронной почты, номер телефона и предпочтения по недвижимости при отправке форм запроса. Мы также собираем технические данные, такие как IP-адрес, тип браузера и шаблоны просмотра с помощью файлов cookie и аналитических инструментов.',
+    tr: 'Sorgulama formlarını gönderdiğinizde adınız, e-posta adresiniz, telefon numaranız ve gayrimenkul tercihleriniz dahil olmak üzere doğrudan sağladığınız kişisel bilgileri toplarız. Ayrıca çerezler ve analiz araçları aracılığıyla IP adresi, tarayıcı türü ve gezinme kalıpları gibi teknik verileri de toplarız.'
+  },
+  'privacy.section2.title': { en: 'How We Use Your Information', ru: 'Как мы используем вашу информацию', tr: 'Bilgilerinizi Nasıl Kullanırız' },
+  'privacy.section2.body': {
+    en: 'We use your information to respond to property inquiries, provide personalized real estate recommendations, process transactions, send relevant property updates (with your consent), and improve our website and services. We do not sell your personal data to third parties.',
+    ru: 'Мы используем вашу информацию для ответа на запросы о недвижимости, предоставления персонализированных рекомендаций, обработки транзакций, отправки актуальных обновлений (с вашего согласия) и улучшения нашего сайта и услуг. Мы не продаём ваши персональные данные третьим лицам.',
+    tr: 'Bilgilerinizi gayrimenkul sorularına yanıt vermek, kişiselleştirilmiş öneriler sunmak, işlemleri gerçekleştirmek, ilgili güncellemeler göndermek (onayınızla) ve web sitemizi ve hizmetlerimizi iyileştirmek için kullanırız. Kişisel verilerinizi üçüncü taraflara satmıyoruz.'
+  },
+  'privacy.section3.title': { en: 'Data Protection & Security', ru: 'Защита и безопасность данных', tr: 'Veri Koruma ve Güvenlik' },
+  'privacy.section3.body': {
+    en: 'We implement industry-standard security measures to protect your personal data, including SSL encryption, secure servers, and restricted access protocols. Your data is stored in compliance with applicable Turkish and international data protection regulations, including KVKK (Turkish Personal Data Protection Law).',
+    ru: 'Мы применяем стандартные отраслевые меры безопасности для защиты ваших персональных данных, включая SSL-шифрование, защищённые серверы и протоколы ограниченного доступа. Ваши данные хранятся в соответствии с применимыми турецкими и международными нормами защиты данных, включая KVKK (Закон Турции о защите персональных данных).',
+    tr: 'SSL şifreleme, güvenli sunucular ve kısıtlı erişim protokolleri dahil olmak üzere kişisel verilerinizi korumak için endüstri standardı güvenlik önlemleri uyguluyoruz. Verileriniz, KVKK (Kişisel Verilerin Korunması Kanunu) dahil olmak üzere geçerli Türk ve uluslararası veri koruma düzenlemelerine uygun olarak saklanır.'
+  },
+  'privacy.section4.title': { en: 'Your Rights', ru: 'Ваши права', tr: 'Haklarınız' },
+  'privacy.section4.body': {
+    en: 'You have the right to access, correct, or delete your personal data at any time. You may also withdraw consent for marketing communications. To exercise these rights, contact us at info@evrichmond.com.',
+    ru: 'Вы имеете право на доступ, исправление или удаление ваших персональных данных в любое время. Вы также можете отозвать согласие на маркетинговые рассылки. Для реализации этих прав свяжитесь с нами по адресу info@evrichmond.com.',
+    tr: 'Kişisel verilerinize istediğiniz zaman erişme, düzeltme veya silme hakkına sahipsiniz. Ayrıca pazarlama iletişimleri için onayınızı geri çekebilirsiniz. Bu hakları kullanmak için info@evrichmond.com adresinden bizimle iletişime geçin.'
+  },
+  'privacy.section5.title': { en: 'Contact', ru: 'Контакты', tr: 'İletişim' },
+  'privacy.section5.body': {
+    en: 'For questions about this Privacy Policy, please contact EV Richmond Property Group at info@evrichmond.com or +90 555 000 0000.',
+    ru: 'По вопросам, связанным с настоящей Политикой конфиденциальности, обращайтесь в EV Richmond Property Group по адресу info@evrichmond.com или +90 555 000 0000.',
+    tr: 'Bu Gizlilik Politikası hakkındaki sorularınız için lütfen EV Richmond Property Group ile info@evrichmond.com veya +90 555 000 0000 üzerinden iletişime geçin.'
+  },
+
+  // Terms of Service page
+  'terms.title': { en: 'Terms of Service', ru: 'Условия использования', tr: 'Hizmet Şartları' },
+  'terms.intro': {
+    en: 'Welcome to EV Richmond Property Group. By accessing and using our website and services, you agree to comply with these Terms of Service. Please read them carefully before using our platform.',
+    ru: 'Добро пожаловать в EV Richmond Property Group. Используя наш сайт и услуги, вы соглашаетесь соблюдать настоящие Условия использования. Пожалуйста, внимательно прочитайте их перед использованием нашей платформы.',
+    tr: 'EV Richmond Property Group\'a hoş geldiniz. Web sitemize ve hizmetlerimize erişerek ve bunları kullanarak bu Hizmet Şartlarına uymayı kabul edersiniz. Platformumuzu kullanmadan önce lütfen bunları dikkatlice okuyun.'
+  },
+  'terms.section1.title': { en: 'Services', ru: 'Услуги', tr: 'Hizmetler' },
+  'terms.section1.body': {
+    en: 'EV Richmond Property Group provides real estate brokerage and advisory services for luxury residential properties in Turkey and Georgia. Property listings, prices, and availability displayed on our website are for informational purposes and may change without notice. All prices are approximate and subject to current exchange rates.',
+    ru: 'EV Richmond Property Group предоставляет брокерские и консультационные услуги в сфере элитной жилой недвижимости в Турции и Грузии. Объявления о недвижимости, цены и доступность, отображаемые на нашем сайте, носят информационный характер и могут быть изменены без предварительного уведомления. Все цены являются приблизительными и зависят от текущих обменных курсов.',
+    tr: 'EV Richmond Property Group, Türkiye ve Gürcistan\'da lüks konut gayrimenkulleri için emlak aracılık ve danışmanlık hizmetleri sunar. Web sitemizde görüntülenen mülk listelemeleri, fiyatlar ve müsaitlik bilgilendirme amaçlıdır ve önceden haber verilmeksizin değişebilir. Tüm fiyatlar yaklaşık olup güncel döviz kurlarına tabidir.'
+  },
+  'terms.section2.title': { en: 'User Responsibilities', ru: 'Обязанности пользователя', tr: 'Kullanıcı Sorumlulukları' },
+  'terms.section2.body': {
+    en: 'You agree to provide accurate information when submitting inquiries or contact forms. You may not use our website for any unlawful purpose or in a way that could damage, disable, or impair our services. Any information obtained from our site shall not be used for competing commercial purposes without our written consent.',
+    ru: 'Вы обязуетесь предоставлять точную информацию при отправке запросов или контактных форм. Вы не имеете права использовать наш сайт в незаконных целях или способом, который может повредить, отключить или нарушить работу наших услуг. Любая информация, полученная с нашего сайта, не может быть использована в конкурирующих коммерческих целях без нашего письменного согласия.',
+    tr: 'Sorgulama veya iletişim formları gönderirken doğru bilgi vermeyi kabul edersiniz. Web sitemizi herhangi bir yasadışı amaçla veya hizmetlerimize zarar verebilecek, devre dışı bırakabilecek şekilde kullanamazsınız. Sitemizden elde edilen bilgiler, yazılı onayımız olmadan rakip ticari amaçlarla kullanılamaz.'
+  },
+  'terms.section3.title': { en: 'Property Transactions', ru: 'Сделки с недвижимостью', tr: 'Gayrimenkul İşlemleri' },
+  'terms.section3.body': {
+    en: 'All property transactions are subject to separate purchase agreements governed by Turkish or Georgian law, as applicable. EV Richmond Property Group acts as an intermediary and does not guarantee the accuracy of third-party developer information. Buyers are advised to conduct independent due diligence before making purchase decisions.',
+    ru: 'Все сделки с недвижимостью регулируются отдельными договорами купли-продажи в соответствии с турецким или грузинским законодательством. EV Richmond Property Group выступает в качестве посредника и не гарантирует точность информации сторонних застройщиков. Покупателям рекомендуется проводить независимую проверку перед принятием решений о покупке.',
+    tr: 'Tüm gayrimenkul işlemleri, uygulanabilir olduğu şekilde Türk veya Gürcü hukukuna tabi ayrı satın alma sözleşmelerine tabidir. EV Richmond Property Group aracı olarak hareket eder ve üçüncü taraf geliştirici bilgilerinin doğruluğunu garanti etmez. Alıcıların satın alma kararları vermeden önce bağımsız durum tespiti yapmaları tavsiye edilir.'
+  },
+  'terms.section4.title': { en: 'Intellectual Property', ru: 'Интеллектуальная собственность', tr: 'Fikri Mülkiyet' },
+  'terms.section4.body': {
+    en: 'All content on this website, including text, images, logos, and design, is the property of EV Richmond Property Group and is protected by copyright and intellectual property laws. Unauthorized reproduction or distribution of any content is prohibited.',
+    ru: 'Всё содержимое данного сайта, включая тексты, изображения, логотипы и дизайн, является собственностью EV Richmond Property Group и защищено законами об авторском праве и интеллектуальной собственности. Несанкционированное воспроизведение или распространение любого контента запрещено.',
+    tr: 'Bu web sitesindeki metin, görseller, logolar ve tasarım dahil tüm içerik EV Richmond Property Group\'un mülkiyetindedir ve telif hakkı ve fikri mülkiyet yasalarıyla korunmaktadır. İçeriğin izinsiz çoğaltılması veya dağıtılması yasaktır.'
+  },
+  'terms.section5.title': { en: 'Limitation of Liability', ru: 'Ограничение ответственности', tr: 'Sorumluluk Sınırlaması' },
+  'terms.section5.body': {
+    en: 'EV Richmond Property Group shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or services. We make no warranties regarding the completeness or accuracy of information on our site. Investment decisions should be made with professional financial and legal advice.',
+    ru: 'EV Richmond Property Group не несёт ответственности за любые косвенные, случайные или последующие убытки, возникающие в результате использования нашего сайта или услуг. Мы не даём гарантий относительно полноты или точности информации на нашем сайте. Инвестиционные решения следует принимать с профессиональной финансовой и юридической консультацией.',
+    tr: 'EV Richmond Property Group, web sitemizin veya hizmetlerimizin kullanımından kaynaklanan dolaylı, arızi veya sonuç olarak ortaya çıkan zararlardan sorumlu tutulamaz. Sitemizdeki bilgilerin eksiksizliği veya doğruluğu konusunda garanti vermiyoruz. Yatırım kararları profesyonel mali ve hukuki danışmanlık ile alınmalıdır.'
+  },
+  'terms.section6.title': { en: 'Contact', ru: 'Контакты', tr: 'İletişim' },
+  'terms.section6.body': {
+    en: 'For questions regarding these Terms of Service, contact us at info@evrichmond.com or +90 555 000 0000.',
+    ru: 'По вопросам, связанным с настоящими Условиями использования, свяжитесь с нами по адресу info@evrichmond.com или +90 555 000 0000.',
+    tr: 'Bu Hizmet Şartları ile ilgili sorularınız için info@evrichmond.com veya +90 555 000 0000 üzerinden bizimle iletişime geçin.'
+  },
+  'legal.lastUpdated': { en: 'Last updated', ru: 'Последнее обновление', tr: 'Son güncelleme' }
 };
 
 interface LocalizedText { en: string; ru: string; tr: string }

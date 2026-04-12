@@ -13,6 +13,8 @@ const Properties = lazy(() => import("@/pages/Properties"));
 const About = lazy(() => import("@/pages/About"));
 const Contact = lazy(() => import("@/pages/Contact"));
 const PropertyDetail = lazy(() => import("@/pages/PropertyDetail"));
+const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 const queryClient = new QueryClient();
@@ -37,6 +39,8 @@ function Router() {
             <Route path="/properties/:id" component={PropertyDetail} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/privacy" component={PrivacyPolicy} />
+            <Route path="/terms" component={TermsOfService} />
             <Route component={NotFound} />
           </Switch>
         </Suspense>
