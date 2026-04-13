@@ -130,11 +130,6 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.2 }}
             className="max-w-3xl"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#C4A265]/50 bg-[#C4A265]/15 backdrop-blur-sm text-[#C4A265] text-xs uppercase tracking-[0.2em] font-sans mb-6">
-              <Crown className="w-3 h-3" />
-              EV Richmond Property Group
-            </div>
-            
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-medium text-white leading-[1.1] mb-6">
               {t('home.hero.title')}
             </h1>
