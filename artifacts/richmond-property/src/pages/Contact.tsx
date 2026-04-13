@@ -40,7 +40,8 @@ export default function Contact() {
     };
 
     try {
-      const res = await fetch('/api/contact', {
+      const apiUrl = `${import.meta.env.BASE_URL}api/contact`.replace(/\/\/+/g, '/');
+      const res = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
