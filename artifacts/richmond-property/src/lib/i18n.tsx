@@ -169,8 +169,10 @@ const translations: Translations = {
   'contact.form.message.placeholder': { en: 'Tell us more about your requirements, timeline, or any specific questions...', ru: 'Расскажите подробнее о ваших требованиях, сроках или конкретных вопросах...', tr: 'Gereksinimleriniz, zaman çizelgeniz veya özel sorularınız hakkında daha fazla bilgi verin...' },
   'contact.form.submit': { en: 'Schedule Consultation', ru: 'Запланировать Консультацию', tr: 'Danışmanlık Planla' },
   'contact.form.sending': { en: 'Sending...', ru: 'Отправка...', tr: 'Gönderiliyor...' },
-  'contact.toast.title': { en: 'Inquiry Sent Successfully', ru: 'Запрос Успешно Отправлен', tr: 'Başvuru Başarıyla Gönderildi' },
+  'contact.toast.title': { en: 'Inquiry Sent Successfully', ru: 'Запрос успешно отправлен', tr: 'Başvuru Başarıyla Gönderildi' },
   'contact.toast.desc': { en: 'One of our luxury property consultants will contact you within 24 hours.', ru: 'Один из наших консультантов по элитной недвижимости свяжется с вами в течение 24 часов.', tr: 'Lüks mülk danışmanlarımızdan biri 24 saat içinde sizinle iletişime geçecektir.' },
+  'contact.toast.errorTitle': { en: 'Sending Failed', ru: 'Ошибка отправки', tr: 'Gönderim Başarısız' },
+  'contact.toast.errorDesc': { en: 'Something went wrong. Please try again or contact us directly.', ru: 'Что-то пошло не так. Попробуйте ещё раз или свяжитесь с нами напрямую.', tr: 'Bir şeyler ters gitti. Lütfen tekrar deneyin veya doğrudan bizimle iletişime geçin.' },
   
   // Team
   'section.team.title': { en: 'Our Team', ru: 'Наша Команда', tr: 'Ekibimiz' },

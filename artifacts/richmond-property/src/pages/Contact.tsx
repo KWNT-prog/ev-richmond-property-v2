@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useI18n } from '@/lib/i18n';
 import { Button } from '@/components/ui/Button';
 import { motion } from 'framer-motion';
@@ -9,24 +9,62 @@ const inputClass = "w-full bg-input border border-border rounded-lg px-4 py-3 te
 const selectClass = "w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none font-sans";
 const labelClass = "text-sm font-medium text-foreground font-sans";
 
+const PROPERTY_INTERESTS = ['purchase', 'rental', 'investment', 'management', 'titleTransfer'];
+const BUDGET_INTERESTS = ['purchase', 'citizenship', 'investment', 'rental', 'management', 'titleTransfer'];
+
 export default function Contact() {
   const { t } = useI18n();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [interestType, setInterestType] = useState('');
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    const form = e.target as HTMLFormElement;
+    const fd = new FormData(form);
+
+    const payload = {
+      name: fd.get('name') as string,
+      email: fd.get('email') as string,
+      phone: fd.get('phone') as string || '',
+      language: fd.get('language') as string || 'en',
+      interestType: fd.get('interestType') as string || '',
+      propertyType: fd.get('propertyType') as string || '',
+      location: fd.get('location') as string || '',
+      citizenshipProgram: fd.get('citizenshipProgram') as string || '',
+      budget: fd.get('budget') as string || '',
+      message: fd.get('message') as string || '',
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to send');
+      }
+
       toast({
         title: t('contact.toast.title'),
         description: t('contact.toast.desc'),
       });
-      (e.target as HTMLFormElement).reset();
+      form.reset();
       setInterestType('');
-    }, 1500);
+    } catch {
+      toast({
+        title: t('contact.toast.errorTitle'),
+        description: t('contact.toast.errorDesc'),
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -121,26 +159,26 @@ export default function Contact() {
               <h3 className="text-2xl font-display text-foreground mb-2">{t('contact.form.heading')}</h3>
               <p className="text-muted-foreground font-sans text-sm mb-8">{t('contact.form.subheading')}</p>
 
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <label className={labelClass}>{t('contact.form.name')}</label>
-                    <input required type="text" className={inputClass} placeholder="John Doe" />
+                    <input required type="text" name="name" className={inputClass} placeholder="John Doe" />
                   </div>
                   <div className="space-y-2">
                     <label className={labelClass}>{t('contact.form.email')}</label>
-                    <input required type="email" className={inputClass} placeholder="john@example.com" />
+                    <input required type="email" name="email" className={inputClass} placeholder="john@example.com" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <label className={labelClass}>{t('contact.form.phone')}</label>
-                    <input type="tel" className={inputClass} placeholder="+1 234 567 8900" />
+                    <input type="tel" name="phone" className={inputClass} placeholder="+1 234 567 8900" />
                   </div>
                   <div className="space-y-2">
                     <label className={labelClass}>{t('contact.form.language')}</label>
-                    <select className={selectClass}>
+                    <select name="language" className={selectClass}>
                       <option value="en">English</option>
                       <option value="ru">Русский</option>
                       <option value="tr">Türkçe</option>
@@ -154,7 +192,7 @@ export default function Contact() {
                   
                   <div className="space-y-2 mb-5">
                     <label className={labelClass}>{t('contact.form.interest')}</label>
-                    <select className={selectClass} value={interestType} onChange={(e) => setInterestType(e.target.value)}>
+                    <select name="interestType" className={selectClass} value={interestType} onChange={(e) => setInterestType(e.target.value)}>
                       <option value="">{t('contact.form.interest.placeholder')}</option>
                       <option value="purchase">{t('contact.form.interest.purchase')}</option>
                       <option value="citizenship">{t('contact.form.interest.citizenship')}</option>
@@ -171,11 +209,11 @@ export default function Contact() {
                     </select>
                   </div>
 
-                  {(['purchase', 'rental', 'investment', 'management', 'titleTransfer'].includes(interestType)) && (
+                  {PROPERTY_INTERESTS.includes(interestType) && (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                       <div className="space-y-2">
                         <label className={labelClass}>{t('contact.form.propertyType')}</label>
-                        <select className={selectClass}>
+                        <select name="propertyType" className={selectClass}>
                           <option value="">{t('contact.form.propertyType.any')}</option>
                           <option value="villa">{t('contact.form.propertyType.villa')}</option>
                           <option value="penthouse">{t('contact.form.propertyType.penthouse')}</option>
@@ -187,7 +225,7 @@ export default function Contact() {
                       </div>
                       <div className="space-y-2">
                         <label className={labelClass}>{t('contact.form.location')}</label>
-                        <select className={selectClass}>
+                        <select name="location" className={selectClass}>
                           <option value="">{t('contact.form.location.any')}</option>
                           <option value="istanbul">Istanbul</option>
                           <option value="bodrum">Bodrum</option>
@@ -203,7 +241,7 @@ export default function Contact() {
                   {interestType === 'citizenship' && (
                     <div className="space-y-2 mb-5">
                       <label className={labelClass}>{t('contact.form.citizenshipProgram')}</label>
-                      <select className={selectClass}>
+                      <select name="citizenshipProgram" className={selectClass}>
                         <option value="">{t('contact.form.citizenshipProgram.placeholder')}</option>
                         <option value="turkey-400k">{t('contact.form.citizenshipProgram.turkey400')}</option>
                         <option value="turkey-investment">{t('contact.form.citizenshipProgram.turkeyInvestment')}</option>
@@ -213,10 +251,10 @@ export default function Contact() {
                     </div>
                   )}
 
-                  {(['purchase', 'citizenship', 'investment', 'rental', 'management', 'titleTransfer'].includes(interestType)) && (
+                  {BUDGET_INTERESTS.includes(interestType) && (
                     <div className="space-y-2 mb-5">
                       <label className={labelClass}>{t('contact.form.budget')}</label>
-                      <select className={selectClass}>
+                      <select name="budget" className={selectClass}>
                         <option value="">{t('contact.form.budget.placeholder')}</option>
                         <option value="under-500k">{t('contact.form.budget.under500')}</option>
                         <option value="500k-1m">{t('contact.form.budget.500to1m')}</option>
@@ -232,6 +270,7 @@ export default function Contact() {
                 <div className="space-y-2">
                   <label className={labelClass}>{t('contact.form.message')}</label>
                   <textarea 
+                    name="message"
                     rows={4}
                     className={`${inputClass} resize-none`}
                     placeholder={t('contact.form.message.placeholder')}
