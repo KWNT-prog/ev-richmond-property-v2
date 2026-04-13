@@ -211,7 +211,7 @@ const translations: Translations = {
   'services.3': { en: 'Comprehensive residence permit processing', ru: 'Комплексное оформление ВНЖ', tr: 'Kapsamlı oturma izni işlemleri' },
   'services.4': { en: 'Student visa assistance', ru: 'Сопровождение студенческих виз', tr: 'Öğrenci vizesi desteği' },
   'services.5': { en: 'Legal support for gift transactions', ru: 'Юридическое сопровождение сделок дарения', tr: 'Bağış işlemleri için hukuki destek' },
-  'services.6': { en: 'Turnkey property title transfer', ru: 'Переоформление прав собственности «под ключ»', tr: 'Anahtar teslimi tapu devri' },
+  'services.6': { en: 'Full property title transfer support', ru: 'Полное сопровождение переоформления прав собственности', tr: 'Tam tapu devri desteği' },
   'services.7': { en: 'Notarized translations with guaranteed accuracy and confidentiality', ru: 'Нотариальные переводы с гарантией точности и конфиденциальности', tr: 'Doğruluk ve gizlilik garantili noter onaylı çeviriler' },
   'services.8': { en: 'Professional notary services', ru: 'Профессиональные нотариальные услуги', tr: 'Profesyonel noter hizmetleri' },
   'services.9': { en: 'Legal consultation and lawyer services', ru: 'Юридические консультации и услуги адвоката', tr: 'Hukuki danışmanlık ve avukatlık hizmetleri' },
