@@ -282,15 +282,15 @@ const translations: Translations = {
   },
   'privacy.section4.title': { en: 'Your Rights', ru: 'Ваши права', tr: 'Haklarınız' },
   'privacy.section4.body': {
-    en: 'You have the right to access, correct, or delete your personal data at any time. You may also withdraw consent for marketing communications. To exercise these rights, contact us at info@evrichmond.com.',
-    ru: 'Вы имеете право на доступ, исправление или удаление ваших персональных данных в любое время. Вы также можете отозвать согласие на маркетинговые рассылки. Для реализации этих прав свяжитесь с нами по адресу info@evrichmond.com.',
-    tr: 'Kişisel verilerinize istediğiniz zaman erişme, düzeltme veya silme hakkına sahipsiniz. Ayrıca pazarlama iletişimleri için onayınızı geri çekebilirsiniz. Bu hakları kullanmak için info@evrichmond.com adresinden bizimle iletişime geçin.'
+    en: 'You have the right to access, correct, or delete your personal data at any time. You may also withdraw consent for marketing communications. To exercise these rights, contact us at info@richmond-propertygroup.com.',
+    ru: 'Вы имеете право на доступ, исправление или удаление ваших персональных данных в любое время. Вы также можете отозвать согласие на маркетинговые рассылки. Для реализации этих прав свяжитесь с нами по адресу info@richmond-propertygroup.com.',
+    tr: 'Kişisel verilerinize istediğiniz zaman erişme, düzeltme veya silme hakkına sahipsiniz. Ayrıca pazarlama iletişimleri için onayınızı geri çekebilirsiniz. Bu hakları kullanmak için info@richmond-propertygroup.com adresinden bizimle iletişime geçin.'
   },
   'privacy.section5.title': { en: 'Contact', ru: 'Контакты', tr: 'İletişim' },
   'privacy.section5.body': {
-    en: 'For questions about this Privacy Policy, please contact EV Richmond Property Group at info@evrichmond.com or +90 555 000 0000.',
-    ru: 'По вопросам, связанным с настоящей Политикой конфиденциальности, обращайтесь в EV Richmond Property Group по адресу info@evrichmond.com или +90 555 000 0000.',
-    tr: 'Bu Gizlilik Politikası hakkındaki sorularınız için lütfen EV Richmond Property Group ile info@evrichmond.com veya +90 555 000 0000 üzerinden iletişime geçin.'
+    en: 'For questions about this Privacy Policy, please contact EV Richmond Property Group at info@richmond-propertygroup.com or +90 555 000 0000.',
+    ru: 'По вопросам, связанным с настоящей Политикой конфиденциальности, обращайтесь в EV Richmond Property Group по адресу info@richmond-propertygroup.com или +90 555 000 0000.',
+    tr: 'Bu Gizlilik Politikası hakkındaki sorularınız için lütfen EV Richmond Property Group ile info@richmond-propertygroup.com veya +90 555 000 0000 üzerinden iletişime geçin.'
   },
 
   // Terms of Service page
@@ -332,9 +332,9 @@ const translations: Translations = {
   },
   'terms.section6.title': { en: 'Contact', ru: 'Контакты', tr: 'İletişim' },
   'terms.section6.body': {
-    en: 'For questions regarding these Terms of Service, contact us at info@evrichmond.com or +90 555 000 0000.',
-    ru: 'По вопросам, связанным с настоящими Условиями использования, свяжитесь с нами по адресу info@evrichmond.com или +90 555 000 0000.',
-    tr: 'Bu Hizmet Şartları ile ilgili sorularınız için info@evrichmond.com veya +90 555 000 0000 üzerinden bizimle iletişime geçin.'
+    en: 'For questions regarding these Terms of Service, contact us at info@richmond-propertygroup.com or +90 555 000 0000.',
+    ru: 'По вопросам, связанным с настоящими Условиями использования, свяжитесь с нами по адресу info@richmond-propertygroup.com или +90 555 000 0000.',
+    tr: 'Bu Hizmet Şartları ile ilgili sorularınız için info@richmond-propertygroup.com veya +90 555 000 0000 üzerinden bizimle iletişime geçin.'
   },
   'legal.lastUpdated': { en: 'Last updated', ru: 'Последнее обновление', tr: 'Son güncelleme' }
 };

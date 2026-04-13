@@ -21,7 +21,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 ```text
 artifacts-monorepo/
 ├── artifacts/              # Deployable applications
-│   ├── richmond-property/  # EV Richmond Property Group - Luxury Real Estate Website (React + Vite + Tailwind, EN/RU/TR i18n, 6 property detail pages, live currency conversion USD/EUR/TRY/GBP/RUB)
+│   ├── richmond-property/  # EV Richmond Property Group - Luxury Real Estate Website (React + Vite + Tailwind, EN/RU/TR i18n, 6 property detail pages, live currency conversion USD/EUR/TRY/GBP/AED, contact form → Outlook email via Microsoft Graph)
 │   └── api-server/         # Express API server
 ├── lib/                    # Shared libraries
 │   ├── api-spec/           # OpenAPI spec + Orval codegen config

@@ -284,9 +284,9 @@ export default function PropertyDetail() {
                       <Phone className="w-5 h-5 text-[#C4A265]" />
                       <span className="text-sm">+90 555 000 0000</span>
                     </a>
-                    <a href="mailto:info@evrichmond.com" className="flex items-center gap-3 text-muted-foreground hover:text-[#C4A265] transition-colors">
+                    <a href="mailto:info@richmond-propertygroup.com" className="flex items-center gap-3 text-muted-foreground hover:text-[#C4A265] transition-colors">
                       <Mail className="w-5 h-5 text-[#C4A265]" />
-                      <span className="text-sm">info@evrichmond.com</span>
+                      <span className="text-sm">info@richmond-propertygroup.com</span>
                     </a>
                   </div>
                 </div>

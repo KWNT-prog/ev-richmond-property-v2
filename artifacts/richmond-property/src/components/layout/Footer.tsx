@@ -52,6 +52,9 @@ export function Footer() {
               <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Istanbul</Link></li>
               <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Bodrum</Link></li>
               <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Batumi</Link></li>
+              <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">London</Link></li>
+              <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Monaco</Link></li>
+              <li><Link href="/properties" className="hover:text-[#C4A265] transition-colors">Dubai</Link></li>
             </ul>
           </div>
 
@@ -68,7 +71,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#C4A265] shrink-0" />
-                <span>info@evrichmond.com</span>
+                <span>info@richmond-propertygroup.com</span>
               </li>
             </ul>
           </div>

@@ -115,7 +115,7 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary mr-4 shrink-0 mt-1" />
                   <div>
                     <p className="text-foreground font-medium mb-1">{t('contact.office.email')}</p>
-                    <p className="text-muted-foreground">info@evrichmond.com</p>
+                    <p className="text-muted-foreground">info@richmond-propertygroup.com</p>
                   </div>
                 </div>
                 
@@ -229,8 +229,9 @@ export default function Contact() {
                           <option value="istanbul">Istanbul</option>
                           <option value="bodrum">Bodrum</option>
                           <option value="batumi">Batumi</option>
-                          <option value="antalya">Antalya</option>
-                          <option value="alanya">Alanya</option>
+                          <option value="london">London</option>
+                          <option value="monaco">Monaco</option>
+                          <option value="dubai">Dubai</option>
                           <option value="other">{t('contact.form.location.other')}</option>
                         </select>
                       </div>
