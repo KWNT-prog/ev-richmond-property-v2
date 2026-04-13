@@ -10,9 +10,9 @@ export default function About() {
 
   const team = [
     { photo: 'team-ceo.jpg', title: t('team.3.name'), name: 'Melena Vidina' },
-    { photo: 'team-sales-manager.jpg', title: t('team.1.name'), name: '' },
-    { photo: 'team-portfolio-manager.jpg', title: t('team.2.name'), name: '' },
-    { photo: 'team-lawyer.jpg', title: t('team.4.name'), name: '' },
+    { photo: 'team-sales-manager.jpg', title: t('team.1.name'), name: 'Sofia Shulepova' },
+    { photo: 'team-portfolio-manager.jpg', title: t('team.2.name'), name: 'Harun Makartay' },
+    { photo: 'team-lawyer.jpg', title: t('team.4.name'), name: 'Berna Aksoy' },
   ];
 
   const services = [

@@ -424,9 +424,9 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { photo: 'team-ceo.jpg', title: t('team.3.name'), name: 'Melena Vidina' },
-              { photo: 'team-sales-manager.jpg', title: t('team.1.name'), name: '' },
-              { photo: 'team-portfolio-manager.jpg', title: t('team.2.name'), name: '' },
-              { photo: 'team-lawyer.jpg', title: t('team.4.name'), name: '' },
+              { photo: 'team-sales-manager.jpg', title: t('team.1.name'), name: 'Sofia Shulepova' },
+              { photo: 'team-portfolio-manager.jpg', title: t('team.2.name'), name: 'Harun Makartay' },
+              { photo: 'team-lawyer.jpg', title: t('team.4.name'), name: 'Berna Aksoy' },
             ].map((member, i) => (
               <motion.div
                 key={i}
