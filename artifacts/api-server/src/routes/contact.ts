@@ -18,6 +18,15 @@ const ContactFormSchema = z.object({
   message: z.string().optional().default(""),
 });
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 function buildEmailHtml(data: z.infer<typeof ContactFormSchema>): string {
   const rows: [string, string][] = [
     ["Name", data.name],
@@ -35,7 +44,7 @@ function buildEmailHtml(data: z.infer<typeof ContactFormSchema>): string {
   const tableRows = rows
     .map(
       ([label, value]) =>
-        `<tr><td style="padding:8px 12px;font-weight:600;color:#2A2A2A;border-bottom:1px solid #eee;white-space:nowrap;vertical-align:top;">${label}</td><td style="padding:8px 12px;color:#555;border-bottom:1px solid #eee;vertical-align:top;">${value.replace(/\n/g, "<br/>")}</td></tr>`
+        `<tr><td style="padding:8px 12px;font-weight:600;color:#2A2A2A;border-bottom:1px solid #eee;white-space:nowrap;vertical-align:top;">${escapeHtml(label)}</td><td style="padding:8px 12px;color:#555;border-bottom:1px solid #eee;vertical-align:top;">${escapeHtml(value).replace(/\n/g, "<br/>")}</td></tr>`
     )
     .join("");
 

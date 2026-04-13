@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { useI18n } from '@/lib/i18n';
 import { Button } from '@/components/ui/Button';
 import { motion } from 'framer-motion';
@@ -17,8 +17,6 @@ export default function Contact() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [interestType, setInterestType] = useState('');
-  const formRef = useRef<HTMLFormElement>(null);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -160,7 +158,7 @@ export default function Contact() {
               <h3 className="text-2xl font-display text-foreground mb-2">{t('contact.form.heading')}</h3>
               <p className="text-muted-foreground font-sans text-sm mb-8">{t('contact.form.subheading')}</p>
 
-              <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <label className={labelClass}>{t('contact.form.name')}</label>
