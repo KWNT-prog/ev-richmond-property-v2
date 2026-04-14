@@ -35,7 +35,7 @@ const L = (en: string, ru: string, tr: string): LocalizedText => ({ en, ru, tr }
 export const properties: Property[] = [
   {
     id: '1',
-    title: 'Rotana Bomonti',
+    title: 'Premium Residence — Bomonti',
     location: 'Istanbul',
     address: L('Bomonti, Şişli, Istanbul', 'Бомонти, Шишли, Стамбул', 'Bomonti, Şişli, İstanbul'),
     price: 400000,
@@ -84,7 +84,7 @@ export const properties: Property[] = [
         details: L('Panoramic views: Bosphorus, city & forest', 'Панорамные виды: Босфор, город и лес', 'Panoramik manzara: Boğaz, şehir ve orman')
       },
       {
-        name: L('Arjaan Hotel', 'Отель Arjaan', 'Arjaan Otel'),
+        name: L('Hotel Wing', 'Отельное Крыло', 'Otel Kanadı'),
         floors: 7,
         units: 87,
         layouts: 'Hotel rooms',
@@ -100,7 +100,7 @@ export const properties: Property[] = [
       L('10 min to Taksim', '10 мин до Таксима', 'Taksim\'e 10 dk'),
       L('3 min to 6 leading hospitals', '3 мин до 6 ведущих больниц', '6 önde gelen hastaneye 3 dk'),
       L('5 min to top universities', '5 мин до ведущих университетов', 'Önde gelen üniversitelere 5 dk'),
-      L('Cevahir, City\'s Nişantaşı, Zorlu Center, Galataport, Kanyon', 'Cevahir, City\'s Nişantaşı, Zorlu Center, Galataport, Kanyon', 'Cevahir, City\'s Nişantaşı, Zorlu Center, Galataport, Kanyon')
+      L('Near major shopping centers', 'Рядом с крупными торговыми центрами', 'Büyük alışveriş merkezlerine yakın')
     ],
     amenities: [
       L('Smart home system', 'Система «умный дом»', 'Akıllı ev sistemi'),
@@ -109,17 +109,16 @@ export const properties: Property[] = [
       L('Fitness center', 'Фитнес-центр', 'Fitness merkezi'),
       L('Sauna', 'Сауна', 'Sauna'),
       L('Children\'s playground', 'Детская площадка', 'Çocuk oyun alanı'),
-      L('Bomonti–Kağıthane tunnel access', 'Доступ к тоннелю Бомонти–Кагытхане', 'Bomonti–Kağıthane tünel erişimi'),
-      L('Bomonti–Beşiktaş tunnel access', 'Доступ к тоннелю Бомонти–Бешикташ', 'Bomonti–Beşiktaş tünel erişimi'),
-      L('Osmanbey Metro (9 min walk)', 'Метро Османбей (9 мин пешком)', 'Osmanbey Metro (9 dk yürüyüş)'),
+      L('Tunnel access to major districts', 'Доступ к тоннелям в основные районы', 'Ana bölgelere tünel erişimi'),
+      L('Nearby metro station', 'Рядом станция метро', 'Yakın metro istasyonu'),
       L('E5 Highway access', 'Доступ к автомагистрали E5', 'E5 Otoyol erişimi')
     ]
   },
   {
     id: '2',
-    title: 'Tonino Lamborghini Tower',
+    title: 'Luxury Tower — Batumi',
     location: 'Batumi',
-    address: L('Batumi Island, Tamari District, Batumi, Georgia', 'Остров Батуми, район Тамари, Батуми, Грузия', 'Batum Adası, Tamari Bölgesi, Batum, Gürcistan'),
+    address: L('Island District, Batumi, Georgia', 'Островной район, Батуми, Грузия', 'Ada Bölgesi, Batum, Gürcistan'),
     price: 150000,
     bedrooms: 3,
     bathrooms: 2,
@@ -132,12 +131,12 @@ export const properties: Property[] = [
     parking: 2,
     floors: 66,
     description: L(
-      'The Tonino Lamborghini Tower Batumi is set to become the symbol of Batumi Island — the first artificial island in the Black Sea. Rising 66 floors, this architectural manifesto of Italian style marks the world-renowned Lamborghini brand\'s exclusive entry into the Caucasus. Developed by FK Development with over 22 years of experience, the tower offers studios, apartments, and penthouses featuring authentic Tonino Lamborghini furniture made in Italy, smart home technologies, and panoramic views of the sea, city, and mountains. Located just 30 meters from the Black Sea, it is an exceptional investment and lifestyle destination.',
-      'Tonino Lamborghini Tower Batumi станет символом острова Батуми — первого искусственного острова в Чёрном море. Возвышаясь на 66 этажей, этот архитектурный манифест итальянского стиля знаменует эксклюзивный выход всемирно известного бренда Lamborghini на рынок Кавказа. Построенная компанией FK Development с более чем 22-летним опытом, башня предлагает студии, апартаменты и пентхаусы с аутентичной мебелью Tonino Lamborghini, произведённой в Италии, технологиями «умный дом» и панорамными видами на море, город и горы. Расположенная всего в 30 метрах от Чёрного моря, она является исключительным инвестиционным и жизненным направлением.',
-      'Tonino Lamborghini Tower Batum, Karadeniz\'deki ilk yapay ada olan Batum Adası\'nın sembolü olmaya hazırlanıyor. 66 kat yüksekliğiyle bu İtalyan tarzının mimari manifestosu, dünyaca ünlü Lamborghini markasının Kafkasya\'ya özel girişini işaret ediyor. 22 yılı aşkın deneyime sahip FK Development tarafından geliştirilen kule; İtalya\'da üretilen otantik Tonino Lamborghini mobilyaları, akıllı ev teknolojileri ve deniz, şehir ve dağ panoramik manzaralarıyla stüdyolar, daireler ve çatı katları sunuyor. Karadeniz\'e sadece 30 metre mesafede olup olağanüstü bir yatırım ve yaşam destinasyonudur.'
+      'This iconic 66-floor tower is set to become the symbol of Batumi\'s first artificial island in the Black Sea. An architectural masterpiece of Italian design, the tower offers studios, apartments, and penthouses featuring authentic Italian-made designer furniture, smart home technologies, and panoramic views of the sea, city, and mountains. Located just 30 meters from the Black Sea, developed by a company with over 22 years of experience — it is an exceptional investment and lifestyle destination.',
+      'Эта знаковая 66-этажная башня станет символом первого искусственного острова Батуми в Чёрном море. Архитектурный шедевр итальянского дизайна, башня предлагает студии, апартаменты и пентхаусы с аутентичной дизайнерской мебелью итальянского производства, технологиями «умный дом» и панорамными видами на море, город и горы. Расположенная всего в 30 метрах от Чёрного моря, построенная компанией с более чем 22-летним опытом — она является исключительным инвестиционным и жизненным направлением.',
+      'Bu ikonik 66 katlı kule, Karadeniz\'deki Batum\'un ilk yapay adasının sembolü olmaya hazırlanıyor. İtalyan tasarımının mimari şaheseri olan kule; İtalya\'da üretilen otantik tasarımcı mobilyaları, akıllı ev teknolojileri ve deniz, şehir ve dağ panoramik manzaralarıyla stüdyolar, daireler ve çatı katları sunuyor. Karadeniz\'e sadece 30 metre mesafede, 22 yılı aşkın deneyime sahip bir şirket tarafından geliştirilen bu proje olağanüstü bir yatırım ve yaşam destinasyonudur.'
     ),
     features: [
-      L('Authentic Tonino Lamborghini furniture', 'Аутентичная мебель Tonino Lamborghini', 'Otantik Tonino Lamborghini mobilyaları'),
+      L('Authentic Italian designer furniture', 'Аутентичная итальянская дизайнерская мебель', 'Otantik İtalyan tasarımcı mobilyaları'),
       L('Smart home system', 'Система «умный дом»', 'Akıllı ev sistemi'),
       L('3 outdoor + 1 indoor infinity pools', '3 открытых + 1 крытый бассейн-инфинити', '3 açık + 1 kapalı sonsuzluk havuzu'),
       L('15,000 m² premium shopping mall', 'Премиальный ТЦ 15 000 м²', '15.000 m² premium alışveriş merkezi'),
@@ -157,7 +156,7 @@ export const properties: Property[] = [
         units: 0,
         layouts: 'Studios, 1+1, 3+1, Penthouses',
         status: L('Completion Q4 2030', 'Сдача 4 кв. 2030', 'Teslim 2030 4. Çeyrek'),
-        details: L('Georgia\'s tallest building, Italian-designed interiors', 'Самое высокое здание Грузии, интерьеры итальянского дизайна', 'Gürcistan\'ın en yüksek binası, İtalyan tasarım iç mekanlar')
+        details: L('Tallest building in the region, Italian-designed interiors', 'Самое высокое здание региона, интерьеры итальянского дизайна', 'Bölgenin en yüksek binası, İtalyan tasarım iç mekanlar')
       },
       {
         name: L('Hotel Component', 'Гостиничная Составляющая', 'Otel Bileşeni'),
@@ -197,7 +196,7 @@ export const properties: Property[] = [
   },
   {
     id: '3',
-    title: 'Rixos Tersane Istanbul',
+    title: 'Waterfront Residence — Beyoğlu',
     location: 'Istanbul',
     address: L('Beyoğlu, Golden Horn Waterfront, Istanbul', 'Бейоглу, набережная Золотого Рога, Стамбул', 'Beyoğlu, Haliç Kıyısı, İstanbul'),
     price: 695000,
@@ -212,18 +211,18 @@ export const properties: Property[] = [
     parking: 2,
     floors: 44,
     description: L(
-      'Rixos Tersane Istanbul Residences is the first residential project by the legendary Rixos brand, nestled within a restored 600-year-old Ottoman shipyard on the Golden Horn. This landmark mixed-use development spans 242,000 m² with 2 km of pristine waterfront, 4 luxury hotels, 270 shops, 2 marinas, and 2 cultural museums. Residents enjoy guaranteed 7% annual returns for 5 years, VIP Accor Ownership Benefits, and 24/7 hotel-branded services including concierge, housekeeping, and in-residence dining.',
-      'Rixos Tersane Istanbul Residences — первый жилой проект легендарного бренда Rixos, расположенный в восстановленной 600-летней османской верфи на берегу Золотого Рога. Этот знаковый комплекс смешанного использования занимает 242 000 м² с 2 км набережной, 4 роскошными отелями, 270 магазинами, 2 марининами и 2 культурными музеями. Жильцы получают гарантированный доход 7% годовых в течение 5 лет, VIP-привилегии программы Accor Ownership Benefits и гостиничный сервис 24/7, включая консьержа, уборку и ресторанное обслуживание в резиденции.',
-      'Rixos Tersane İstanbul Residences, efsanevi Rixos markasının ilk konut projesidir ve Haliç kıyısında restore edilmiş 600 yıllık bir Osmanlı tersanesinde yer almaktadır. Bu önemli karma kullanımlı geliştirme 242.000 m²\'lik alanda 2 km sahil şeridi, 4 lüks otel, 270 mağaza, 2 marina ve 2 kültür müzesine sahiptir. Sakinler 5 yıl boyunca garantili %7 yıllık getiri, VIP Accor Sahiplik Avantajları ve konsiyerj, temizlik ve konut içi yemek hizmeti dahil 7/24 otel markalı hizmetlerden yararlanır.'
+      'The first branded residential project by an internationally renowned hotel chain, nestled within a restored 600-year-old Ottoman shipyard on the Golden Horn. This landmark mixed-use development spans 242,000 m² with 2 km of pristine waterfront, 4 luxury hotels, 270 shops, 2 marinas, and 2 cultural museums. Residents enjoy guaranteed 7% annual returns for 5 years, VIP ownership benefits, and 24/7 hotel-branded services including concierge, housekeeping, and in-residence dining.',
+      'Первый брендированный жилой проект всемирно известной гостиничной сети, расположенный в восстановленной 600-летней османской верфи на берегу Золотого Рога. Этот знаковый комплекс смешанного использования занимает 242 000 м² с 2 км набережной, 4 роскошными отелями, 270 магазинами, 2 маринами и 2 культурными музеями. Жильцы получают гарантированный доход 7% годовых в течение 5 лет, VIP-привилегии и гостиничный сервис 24/7, включая консьержа, уборку и ресторанное обслуживание в резиденции.',
+      'Uluslararası üne sahip bir otel zincirinin ilk markalı konut projesi, Haliç kıyısında restore edilmiş 600 yıllık bir Osmanlı tersanesinde yer almaktadır. Bu önemli karma kullanımlı geliştirme 242.000 m²\'lik alanda 2 km sahil şeridi, 4 lüks otel, 270 mağaza, 2 marina ve 2 kültür müzesine sahiptir. Sakinler 5 yıl boyunca garantili %7 yıllık getiri, VIP sahiplik avantajları ve konsiyerj, temizlik ve konut içi yemek hizmeti dahil 7/24 otel markalı hizmetlerden yararlanır.'
     ),
     features: [
       L('Guaranteed 7% annual return (5 years)', 'Гарантированный доход 7% годовых (5 лет)', 'Garantili %7 yıllık getiri (5 yıl)'),
-      L('24/7 Rixos concierge & housekeeping', 'Консьерж и уборка Rixos 24/7', '7/24 Rixos konsiyerj ve temizlik'),
+      L('24/7 hotel-branded concierge & housekeeping', 'Гостиничный консьерж и уборка 24/7', '7/24 otel markalı konsiyerj ve temizlik'),
       L('Rooftop & indoor swimming pools', 'Бассейны на крыше и закрытые', 'Çatı ve kapalı yüzme havuzları'),
       L('State-of-the-art fitness center & spa', 'Современный фитнес-центр и спа', 'Son teknoloji fitness merkezi ve spa'),
       L('2 marinas (140 yacht capacity)', '2 марины (вместимость 140 яхт)', '2 marina (140 yat kapasitesi)'),
-      L('Nickelodeon Play indoor theme park', 'Крытый тематический парк Nickelodeon Play', 'Nickelodeon Play kapalı tema parkı'),
-      L('Accor VIP Ownership Benefits', 'VIP-привилегии программы Accor', 'Accor VIP Sahiplik Avantajları'),
+      L('Indoor theme park for children', 'Крытый тематический парк для детей', 'Çocuklar için kapalı tema parkı'),
+      L('VIP Ownership Benefits', 'VIP-привилегии программы владения', 'VIP Sahiplik Avantajları'),
       L('In-residence dining & catering', 'Ресторанное обслуживание в резиденции', 'Konut içi yemek ve ikram hizmeti'),
       L('Customizable luxury interiors', 'Индивидуальные роскошные интерьеры', 'Özelleştirilebilir lüks iç mekanlar'),
       L('Eligible for Turkish citizenship', 'Подходит для получения гражданства Турции', 'Türk vatandaşlığına uygun'),
@@ -256,18 +255,18 @@ export const properties: Property[] = [
       L('Beach & saltwater pool', 'Пляж и бассейн с морской водой', 'Plaj ve tuzlu su havuzu'),
       L('Fitness center', 'Фитнес-центр', 'Fitness merkezi'),
       L('Spa & wellness center', 'Спа и велнес-центр', 'Spa ve sağlık merkezi'),
-      L('Nickelodeon Play theme park', 'Тематический парк Nickelodeon Play', 'Nickelodeon Play tema parkı'),
+      L('Indoor theme park', 'Крытый тематический парк', 'Kapalı tema parkı'),
       L('2 marinas (140 yachts)', '2 марины (140 яхт)', '2 marina (140 yat)'),
       L('270 retail shops', '270 магазинов', '270 perakende mağaza'),
       L('2 cultural museums', '2 культурных музея', '2 kültür müzesi'),
-      L('Rixos concierge 24/7', 'Консьерж-сервис Rixos 24/7', 'Rixos konsiyerj 7/24'),
+      L('24/7 concierge', 'Консьерж-сервис 24/7', 'Konsiyerj 7/24'),
       L('In-residence dining', 'Ресторанное обслуживание в резиденции', 'Konut içi yemek hizmeti'),
       L('Housekeeping services', 'Услуги уборки', 'Temizlik hizmetleri')
     ]
   },
   {
     id: '4',
-    title: 'ETRO Residences Istanbul',
+    title: 'Designer Tower — Maslak',
     location: 'Istanbul',
     address: L('Maslak, Büyükdere Caddesi, Sarıyer, Istanbul', 'Маслак, Бюйюкдере Джаддеси, Сарыер, Стамбул', 'Maslak, Büyükdere Caddesi, Sarıyer, İstanbul'),
     price: 990000,
@@ -282,12 +281,12 @@ export const properties: Property[] = [
     parking: 2,
     floors: 50,
     description: L(
-      'ETRO Residences Istanbul marks the iconic Italian fashion house\'s first-ever venture into luxury real estate, developed in partnership with RAMS Global. This 50-story landmark tower in Maslak — Istanbul\'s premier business district — features 471 residences styled by ETRO Home Interiors, engineered by Thornton Tomasetti (New York), and designed by Dome + Partners. With a 49th-floor infinity pool offering 360° views of three Bosphorus bridges, a Michelin-starred restaurant, and world-class amenities, this is where Italian haute couture meets Istanbul\'s skyline.',
-      'ETRO Residences Istanbul знаменует первый выход легендарного итальянского модного дома на рынок элитной недвижимости в партнёрстве с RAMS Global. Эта 50-этажная башня-ориентир в Маслаке — ведущем деловом районе Стамбула — включает 471 резиденцию, оформленную ETRO Home Interiors, спроектированную Thornton Tomasetti (Нью-Йорк) и разработанную Dome + Partners. С бассейном-инфинити на 49-м этаже с 360° видом на три моста через Босфор, рестораном со звездой Мишлен и удобствами мирового класса — здесь итальянская высокая мода встречается с горизонтом Стамбула.',
-      'ETRO Residences İstanbul, ikonik İtalyan moda evinin RAMS Global ile ortaklaşa geliştirdiği lüks gayrimenkul alanındaki ilk girişimidir. Maslak\'ta — İstanbul\'un önde gelen iş merkezinde — yer alan bu 50 katlı simge kule, ETRO Home Interiors tarafından tasarlanmış 471 konut, Thornton Tomasetti (New York) mühendisliği ve Dome + Partners mimari tasarımı ile öne çıkar. Üç Boğaz köprüsüne 360° manzara sunan 49. kattaki sonsuzluk havuzu, Michelin yıldızlı restoran ve dünya standartlarındaki olanaklarla İtalyan haute couture İstanbul silüetiyle buluşuyor.'
+      'An iconic Italian fashion house\'s first-ever venture into luxury real estate. This 50-story landmark tower in Maslak — Istanbul\'s premier business district — features 471 residences with world-class designer interiors, engineered by a leading New York structural firm, and designed by a renowned Italian architecture studio. With a 49th-floor infinity pool offering 360° views of three Bosphorus bridges, a Michelin-starred restaurant, and world-class amenities, this is where Italian haute couture meets Istanbul\'s skyline.',
+      'Первый выход легендарного итальянского модного дома на рынок элитной недвижимости. Эта 50-этажная башня-ориентир в Маслаке — ведущем деловом районе Стамбула — включает 471 резиденцию с дизайнерскими интерьерами мирового класса, спроектированную ведущей нью-йоркской инженерной фирмой и разработанную известной итальянской архитектурной студией. С бассейном-инфинити на 49-м этаже с 360° видом на три моста через Босфор, рестораном со звездой Мишлен и удобствами мирового класса — здесь итальянская высокая мода встречается с горизонтом Стамбула.',
+      'İkonik bir İtalyan moda evinin lüks gayrimenkul alanındaki ilk girişimi. Maslak\'ta — İstanbul\'un önde gelen iş merkezinde — yer alan bu 50 katlı simge kule, dünya standartlarında tasarımcı iç mekanlarıyla 471 konut sunmakta olup önde gelen bir New York yapısal firması tarafından mühendisliği ve ünlü bir İtalyan mimarlık stüdyosu tarafından tasarımı yapılmıştır. Üç Boğaz köprüsüne 360° manzara sunan 49. kattaki sonsuzluk havuzu, Michelin yıldızlı restoran ve dünya standartlarındaki olanaklarla İtalyan haute couture İstanbul silüetiyle buluşuyor.'
     ),
     features: [
-      L('ETRO Home Interiors on first 37 floors', 'Интерьеры ETRO Home на первых 37 этажах', 'İlk 37 katta ETRO Home iç mekanları'),
+      L('Italian designer interiors on first 37 floors', 'Итальянские дизайнерские интерьеры на первых 37 этажах', 'İlk 37 katta İtalyan tasarımcı iç mekanları'),
       L('49th-floor infinity pool', 'Бассейн-инфинити на 49-м этаже', '49. katta sonsuzluk havuzu'),
       L('Michelin-starred rooftop restaurant', 'Ресторан со звездой Мишлен на крыше', 'Michelin yıldızlı çatı restoranı'),
       L('360° views of 3 Bosphorus bridges', '360° вид на 3 моста через Босфор', '3 Boğaz köprüsüne 360° manzara'),
@@ -298,26 +297,26 @@ export const properties: Property[] = [
       L('Co-working spaces', 'Коворкинг-пространства', 'Ortak çalışma alanları'),
       L('Premium concierge services', 'Премиальный консьерж-сервис', 'Premium konsiyerj hizmetleri'),
       L('Eligible for Turkish citizenship', 'Подходит для получения гражданства Турции', 'Türk vatandaşlığına uygun'),
-      L('ITU Metro pedestrian tunnel access', 'Пешеходный тоннель к метро ITU', 'İTÜ Metro yaya tüneli erişimi')
+      L('Metro pedestrian tunnel access', 'Пешеходный тоннель к метро', 'Metro yaya tüneli erişimi')
     ],
     blocks: [
       {
-        name: L('ETRO Tower', 'Башня ETRO', 'ETRO Kulesi'),
+        name: L('Main Tower', 'Главная Башня', 'Ana Kule'),
         floors: 50,
         units: 471,
         layouts: '1+1, 2+1, 3+1',
         status: L('Delivery Q4 2026', 'Сдача 4 кв. 2026', 'Teslim 2026 4. Çeyrek'),
-        details: L('Designed by Dome + Partners, engineered by Thornton Tomasetti', 'Дизайн Dome + Partners, инжиниринг Thornton Tomasetti', 'Dome + Partners tasarımı, Thornton Tomasetti mühendisliği')
+        details: L('Designed by leading Italian architects, engineered by a renowned New York firm', 'Дизайн ведущих итальянских архитекторов, инжиниринг известной нью-йоркской фирмы', 'Önde gelen İtalyan mimarlar tarafından tasarlanmış, ünlü bir New York firması mühendisliğinde')
       }
     ],
     nearby: [
       L('Istanbul Airport (25 min)', 'Аэропорт Стамбула (25 мин)', 'İstanbul Havalimanı (25 dk)'),
-      L('ITU Ayazağa Metro (pedestrian tunnel)', 'Метро ITU Аязага (пешеходный тоннель)', 'İTÜ Ayazağa Metro (yaya tüneli)'),
+      L('Metro station (pedestrian tunnel)', 'Станция метро (пешеходный тоннель)', 'Metro istasyonu (yaya tüneli)'),
       L('Maslak business district (on-site)', 'Деловой район Маслак (на территории)', 'Maslak iş merkezi (yerleşkede)'),
       L('Büyükdere Caddesi (on-site)', 'Бюйюкдере Джаддеси (на территории)', 'Büyükdere Caddesi (yerleşkede)'),
       L('Levent & Nişantaşı (15 min)', 'Левент и Нишанташи (15 мин)', 'Levent ve Nişantaşı (15 dk)'),
       L('Bosphorus (20 min)', 'Босфор (20 мин)', 'Boğaz (20 dk)'),
-      L('Zorlu Center (20 min)', 'Zorlu Center (20 мин)', 'Zorlu Center (20 dk)'),
+      L('Major shopping centers (20 min)', 'Крупные торговые центры (20 мин)', 'Büyük alışveriş merkezleri (20 dk)'),
       L('İstinye Park (15 min)', 'İstinye Park (15 мин)', 'İstinye Park (15 dk)')
     ],
     amenities: [
@@ -337,7 +336,7 @@ export const properties: Property[] = [
   },
   {
     id: '5',
-    title: 'REV Blue Zone Yalıkavak',
+    title: 'Premium Villas — Yalıkavak',
     location: 'Bodrum',
     address: L('Yalıkavak, Bodrum, Muğla, Turkey', 'Яликавак, Бодрум, Мугла, Турция', 'Yalıkavak, Bodrum, Muğla, Türkiye'),
     price: 2500000,
@@ -352,12 +351,12 @@ export const properties: Property[] = [
     parking: 2,
     floors: 3,
     description: L(
-      'REV Blue Zone Yalıkavak is Turkey\'s first Blue Zone-concept residential project, designed by world-renowned architecture firm SAOTA. Spanning 44,000 m² on the last residentially-zoned plot in Yalıkavak Center, this exclusive collection of villas integrates the Blue Zone longevity philosophy — inspired by the world\'s five regions where people live the longest, healthiest lives — with modern architecture, sustainable materials, and harmony with nature. Each villa offers private pools, sea-view terraces, smart home systems, and four-season livability.',
-      'REV Blue Zone Yalıkavak — первый в Турции жилой проект с концепцией «Голубой зоны», спроектированный всемирно известным архитектурным бюро SAOTA. Расположенный на 44 000 м² на последнем жилом участке в центре Яликавак, этот эксклюзивный комплекс вилл объединяет философию долголетия «Голубых зон» — вдохновлённую пятью регионами мира, где люди живут дольше и здоровее всего — с современной архитектурой, экологичными материалами и гармонией с природой. Каждая вилла оснащена частным бассейном, террасами с видом на море, системой «умный дом» и рассчитана на проживание круглый год.',
-      'REV Blue Zone Yalıkavak, dünyaca ünlü mimarlık firması SAOTA tarafından tasarlanan Türkiye\'nin ilk Blue Zone konseptli konut projesidir. Yalıkavak Merkez\'deki son konut imarlı arazide 44.000 m² üzerine kurulu bu özel villa koleksiyonu; insanların en uzun, en sağlıklı yaşadığı dünyanın beş bölgesinden ilham alan Blue Zone uzun ömür felsefesini modern mimari, sürdürülebilir malzemeler ve doğayla uyumla birleştiriyor. Her villa özel havuz, deniz manzaralı teras, akıllı ev sistemleri ve dört mevsim yaşanabilirlik sunuyor.'
+      'Turkey\'s first Blue Zone-concept residential project, designed by a world-renowned South African architecture firm. Spanning 44,000 m² on the last residentially-zoned plot in Yalıkavak Center, this exclusive collection of villas integrates the Blue Zone longevity philosophy — inspired by the world\'s five regions where people live the longest, healthiest lives — with modern architecture, sustainable materials, and harmony with nature. Each villa offers private pools, sea-view terraces, smart home systems, and four-season livability.',
+      'Первый в Турции жилой проект с концепцией «Голубой зоны», спроектированный всемирно известным южноафриканским архитектурным бюро. Расположенный на 44 000 м² на последнем жилом участке в центре Яликавак, этот эксклюзивный комплекс вилл объединяет философию долголетия «Голубых зон» — вдохновлённую пятью регионами мира, где люди живут дольше и здоровее всего — с современной архитектурой, экологичными материалами и гармонией с природой. Каждая вилла оснащена частным бассейном, террасами с видом на море, системой «умный дом» и рассчитана на проживание круглый год.',
+      'Dünyaca ünlü bir Güney Afrika mimarlık firması tarafından tasarlanan Türkiye\'nin ilk Blue Zone konseptli konut projesi. Yalıkavak Merkez\'deki son konut imarlı arazide 44.000 m² üzerine kurulu bu özel villa koleksiyonu; insanların en uzun, en sağlıklı yaşadığı dünyanın beş bölgesinden ilham alan Blue Zone uzun ömür felsefesini modern mimari, sürdürülebilir malzemeler ve doğayla uyumla birleştiriyor. Her villa özel havuz, deniz manzaralı teras, akıllı ev sistemleri ve dört mevsim yaşanabilirlik sunuyor.'
     ),
     features: [
-      L('SAOTA world-class architecture', 'Архитектура мирового класса от SAOTA', 'SAOTA dünya standartlarında mimari'),
+      L('World-class architecture', 'Архитектура мирового класса', 'Dünya standartlarında mimari'),
       L('Turkey\'s first Blue Zone concept', 'Первая концепция «Голубой зоны» в Турции', 'Türkiye\'nin ilk Blue Zone konsepti'),
       L('Private swimming pools', 'Частные бассейны', 'Özel yüzme havuzları'),
       L('Sea-view terraces', 'Террасы с видом на море', 'Deniz manzaralı teraslar'),
@@ -377,7 +376,7 @@ export const properties: Property[] = [
         units: 0,
         layouts: '4+1, 5+1, 6+1',
         status: L('Pre-Sale', 'Предпродажа', 'Ön Satış'),
-        details: L('6 distinct villa types, SAOTA-designed, 44,000 m² land', '6 уникальных типов вилл, дизайн SAOTA, участок 44 000 м²', '6 farklı villa tipi, SAOTA tasarımı, 44.000 m² arazi')
+        details: L('6 distinct villa types, world-class architecture, 44,000 m² land', '6 уникальных типов вилл, архитектура мирового класса, участок 44 000 м²', '6 farklı villa tipi, dünya standartlarında mimari, 44.000 m² arazi')
       }
     ],
     nearby: [
@@ -407,7 +406,7 @@ export const properties: Property[] = [
   },
   {
     id: '6',
-    title: 'Senfoni Etiler',
+    title: 'Boutique Residence — Etiler',
     location: 'Istanbul',
     address: L('Akat, Etiler, Beşiktaş, Istanbul', 'Акат, Этилер, Бешикташ, Стамбул', 'Akat, Etiler, Beşiktaş, İstanbul'),
     price: 1000000,
@@ -422,12 +421,12 @@ export const properties: Property[] = [
     parking: 2,
     floors: 8,
     description: L(
-      'Senfoni Etiler offers a boutique, privileged life in the heart of Istanbul\'s most prestigious neighborhood. Built on 24,000 m² with the assurance of Emlak Konut and developed by Yiğit Group, Kubba Construction & DBH Group, this elegant low-rise complex features 8 residential blocks with 175 private apartments ranging from compact 1+1 layouts to expansive 7+1 duplexes. Every apartment includes its own terrace and balcony, private storage, underfloor heating, and superior sound insulation — combining boutique luxury with Etiler\'s unmatched urban prestige.',
-      'Senfoni Etiler предлагает бутиковую, привилегированную жизнь в самом сердце самого престижного района Стамбула. Построенный на 24 000 м² при поддержке Emlak Konut и реализованный Yiğit Group, Kubba Construction и DBH Group, этот элегантный малоэтажный комплекс включает 8 жилых блоков с 175 приватными квартирами — от компактных 1+1 до просторных дуплексов 7+1. Каждая квартира оснащена собственной террасой и балконом, личной кладовой, тёплым полом и превосходной звукоизоляцией — сочетание бутиковой роскоши и непревзойдённого городского престижа Этилера.',
-      'Senfoni Etiler, İstanbul\'un en prestijli semtinin kalbinde butik ve ayrıcalıklı bir yaşam sunuyor. 24.000 m² üzerine Emlak Konut güvencesiyle inşa edilen ve Yiğit Group, Kubba Construction ve DBH Group tarafından geliştirilen bu zarif alçak katlı kompleks; kompakt 1+1 planlardan geniş 7+1 dublekslere kadar uzanan 175 özel daireye sahip 8 konut bloğundan oluşuyor. Her daire kendi terası ve balkonu, özel depo, yerden ısıtma ve üstün ses yalıtımı ile donatılmış olup butik lüksü Etiler\'in eşsiz kentsel prestiji ile birleştiriyor.'
+      'A boutique, privileged life in the heart of Istanbul\'s most prestigious neighborhood. Built on 24,000 m² with state guarantee and developed by a trusted consortium, this elegant low-rise complex features 8 residential blocks with 175 private apartments ranging from compact 1+1 layouts to expansive 7+1 duplexes. Every apartment includes its own terrace and balcony, private storage, underfloor heating, and superior sound insulation — combining boutique luxury with Etiler\'s unmatched urban prestige.',
+      'Бутиковая, привилегированная жизнь в самом сердце самого престижного района Стамбула. Построенный на 24 000 м² с государственной гарантией и реализованный надёжным консорциумом, этот элегантный малоэтажный комплекс включает 8 жилых блоков с 175 приватными квартирами — от компактных 1+1 до просторных дуплексов 7+1. Каждая квартира оснащена собственной террасой и балконом, личной кладовой, тёплым полом и превосходной звукоизоляцией — сочетание бутиковой роскоши и непревзойдённого городского престижа Этилера.',
+      'İstanbul\'un en prestijli semtinin kalbinde butik ve ayrıcalıklı bir yaşam. 24.000 m² üzerine devlet güvencesiyle inşa edilen ve güvenilir bir konsorsiyum tarafından geliştirilen bu zarif alçak katlı kompleks; kompakt 1+1 planlardan geniş 7+1 dublekslere kadar uzanan 175 özel daireye sahip 8 konut bloğundan oluşuyor. Her daire kendi terası ve balkonu, özel depo, yerden ısıtma ve üstün ses yalıtımı ile donatılmış olup butik lüksü Etiler\'in eşsiz kentsel prestiji ile birleştiriyor.'
     ),
     features: [
-      L('Emlak Konut guaranteed development', 'Проект при поддержке Emlak Konut', 'Emlak Konut güvencesiyle geliştirme'),
+      L('State-guaranteed development', 'Проект с государственной гарантией', 'Devlet güvenceli geliştirme'),
       L('Private terrace & balcony per unit', 'Собственная терраса и балкон в каждой квартире', 'Her daireye özel teras ve balkon'),
       L('Underfloor heating & central AC', 'Тёплый пол и центральное кондиционирование', 'Yerden ısıtma ve merkezi klima'),
       L('Superior sound insulation', 'Превосходная звукоизоляция', 'Üstün ses yalıtımı'),
@@ -460,10 +459,10 @@ export const properties: Property[] = [
     ],
     nearby: [
       L('Fatih Sultan Mehmet Bridge (2 min)', 'Мост Фатих Султан Мехмет (2 мин)', 'Fatih Sultan Mehmet Köprüsü (2 dk)'),
-      L('Akmerkez Shopping Mall (6 min)', 'ТЦ Акмеркез (6 мин)', 'Akmerkez AVM (6 dk)'),
+      L('Major Shopping Mall (6 min)', 'Крупный ТЦ (6 мин)', 'Büyük AVM (6 dk)'),
       L('Boğaziçi University (6 min)', 'Босфорский университет (6 мин)', 'Boğaziçi Üniversitesi (6 dk)'),
       L('Bebek & Levent (8 min)', 'Бебек и Левент (8 мин)', 'Bebek ve Levent (8 dk)'),
-      L('Zorlu Center (8 min)', 'Zorlu Center (8 мин)', 'Zorlu Center (8 dk)'),
+      L('Major shopping centers (8 min)', 'Крупные торговые центры (8 мин)', 'Büyük alışveriş merkezleri (8 dk)'),
       L('İstinye Park (10 min)', 'İstinye Park (10 мин)', 'İstinye Park (10 dk)'),
       L('Metro station (10 min)', 'Станция метро (10 мин)', 'Metro istasyonu (10 dk)'),
       L('Istanbul Airport (40 min)', 'Аэропорт Стамбула (40 мин)', 'İstanbul Havalimanı (40 dk)')
