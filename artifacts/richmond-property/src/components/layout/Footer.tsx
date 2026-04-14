@@ -16,7 +16,7 @@ export function Footer() {
             <Link href="/" className="flex items-center mb-6">
               <img 
                 src={`${import.meta.env.BASE_URL}logo.png`} 
-                alt="EV Richmond Property Group" 
+                alt="Richmond Property Group" 
                 className="h-16 w-auto"
               />
             </Link>
@@ -79,7 +79,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans text-white/40">
-          <p>&copy; {currentYear} EV Richmond Property Group. {t('footer.rights')}</p>
+          <p>&copy; {currentYear} Richmond Property Group. {t('footer.rights')}</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-[#C4A265] transition-colors">{t('footer.privacy')}</Link>
             <Link href="/terms" className="hover:text-[#C4A265] transition-colors">{t('footer.terms')}</Link>

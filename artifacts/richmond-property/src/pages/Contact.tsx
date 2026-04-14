@@ -123,7 +123,7 @@ export default function Contact() {
                   <Clock className="w-6 h-6 text-primary mr-4 shrink-0 mt-1" />
                   <div>
                     <p className="text-foreground font-medium mb-1">{t('contact.office.hours')}</p>
-                    <p className="text-muted-foreground">Mon - Sat: 09:00 - 18:00<br/>Sunday: Closed</p>
+                    <p className="text-muted-foreground">Mon - Fri: 10:00 - 18:00<br/>Saturday: 10:00 - 15:00<br/>Sunday: Closed</p>
                   </div>
                 </div>
               </div>

@@ -52,7 +52,7 @@ function buildEmailHtml(data: z.infer<typeof ContactFormSchema>): string {
     <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">
       <div style="background:#2A2A2A;padding:24px;text-align:center;">
         <h1 style="color:#C4A265;margin:0;font-size:20px;">New Consultation Request</h1>
-        <p style="color:#999;margin:8px 0 0;font-size:13px;">EV Richmond Property Group</p>
+        <p style="color:#999;margin:8px 0 0;font-size:13px;">Richmond Property Group</p>
       </div>
       <div style="padding:24px;">
         <table style="width:100%;border-collapse:collapse;">

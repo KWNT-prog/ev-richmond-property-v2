@@ -65,7 +65,7 @@ const translations: Translations = {
   'section.reviews.subtitle': { en: 'Trusted by clients from around the world for premium real estate services in Turkey.', ru: 'Нам доверяют клиенты со всего мира в сфере премиальной недвижимости в Турции.', tr: "Türkiye'de premium gayrimenkul hizmetlerinde dünya genelinden müşteriler tarafından güveniliyor." },
   
   'review.1.location': { en: 'Moscow, Russia', ru: 'Москва, Россия', tr: 'Moskova, Rusya' },
-  'review.1.text': { en: 'EV Richmond made our dream of owning a Bosphorus villa a reality. Their team handled everything from property selection to citizenship paperwork. Truly exceptional service.', ru: 'EV Richmond воплотили нашу мечту о вилле на Босфоре в реальность. Их команда занималась всем — от выбора объекта до оформления гражданства. Поистине исключительный сервис.', tr: 'EV Richmond, Boğaz\'da villa sahibi olma hayalimizi gerçeğe dönüştürdü. Ekipleri mülk seçiminden vatandaşlık evraklarına kadar her şeyi halletti. Gerçekten olağanüstü hizmet.' },
+  'review.1.text': { en: 'Richmond made our dream of owning a Bosphorus villa a reality. Their team handled everything from property selection to citizenship paperwork. Truly exceptional service.', ru: 'Richmond воплотили нашу мечту о вилле на Босфоре в реальность. Их команда занималась всем — от выбора объекта до оформления гражданства. Поистине исключительный сервис.', tr: 'Richmond, Boğaz\'da villa sahibi olma hayalimizi gerçeğe dönüştürdü. Ekipleri mülk seçiminden vatandaşlık evraklarına kadar her şeyi halletti. Gerçekten olağanüstü hizmet.' },
   
   'review.2.location': { en: 'Istanbul, Turkey', ru: 'Стамбул, Турция', tr: 'İstanbul, Türkiye' },
   'review.2.text': { en: 'Professional, knowledgeable, and always available. They found us the perfect penthouse in Antalya within our budget. The after-sale support has been outstanding.', ru: 'Профессиональные, компетентные и всегда на связи. Они нашли нам идеальный пентхаус в Анталии в рамках нашего бюджета. Послепродажная поддержка была великолепной.', tr: 'Profesyonel, bilgili ve her zaman ulaşılabilir. Bütçemize uygun mükemmel bir Antalya penthouse\'u buldular. Satış sonrası destek olağanüstüydü.' },
@@ -74,13 +74,13 @@ const translations: Translations = {
   'review.3.text': { en: 'As a first-time international buyer, I was nervous about the process. The Richmond team guided me through every step in Russian, making the entire experience seamless and stress-free.', ru: 'Как покупатель недвижимости за рубежом в первый раз, я нервничала. Команда Richmond провела меня через каждый этап на русском языке, сделав весь процесс простым и безстрессовым.', tr: 'İlk kez uluslararası mülk alan biri olarak süreç konusunda endişeliydim. Richmond ekibi her adımda bana rehberlik etti ve tüm deneyimi sorunsuz hale getirdi.' },
   
   'review.4.location': { en: 'Ankara, Turkey', ru: 'Анкара, Турция', tr: 'Ankara, Türkiye' },
-  'review.4.text': { en: 'We invested in two properties through EV Richmond and the returns have exceeded our expectations. Their market knowledge and investment advice is second to none.', ru: 'Мы инвестировали в два объекта через EV Richmond, и доходность превзошла наши ожидания. Их знание рынка и инвестиционные консультации не имеют себе равных.', tr: 'EV Richmond aracılığıyla iki mülke yatırım yaptık ve getiriler beklentilerimizi aştı. Piyasa bilgileri ve yatırım tavsiyeleri eşsiz.' },
+  'review.4.text': { en: 'We invested in two properties through Richmond and the returns have exceeded our expectations. Their market knowledge and investment advice is second to none.', ru: 'Мы инвестировали в два объекта через Richmond, и доходность превзошла наши ожидания. Их знание рынка и инвестиционные консультации не имеют себе равных.', tr: 'Richmond aracılığıyla iki mülke yatırım yaptık ve getiriler beklentilerimizi aştı. Piyasa bilgileri ve yatırım tavsiyeleri eşsiz.' },
   
   'review.5.location': { en: 'Moscow, Russia', ru: 'Москва, Россия', tr: 'Moskova, Rusya' },
   'review.5.text': { en: 'The attention to detail and personalized approach sets Richmond apart. They understood exactly what we were looking for and delivered beyond our expectations.', ru: 'Внимание к деталям и персональный подход выделяют Richmond. Они точно поняли, что мы ищем, и превзошли наши ожидания.', tr: 'Detaylara gösterilen özen ve kişiselleştirilmiş yaklaşım Richmond\'ı farklı kılıyor. Tam olarak ne aradığımızı anladılar ve beklentilerimizi aştılar.' },
   
   'review.6.location': { en: 'Dubai, UAE', ru: 'Дубай, ОАЭ', tr: 'Dubai, BAE' },
-  'review.6.text': { en: 'Investing in Turkish real estate from Dubai was made effortless by the EV Richmond team. Their multilingual support and deep market expertise made all the difference.', ru: 'Инвестирование в турецкую недвижимость из Дубая стало лёгким благодаря команде EV Richmond. Их многоязычная поддержка и глубокая экспертиза рынка сыграли решающую роль.', tr: "Dubai'den Türk gayrimenkulüne yatırım yapmak EV Richmond ekibi sayesinde zahmetsiz oldu. Çok dilli destekleri ve derin piyasa uzmanlıkları büyük fark yarattı." },
+  'review.6.text': { en: 'Investing in Turkish real estate from Dubai was made effortless by the Richmond team. Their multilingual support and deep market expertise made all the difference.', ru: 'Инвестирование в турецкую недвижимость из Дубая стало лёгким благодаря команде Richmond. Их многоязычная поддержка и глубокая экспертиза рынка сыграли решающую роль.', tr: "Dubai'den Türk gayrimenkulüne yatırım yapmak Richmond ekibi sayesinde zahmetsiz oldu. Çok dilli destekleri ve derin piyasa uzmanlıkları büyük fark yarattı." },
 
   // Property Detail
   'detail.backToPortfolio': { en: 'Back to Portfolio', ru: 'Назад к Портфолио', tr: 'Portföye Dön' },
@@ -232,9 +232,9 @@ const translations: Translations = {
   'about.hero.title': { en: 'About', ru: 'О', tr: 'Hakkında' },
   'about.hero.titleAccent': { en: 'Our Company', ru: 'Компании', tr: 'Şirketimiz' },
   'about.hero.subtitle': {
-    en: 'EV Richmond Property Group — your trusted partner in premium real estate and investment consulting in Turkey, Dubai and London.',
-    ru: 'EV Richmond Property Group — ваш надежный партнер в сфере премиальной недвижимости и инвестиционного консалтинга в Турции, Дубае и Лондоне.',
-    tr: 'EV Richmond Property Group — Türkiye, Dubai ve Londra\'da premium gayrimenkul ve yatırım danışmanlığında güvenilir ortağınız.'
+    en: 'Richmond Property Group — your trusted partner in premium real estate and investment consulting in Turkey, Dubai and London.',
+    ru: 'Richmond Property Group — ваш надежный партнер в сфере премиальной недвижимости и инвестиционного консалтинга в Турции, Дубае и Лондоне.',
+    tr: 'Richmond Property Group — Türkiye, Dubai ve Londra\'da premium gayrimenkul ve yatırım danışmanlığında güvenilir ortağınız.'
   },
   'about.story.title': { en: 'Our Story', ru: 'Наша История', tr: 'Hikayemiz' },
   'about.values.1': { en: 'Finance education & MBI business school diploma', ru: 'Финансовое образование и диплом бизнес-школы MBI', tr: 'Finans eğitimi ve MBI işletme okulu diploması' },
@@ -258,9 +258,9 @@ const translations: Translations = {
   // Privacy Policy page
   'privacy.title': { en: 'Privacy Policy', ru: 'Политика конфиденциальности', tr: 'Gizlilik Politikası' },
   'privacy.intro': {
-    en: 'EV Richmond Property Group ("we", "us", "our") is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website and real estate services.',
-    ru: 'EV Richmond Property Group («мы», «нас», «наш») обязуется защищать ваши персональные данные. Настоящая Политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу информацию при использовании нашего сайта и услуг в сфере недвижимости.',
-    tr: 'EV Richmond Property Group ("biz", "bize", "bizim") kişisel verilerinizi korumayı taahhüt eder. Bu Gizlilik Politikası, web sitemizi ve gayrimenkul hizmetlerimizi kullandığınızda bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.'
+    en: 'Richmond Property Group ("we", "us", "our") is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website and real estate services.',
+    ru: 'Richmond Property Group («мы», «нас», «наш») обязуется защищать ваши персональные данные. Настоящая Политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу информацию при использовании нашего сайта и услуг в сфере недвижимости.',
+    tr: 'Richmond Property Group ("biz", "bize", "bizim") kişisel verilerinizi korumayı taahhüt eder. Bu Gizlilik Politikası, web sitemizi ve gayrimenkul hizmetlerimizi kullandığınızda bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.'
   },
   'privacy.section1.title': { en: 'Information We Collect', ru: 'Информация, которую мы собираем', tr: 'Topladığımız Bilgiler' },
   'privacy.section1.body': {
@@ -288,23 +288,23 @@ const translations: Translations = {
   },
   'privacy.section5.title': { en: 'Contact', ru: 'Контакты', tr: 'İletişim' },
   'privacy.section5.body': {
-    en: 'For questions about this Privacy Policy, please contact EV Richmond Property Group at info@richmond-propertygroup.com or +90 555 000 0000.',
-    ru: 'По вопросам, связанным с настоящей Политикой конфиденциальности, обращайтесь в EV Richmond Property Group по адресу info@richmond-propertygroup.com или +90 555 000 0000.',
-    tr: 'Bu Gizlilik Politikası hakkındaki sorularınız için lütfen EV Richmond Property Group ile info@richmond-propertygroup.com veya +90 555 000 0000 üzerinden iletişime geçin.'
+    en: 'For questions about this Privacy Policy, please contact Richmond Property Group at info@richmond-propertygroup.com or +90 555 000 0000.',
+    ru: 'По вопросам, связанным с настоящей Политикой конфиденциальности, обращайтесь в Richmond Property Group по адресу info@richmond-propertygroup.com или +90 555 000 0000.',
+    tr: 'Bu Gizlilik Politikası hakkındaki sorularınız için lütfen Richmond Property Group ile info@richmond-propertygroup.com veya +90 555 000 0000 üzerinden iletişime geçin.'
   },
 
   // Terms of Service page
   'terms.title': { en: 'Terms of Service', ru: 'Условия использования', tr: 'Hizmet Şartları' },
   'terms.intro': {
-    en: 'Welcome to EV Richmond Property Group. By accessing and using our website and services, you agree to comply with these Terms of Service. Please read them carefully before using our platform.',
-    ru: 'Добро пожаловать в EV Richmond Property Group. Используя наш сайт и услуги, вы соглашаетесь соблюдать настоящие Условия использования. Пожалуйста, внимательно прочитайте их перед использованием нашей платформы.',
-    tr: 'EV Richmond Property Group\'a hoş geldiniz. Web sitemize ve hizmetlerimize erişerek ve bunları kullanarak bu Hizmet Şartlarına uymayı kabul edersiniz. Platformumuzu kullanmadan önce lütfen bunları dikkatlice okuyun.'
+    en: 'Welcome to Richmond Property Group. By accessing and using our website and services, you agree to comply with these Terms of Service. Please read them carefully before using our platform.',
+    ru: 'Добро пожаловать в Richmond Property Group. Используя наш сайт и услуги, вы соглашаетесь соблюдать настоящие Условия использования. Пожалуйста, внимательно прочитайте их перед использованием нашей платформы.',
+    tr: 'Richmond Property Group\'a hoş geldiniz. Web sitemize ve hizmetlerimize erişerek ve bunları kullanarak bu Hizmet Şartlarına uymayı kabul edersiniz. Platformumuzu kullanmadan önce lütfen bunları dikkatlice okuyun.'
   },
   'terms.section1.title': { en: 'Services', ru: 'Услуги', tr: 'Hizmetler' },
   'terms.section1.body': {
-    en: 'EV Richmond Property Group provides real estate brokerage and advisory services for luxury residential properties in Turkey and Georgia. Property listings, prices, and availability displayed on our website are for informational purposes and may change without notice. All prices are approximate and subject to current exchange rates.',
-    ru: 'EV Richmond Property Group предоставляет брокерские и консультационные услуги в сфере элитной жилой недвижимости в Турции и Грузии. Объявления о недвижимости, цены и доступность, отображаемые на нашем сайте, носят информационный характер и могут быть изменены без предварительного уведомления. Все цены являются приблизительными и зависят от текущих обменных курсов.',
-    tr: 'EV Richmond Property Group, Türkiye ve Gürcistan\'da lüks konut gayrimenkulleri için emlak aracılık ve danışmanlık hizmetleri sunar. Web sitemizde görüntülenen mülk listelemeleri, fiyatlar ve müsaitlik bilgilendirme amaçlıdır ve önceden haber verilmeksizin değişebilir. Tüm fiyatlar yaklaşık olup güncel döviz kurlarına tabidir.'
+    en: 'Richmond Property Group provides real estate brokerage and advisory services for luxury residential properties in Turkey and Georgia. Property listings, prices, and availability displayed on our website are for informational purposes and may change without notice. All prices are approximate and subject to current exchange rates.',
+    ru: 'Richmond Property Group предоставляет брокерские и консультационные услуги в сфере элитной жилой недвижимости в Турции и Грузии. Объявления о недвижимости, цены и доступность, отображаемые на нашем сайте, носят информационный характер и могут быть изменены без предварительного уведомления. Все цены являются приблизительными и зависят от текущих обменных курсов.',
+    tr: 'Richmond Property Group, Türkiye ve Gürcistan\'da lüks konut gayrimenkulleri için emlak aracılık ve danışmanlık hizmetleri sunar. Web sitemizde görüntülenen mülk listelemeleri, fiyatlar ve müsaitlik bilgilendirme amaçlıdır ve önceden haber verilmeksizin değişebilir. Tüm fiyatlar yaklaşık olup güncel döviz kurlarına tabidir.'
   },
   'terms.section2.title': { en: 'User Responsibilities', ru: 'Обязанности пользователя', tr: 'Kullanıcı Sorumlulukları' },
   'terms.section2.body': {
@@ -314,21 +314,21 @@ const translations: Translations = {
   },
   'terms.section3.title': { en: 'Property Transactions', ru: 'Сделки с недвижимостью', tr: 'Gayrimenkul İşlemleri' },
   'terms.section3.body': {
-    en: 'All property transactions are subject to separate purchase agreements governed by Turkish or Georgian law, as applicable. EV Richmond Property Group acts as an intermediary and does not guarantee the accuracy of third-party developer information. Buyers are advised to conduct independent due diligence before making purchase decisions.',
-    ru: 'Все сделки с недвижимостью регулируются отдельными договорами купли-продажи в соответствии с турецким или грузинским законодательством. EV Richmond Property Group выступает в качестве посредника и не гарантирует точность информации сторонних застройщиков. Покупателям рекомендуется проводить независимую проверку перед принятием решений о покупке.',
-    tr: 'Tüm gayrimenkul işlemleri, uygulanabilir olduğu şekilde Türk veya Gürcü hukukuna tabi ayrı satın alma sözleşmelerine tabidir. EV Richmond Property Group aracı olarak hareket eder ve üçüncü taraf geliştirici bilgilerinin doğruluğunu garanti etmez. Alıcıların satın alma kararları vermeden önce bağımsız durum tespiti yapmaları tavsiye edilir.'
+    en: 'All property transactions are subject to separate purchase agreements governed by Turkish or Georgian law, as applicable. Richmond Property Group acts as an intermediary and does not guarantee the accuracy of third-party developer information. Buyers are advised to conduct independent due diligence before making purchase decisions.',
+    ru: 'Все сделки с недвижимостью регулируются отдельными договорами купли-продажи в соответствии с турецким или грузинским законодательством. Richmond Property Group выступает в качестве посредника и не гарантирует точность информации сторонних застройщиков. Покупателям рекомендуется проводить независимую проверку перед принятием решений о покупке.',
+    tr: 'Tüm gayrimenkul işlemleri, uygulanabilir olduğu şekilde Türk veya Gürcü hukukuna tabi ayrı satın alma sözleşmelerine tabidir. Richmond Property Group aracı olarak hareket eder ve üçüncü taraf geliştirici bilgilerinin doğruluğunu garanti etmez. Alıcıların satın alma kararları vermeden önce bağımsız durum tespiti yapmaları tavsiye edilir.'
   },
   'terms.section4.title': { en: 'Intellectual Property', ru: 'Интеллектуальная собственность', tr: 'Fikri Mülkiyet' },
   'terms.section4.body': {
-    en: 'All content on this website, including text, images, logos, and design, is the property of EV Richmond Property Group and is protected by copyright and intellectual property laws. Unauthorized reproduction or distribution of any content is prohibited.',
-    ru: 'Всё содержимое данного сайта, включая тексты, изображения, логотипы и дизайн, является собственностью EV Richmond Property Group и защищено законами об авторском праве и интеллектуальной собственности. Несанкционированное воспроизведение или распространение любого контента запрещено.',
-    tr: 'Bu web sitesindeki metin, görseller, logolar ve tasarım dahil tüm içerik EV Richmond Property Group\'un mülkiyetindedir ve telif hakkı ve fikri mülkiyet yasalarıyla korunmaktadır. İçeriğin izinsiz çoğaltılması veya dağıtılması yasaktır.'
+    en: 'All content on this website, including text, images, logos, and design, is the property of Richmond Property Group and is protected by copyright and intellectual property laws. Unauthorized reproduction or distribution of any content is prohibited.',
+    ru: 'Всё содержимое данного сайта, включая тексты, изображения, логотипы и дизайн, является собственностью Richmond Property Group и защищено законами об авторском праве и интеллектуальной собственности. Несанкционированное воспроизведение или распространение любого контента запрещено.',
+    tr: 'Bu web sitesindeki metin, görseller, logolar ve tasarım dahil tüm içerik Richmond Property Group\'un mülkiyetindedir ve telif hakkı ve fikri mülkiyet yasalarıyla korunmaktadır. İçeriğin izinsiz çoğaltılması veya dağıtılması yasaktır.'
   },
   'terms.section5.title': { en: 'Limitation of Liability', ru: 'Ограничение ответственности', tr: 'Sorumluluk Sınırlaması' },
   'terms.section5.body': {
-    en: 'EV Richmond Property Group shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or services. We make no warranties regarding the completeness or accuracy of information on our site. Investment decisions should be made with professional financial and legal advice.',
-    ru: 'EV Richmond Property Group не несёт ответственности за любые косвенные, случайные или последующие убытки, возникающие в результате использования нашего сайта или услуг. Мы не даём гарантий относительно полноты или точности информации на нашем сайте. Инвестиционные решения следует принимать с профессиональной финансовой и юридической консультацией.',
-    tr: 'EV Richmond Property Group, web sitemizin veya hizmetlerimizin kullanımından kaynaklanan dolaylı, arızi veya sonuç olarak ortaya çıkan zararlardan sorumlu tutulamaz. Sitemizdeki bilgilerin eksiksizliği veya doğruluğu konusunda garanti vermiyoruz. Yatırım kararları profesyonel mali ve hukuki danışmanlık ile alınmalıdır.'
+    en: 'Richmond Property Group shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or services. We make no warranties regarding the completeness or accuracy of information on our site. Investment decisions should be made with professional financial and legal advice.',
+    ru: 'Richmond Property Group не несёт ответственности за любые косвенные, случайные или последующие убытки, возникающие в результате использования нашего сайта или услуг. Мы не даём гарантий относительно полноты или точности информации на нашем сайте. Инвестиционные решения следует принимать с профессиональной финансовой и юридической консультацией.',
+    tr: 'Richmond Property Group, web sitemizin veya hizmetlerimizin kullanımından kaynaklanan dolaylı, arızi veya sonuç olarak ortaya çıkan zararlardan sorumlu tutulamaz. Sitemizdeki bilgilerin eksiksizliği veya doğruluğu konusunda garanti vermiyoruz. Yatırım kararları profesyonel mali ve hukuki danışmanlık ile alınmalıdır.'
   },
   'terms.section6.title': { en: 'Contact', ru: 'Контакты', tr: 'İletişim' },
   'terms.section6.body': {
