@@ -99,9 +99,9 @@ export function Navbar() {
             </nav>
 
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:+905550000000" className={cn("flex items-center gap-2 hover:text-primary transition-colors", isOverDark ? "text-white" : "text-foreground")}>
+              <a href="tel:+905010123999" className={cn("flex items-center gap-2 hover:text-primary transition-colors", isOverDark ? "text-white" : "text-foreground")}>
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="font-sans text-sm">+90 555 000 0000</span>
+                <span className="font-sans text-sm">+90 501 012 3999</span>
               </a>
 
               <div className="w-px h-5 bg-current opacity-20" />
@@ -298,9 +298,9 @@ export function Navbar() {
                 </AnimatePresence>
               </div>
 
-              <a href="tel:+905550000000" className="flex items-center gap-2 text-primary mt-2">
+              <a href="tel:+905010123999" className="flex items-center gap-2 text-primary mt-2">
                 <Phone className="w-5 h-5" />
-                <span className="font-sans text-base">+90 555 000 0000</span>
+                <span className="font-sans text-base">+90 501 012 3999</span>
               </a>
 
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="w-full mt-2">

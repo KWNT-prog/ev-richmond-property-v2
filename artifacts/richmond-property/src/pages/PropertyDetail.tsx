@@ -280,9 +280,12 @@ export default function PropertyDetail() {
                 <div className="bg-white border border-[#C4A265]/15 rounded-2xl p-8 shadow-sm">
                   <h3 className="text-lg font-display text-foreground mb-4">{t('detail.contactDirect')}</h3>
                   <div className="space-y-4 font-sans">
-                    <a href="tel:+905550000000" className="flex items-center gap-3 text-muted-foreground hover:text-[#C4A265] transition-colors">
+                    <a href="tel:+905010123999" className="flex items-center gap-3 text-muted-foreground hover:text-[#C4A265] transition-colors">
                       <Phone className="w-5 h-5 text-[#C4A265]" />
-                      <span className="text-sm">+90 555 000 0000</span>
+                      <div className="flex flex-col text-sm">
+                        <span>+90 501 012 3999</span>
+                        <span>+971 58 156 4659</span>
+                      </div>
                     </a>
                     <a href="mailto:info@richmond-propertygroup.com" className="flex items-center gap-3 text-muted-foreground hover:text-[#C4A265] transition-colors">
                       <Mail className="w-5 h-5 text-[#C4A265]" />

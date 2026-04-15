@@ -107,7 +107,7 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-primary mr-4 shrink-0 mt-1" />
                   <div>
                     <p className="text-foreground font-medium mb-1">{t('contact.office.phone')}</p>
-                    <p className="text-muted-foreground">+90 555 000 0000</p>
+                    <p className="text-muted-foreground">+90 501 012 3999<br/>+971 58 156 4659</p>
                   </div>
                 </div>
                 

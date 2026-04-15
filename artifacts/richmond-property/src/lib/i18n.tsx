@@ -288,9 +288,9 @@ const translations: Translations = {
   },
   'privacy.section5.title': { en: 'Contact', ru: 'Контакты', tr: 'İletişim' },
   'privacy.section5.body': {
-    en: 'For questions about this Privacy Policy, please contact Richmond Property Group at info@richmond-propertygroup.com or +90 555 000 0000.',
-    ru: 'По вопросам, связанным с настоящей Политикой конфиденциальности, обращайтесь в Richmond Property Group по адресу info@richmond-propertygroup.com или +90 555 000 0000.',
-    tr: 'Bu Gizlilik Politikası hakkındaki sorularınız için lütfen Richmond Property Group ile info@richmond-propertygroup.com veya +90 555 000 0000 üzerinden iletişime geçin.'
+    en: 'For questions about this Privacy Policy, please contact Richmond Property Group at info@richmond-propertygroup.com or +90 501 012 3999 / +971 58 156 4659.',
+    ru: 'По вопросам, связанным с настоящей Политикой конфиденциальности, обращайтесь в Richmond Property Group по адресу info@richmond-propertygroup.com или +90 501 012 3999 / +971 58 156 4659.',
+    tr: 'Bu Gizlilik Politikası hakkındaki sorularınız için lütfen Richmond Property Group ile info@richmond-propertygroup.com veya +90 501 012 3999 / +971 58 156 4659 üzerinden iletişime geçin.'
   },
 
   // Terms of Service page
@@ -332,9 +332,9 @@ const translations: Translations = {
   },
   'terms.section6.title': { en: 'Contact', ru: 'Контакты', tr: 'İletişim' },
   'terms.section6.body': {
-    en: 'For questions regarding these Terms of Service, contact us at info@richmond-propertygroup.com or +90 555 000 0000.',
-    ru: 'По вопросам, связанным с настоящими Условиями использования, свяжитесь с нами по адресу info@richmond-propertygroup.com или +90 555 000 0000.',
-    tr: 'Bu Hizmet Şartları ile ilgili sorularınız için info@richmond-propertygroup.com veya +90 555 000 0000 üzerinden bizimle iletişime geçin.'
+    en: 'For questions regarding these Terms of Service, contact us at info@richmond-propertygroup.com or +90 501 012 3999 / +971 58 156 4659.',
+    ru: 'По вопросам, связанным с настоящими Условиями использования, свяжитесь с нами по адресу info@richmond-propertygroup.com или +90 501 012 3999 / +971 58 156 4659.',
+    tr: 'Bu Hizmet Şartları ile ilgili sorularınız için info@richmond-propertygroup.com veya +90 501 012 3999 / +971 58 156 4659 üzerinden bizimle iletişime geçin.'
   },
   'legal.lastUpdated': { en: 'Last updated', ru: 'Последнее обновление', tr: 'Son güncelleme' }
 };
