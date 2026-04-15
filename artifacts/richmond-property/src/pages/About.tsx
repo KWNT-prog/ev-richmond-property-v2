@@ -100,7 +100,7 @@ export default function About() {
               className="relative aspect-square lg:aspect-[4/5] rounded-2xl overflow-hidden border-2 border-primary/20 p-2"
             >
               <img
-                src={`${import.meta.env.BASE_URL}images/team-ceo.jpg`}
+                src={`${import.meta.env.BASE_URL}images/team-ceo-about.jpg`}
                 alt="Melena Vidina - CEO"
                 className="w-full h-full object-cover object-top rounded-xl"
               />
