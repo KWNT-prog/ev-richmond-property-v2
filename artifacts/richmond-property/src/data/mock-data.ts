@@ -481,6 +481,97 @@ export const properties: Property[] = [
       L('Underfloor heating', 'Тёплый пол', 'Yerden ısıtma'),
       L('Central air conditioning', 'Центральное кондиционирование', 'Merkezi klima')
     ]
+  },
+  {
+    id: '7',
+    title: 'Premium Park Residence — Acıbadem',
+    location: 'Istanbul',
+    address: L('Acıbadem, Üsküdar, Asian Side, Istanbul', 'Аджибадем, Ускюдар, Азиатская сторона, Стамбул', 'Acıbadem, Üsküdar, Anadolu Yakası, İstanbul'),
+    price: 350000,
+    bedrooms: 4,
+    bathrooms: 3,
+    area: 315,
+    type: 'Residence',
+    image: 'acibadem-exterior.png',
+    gallery: ['acibadem-exterior.png', 'acibadem-park.png', 'acibadem-interior.png', 'acibadem-pool.png', 'acibadem-hub.png', 'acibadem-aerial.png'],
+    featured: true,
+    yearBuilt: 2024,
+    parking: 2,
+    floors: 15,
+    description: L(
+      'A landmark luxury residential complex on the Asian side of Istanbul, redefining modern urban life over a vast 30,622 m² site. Nine elegant 15-storey blocks house 563 apartments ranging from 1+1 to 5+1 (62–315 m²), each equipped with smart home technology controlling lighting, heating and security from a single app. The crown jewel is a 15,000 m² private park featuring 200 mature Italian trees aged 40 to 80 years, a sky bridge, fruit gardens, skateboarding tracks and a mini basketball court — a first-of-its-kind natural wonder in the heart of the city. Strategically positioned between Kadıköy and Üsküdar, just 5 minutes from the Bosphorus Bridge and a 3-minute walk to the metro, this is the ideal address for both lifestyle and investment.',
+      'Знаковый жилой комплекс премиум-класса на азиатской стороне Стамбула, переосмысляющий современную городскую жизнь на огромной территории 30 622 м². Девять элегантных 15-этажных блоков вмещают 563 апартамента форматов от 1+1 до 5+1 (62–315 м²), каждый оснащён системой «умный дом» с управлением освещением, отоплением и безопасностью через одно приложение. Жемчужина проекта — частный парк площадью 15 000 м² с 200 взрослыми итальянскими деревьями возрастом от 40 до 80 лет, небесным мостом, фруктовыми садами, скейт-парком и мини-баскетбольной площадкой — уникальное природное чудо в самом сердце мегаполиса. Стратегическое расположение между Кадыкёем и Ускюдаром, всего в 5 минутах от моста через Босфор и в 3 минутах пешком от метро, делает этот адрес идеальным как для жизни, так и для инвестиций.',
+      'İstanbul\'un Anadolu yakasında modern kent yaşamını yeniden tanımlayan 30.622 m²\'lik geniş bir alanda yer alan simge niteliğinde bir lüks konut projesi. Dokuz zarif 15 katlı blok, 1+1\'den 5+1\'e (62–315 m²) kadar 563 daire barındırır; her daire aydınlatma, ısıtma ve güvenliği tek uygulamadan yöneten akıllı ev teknolojisiyle donatılmıştır. Projenin tacı, 15.000 m²\'lik özel bir park: 40 ila 80 yaşları arasında 200 adet İtalyan ağacı, gökyüzü köprüsü, meyve bahçeleri, kaykay pistleri ve mini basketbol sahası ile şehrin kalbinde dünyada bir ilk. Kadıköy ile Üsküdar arasında stratejik konumda, Boğaz Köprüsü\'ne 5 dakika ve metroya 3 dakika yürüyüş mesafesinde — hem yaşam hem yatırım için ideal adres.'
+    ),
+    features: [
+      L('15,000 m² private park with 200 Italian trees (40–80 yrs)', 'Частный парк 15 000 м² с 200 итальянскими деревьями (40–80 лет)', '200 İtalyan ağaçlı (40–80 yaş) 15.000 m² özel park'),
+      L('Sky bridge, fruit gardens, skate & basketball areas', 'Небесный мост, фруктовые сады, скейт- и баскетбольные площадки', 'Gökyüzü köprüsü, meyve bahçeleri, kaykay ve basketbol alanları'),
+      L('6,250 m² social hub: cafés, restaurants, market', 'Соц. зона 6 250 м²: кафе, рестораны, маркет', '6.250 m² sosyal alan: kafeler, restoranlar, market'),
+      L('Smart home technology in every apartment', 'Система «умный дом» в каждой квартире', 'Her dairede akıllı ev teknolojisi'),
+      L('Indoor swimming pool, gym, spa, sauna', 'Крытый бассейн, тренажёрный зал, спа, сауна', 'Kapalı havuz, spor salonu, spa, sauna'),
+      L('2,000 m² sports facility (indoor & outdoor pools)', 'Спортивный комплекс 2 000 м² (крытый и открытый бассейны)', '2.000 m² spor tesisi (kapalı ve açık havuzlar)'),
+      L('24/7 concierge service & security', 'Консьерж-сервис и охрана 24/7', '7/24 konsiyerj hizmeti ve güvenlik'),
+      L('Library, Zen gardens & meditation areas', 'Библиотека, дзен-сады и зоны медитации', 'Kütüphane, Zen bahçeleri ve meditasyon alanları'),
+      L('Views: city panorama, forest, Çamlıca Tower, sea', 'Виды: панорама города, лес, башня Чамлыджа, море', 'Manzaralar: şehir panoraması, orman, Çamlıca Kulesi, deniz'),
+      L('Eligible for Turkish citizenship', 'Подходит для получения гражданства Турции', 'Türk vatandaşlığına uygun'),
+      L('Award-winning project (European Property Awards)', 'Призёр европейских премий недвижимости', 'Avrupa Gayrimenkul Ödülleri sahibi proje'),
+      L('Strategic Asian-side location, 5 min to Bosphorus Bridge', 'Стратегическое азиатское расположение, 5 мин до Босфорского моста', 'Stratejik Anadolu yakası konumu, Boğaz Köprüsü\'ne 5 dk')
+    ],
+    blocks: [
+      {
+        name: L('9 Residential Blocks', '9 жилых блоков', '9 Konut Bloğu'),
+        floors: 15,
+        units: 563,
+        layouts: '1+1, 2+1, 3+1, 4+1, 5+1 (62–315 m²)',
+        status: L('Delivered Q2 2024', 'Сдан 2 кв. 2024', 'Teslim 2024 2. Çeyrek'),
+        details: L('Smart home in every unit, terraces & balconies, panoramic views', 'Умный дом в каждой квартире, террасы и балконы, панорамные виды', 'Her dairede akıllı ev, teras ve balkonlar, panoramik manzara')
+      },
+      {
+        name: L('Central Park (15,000 m²)', 'Центральный парк (15 000 м²)', 'Merkezi Park (15.000 m²)'),
+        floors: 0,
+        units: 0,
+        layouts: 'Open landscape',
+        status: L('Operational', 'Действующий', 'Aktif'),
+        details: L('200 Italian trees (40–80 yrs), sky bridge, fruit gardens, skate park', '200 итальянских деревьев (40–80 лет), небесный мост, фруктовые сады, скейт-парк', '200 İtalyan ağacı (40–80 yaş), gökyüzü köprüsü, meyve bahçeleri, kaykay parkı')
+      },
+      {
+        name: L('Social Hub (6,250 m²)', 'Социальный хаб (6 250 м²)', 'Sosyal Merkez (6.250 m²)'),
+        floors: 2,
+        units: 0,
+        layouts: 'Retail, F&B, services',
+        status: L('Operational', 'Действующий', 'Aktif'),
+        details: L('Markets, local cafés, restaurants for residents', 'Маркеты, местные кафе, рестораны для жильцов', 'Sakinler için marketler, yerel kafeler, restoranlar')
+      }
+    ],
+    nearby: [
+      L('5 min to 15 July Martyrs Bridge', '5 мин до моста Мучеников 15 Июля', '15 Temmuz Şehitler Köprüsü\'ne 5 dk'),
+      L('3 min walk to metro station', '3 мин пешком до метро', 'Metro istasyonuna 3 dk yürüyüş'),
+      L('Direct access to E5 Highway', 'Прямой выезд на автомагистраль E5', 'E5 Otoyolu\'na doğrudan erişim'),
+      L('10 min to Bağdat Avenue', '10 мин до улицы Багдат', 'Bağdat Caddesi\'ne 10 dk'),
+      L('2 km to Uzunçayır Metrobus', '2 км до метробуса Узунчайыр', 'Uzunçayır Metrobüs\'e 2 km'),
+      L('Top hospitals, clinics & universities nearby', 'Ведущие больницы, клиники и университеты рядом', 'Önde gelen hastaneler, klinikler ve üniversiteler yakın'),
+      L('Major shopping centers within minutes', 'Крупные ТЦ в нескольких минутах', 'Büyük alışveriş merkezleri dakikalar içinde'),
+      L('Between Kadıköy and Üsküdar', 'Между Кадыкёем и Ускюдаром', 'Kadıköy ile Üsküdar arasında')
+    ],
+    amenities: [
+      L('15,000 m² private landscaped park', 'Частный благоустроенный парк 15 000 м²', '15.000 m² özel peyzajlı park'),
+      L('Indoor swimming pool', 'Крытый бассейн', 'Kapalı yüzme havuzu'),
+      L('Outdoor swimming pool', 'Открытый бассейн', 'Açık yüzme havuzu'),
+      L('Fully equipped gym', 'Полностью оборудованный тренажёрный зал', 'Tam donanımlı spor salonu'),
+      L('Spa, sauna & massage facilities', 'Спа, сауна и массажный центр', 'Spa, sauna ve masaj tesisleri'),
+      L('2,000 m² sports facility', 'Спортивный комплекс 2 000 м²', '2.000 m² spor tesisi'),
+      L('Sky bridge walkway', 'Небесный мост', 'Gökyüzü köprüsü yürüyüş yolu'),
+      L('Mini basketball court', 'Мини-баскетбольная площадка', 'Mini basketbol sahası'),
+      L('Skateboarding tracks', 'Скейт-трассы', 'Kaykay pistleri'),
+      L('Camping & picnic areas', 'Зоны кемпинга и пикника', 'Kamp ve piknik alanları'),
+      L('Library & reading rooms', 'Библиотека и читальные залы', 'Kütüphane ve okuma odaları'),
+      L('Zen gardens', 'Дзен-сады', 'Zen bahçeleri'),
+      L('Fruit gardens', 'Фруктовые сады', 'Meyve bahçeleri'),
+      L('On-site cafés, restaurants & markets', 'Кафе, рестораны и маркеты на территории', 'Yerleşkede kafeler, restoranlar ve marketler'),
+      L('24/7 concierge & security', 'Консьерж и охрана 24/7', '7/24 konsiyerj ve güvenlik'),
+      L('Smart home technology', 'Технология «умный дом»', 'Akıllı ev teknolojisi'),
+      L('Underground parking', 'Подземная парковка', 'Yeraltı otopark')
+    ]
   }
 ];
 
