@@ -189,9 +189,9 @@ const translations: Translations = {
     tr: 'Premium gayrimenkul ve kişiselleştirilmiş hizmet ile güven inşa ediyoruz.'
   },
   'section.about.text1': {
-    en: 'The company was founded in 2022. Director Melena Vidina holds a finance degree and an MBI business school diploma. She has Turkish citizenship and has been living in Istanbul for over 15 years.',
-    ru: 'Компания основана в 2022 году. Руководитель Melena Vidina имеет финансовое образование и диплом бизнес-школы MBI. Имеет турецкое гражданство и более 15 лет живёт в Стамбуле.',
-    tr: 'Şirket 2022 yılında kurulmuştur. Yönetici Melena Vidina finans eğitimine ve MBI işletme okulu diplomasına sahiptir. Türk vatandaşlığına sahip olup 15 yılı aşkın süredir İstanbul\'da yaşamaktadır.'
+    en: 'The company was founded in 2022. Director Melena Vidina holds a finance degree and an MBA business school diploma. She has Turkish citizenship and has been living in Istanbul for over 15 years.',
+    ru: 'Компания основана в 2022 году. Руководитель Melena Vidina имеет финансовое образование и диплом бизнес-школы MBA. Имеет турецкое гражданство и более 15 лет живёт в Стамбуле.',
+    tr: 'Şirket 2022 yılında kurulmuştur. Yönetici Melena Vidina finans eğitimine ve MBA işletme okulu diplomasına sahiptir. Türk vatandaşlığına sahip olup 15 yılı aşkın süredir İstanbul\'da yaşamaktadır.'
   },
   'section.about.text2': {
     en: 'We work with leading development projects in Istanbul, Dubai and London, offering clients carefully selected properties with high investment potential.',
@@ -237,7 +237,7 @@ const translations: Translations = {
     tr: 'Richmond Property Group — Türkiye, Dubai ve Londra\'da premium gayrimenkul ve yatırım danışmanlığında güvenilir ortağınız.'
   },
   'about.story.title': { en: 'Our Story', ru: 'Наша История', tr: 'Hikayemiz' },
-  'about.values.1': { en: 'Finance education & MBI business school diploma', ru: 'Финансовое образование и диплом бизнес-школы MBI', tr: 'Finans eğitimi ve MBI işletme okulu diploması' },
+  'about.values.1': { en: 'Finance education & MBA business school diploma', ru: 'Финансовое образование и диплом бизнес-школы MBA', tr: 'Finans eğitimi ve MBA işletme okulu diploması' },
   'about.values.2': { en: 'Turkish citizenship, 15+ years in Istanbul', ru: 'Турецкое гражданство, более 15 лет в Стамбуле', tr: 'Türk vatandaşlığı, İstanbul\'da 15+ yıl' },
   'about.values.3': { en: 'Projects in Istanbul, Dubai & London', ru: 'Проекты в Стамбуле, Дубае и Лондоне', tr: 'İstanbul, Dubai ve Londra\'da projeler' },
   'about.values.4': { en: 'Full legal, insurance & education support', ru: 'Полная юридическая, страховая и образовательная поддержка', tr: 'Tam hukuki, sigorta ve eğitim desteği' },
