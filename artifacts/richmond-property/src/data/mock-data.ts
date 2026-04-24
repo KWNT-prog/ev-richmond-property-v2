@@ -572,8 +572,218 @@ export const properties: Property[] = [
       L('Smart home technology', 'Технология «умный дом»', 'Akıllı ev teknolojisi'),
       L('Underground parking', 'Подземная парковка', 'Yeraltı otopark')
     ]
+  },
+  {
+    id: '8',
+    title: 'Beachfront Branded Residence — Dubai Harbour',
+    location: 'Dubai',
+    address: L('Dubai Harbour Waterfront, Dubai, UAE', 'Набережная Dubai Harbour, Дубай, ОАЭ', 'Dubai Harbour Sahili, Dubai, BAE'),
+    price: 1100000,
+    bedrooms: 4,
+    bathrooms: 4,
+    area: 240,
+    type: 'Residence',
+    image: 'p8-exterior.png',
+    gallery: ['p8-exterior.png', 'p8-beach.png', 'p8-interior.png', 'p8-pool.png'],
+    featured: true,
+    yearBuilt: 2029,
+    parking: 2,
+    floors: 41,
+    description: L(
+      'A landmark off-plan branded residence on a private peninsula between Palm Jumeirah and Dubai Marina, blending five-star hotel hospitality with home comfort. The project offers 1 to 4-bedroom apartments and 4-bedroom penthouses with panoramic Arabian Gulf, Palm Jumeirah and Dubai Marina views, direct access to a 1.5 km private white-sand beach, an infinity pool, full hotel services and signature dining. Located in one of Dubai\'s most exclusive waterfront destinations, with two metro stations, retail and yacht marina on the doorstep — a perfect lifestyle and capital-growth investment with a flexible payment plan.',
+      'Знаковая брендированная резиденция off-plan на частном полуострове между Palm Jumeirah и Dubai Marina, сочетающая пятизвёздочный отельный сервис с домашним уютом. Проект предлагает апартаменты с 1–4 спальнями и пентхаусы с 4 спальнями с панорамными видами на Персидский залив, Palm Jumeirah и Dubai Marina, прямым выходом на частный пляж длиной 1,5 км, бассейном-инфинити, полным отельным сервисом и фирменными ресторанами. Расположен в одной из самых эксклюзивных набережных Дубая, рядом с двумя станциями метро, торговыми галереями и яхтенной мариной — идеальное вложение для жизни и роста капитала с гибким планом оплаты.',
+      'Palm Jumeirah ile Dubai Marina arasında özel bir yarımadada yer alan, beş yıldızlı otel konaklamasını ev konforuyla birleştiren simge niteliğinde proje aşamasında markalı bir konut. Proje, Basra Körfezi, Palm Jumeirah ve Dubai Marina manzaralı 1 ila 4 yatak odalı daireler ve 4 yatak odalı çatı katları sunar; 1,5 km\'lik özel beyaz kum plaja doğrudan erişim, sonsuzluk havuzu, tam otel hizmetleri ve imza restoranlar bulunur. Dubai\'nin en seçkin sahil destinasyonlarından birinde, iki metro istasyonu, alışveriş ve yat marinası yanı başında — esnek ödeme planıyla yaşam ve sermaye büyümesi için ideal yatırım.'
+    ),
+    features: [
+      L('Branded residence with full hotel services', 'Брендированная резиденция с полным отельным сервисом', 'Tam otel hizmetli markalı konut'),
+      L('Direct access to 1.5 km private beach', 'Прямой выход на частный пляж 1,5 км', '1,5 km özel plaja doğrudan erişim'),
+      L('Panoramic sea, Palm & Marina views', 'Панорамные виды на море, Palm и Marina', 'Panoramik deniz, Palm ve Marina manzarası'),
+      L('Infinity pool & sunset deck', 'Бассейн-инфинити и закатная палуба', 'Sonsuzluk havuzu ve gün batımı terası'),
+      L('5-star spa, gym & wellness center', 'Спа, фитнес и велнес-центр 5*', '5 yıldızlı spa, spor salonu ve sağlık merkezi'),
+      L('Signature restaurants & beach club', 'Фирменные рестораны и бич-клаб', 'İmza restoranlar ve plaj kulübü'),
+      L('24/7 concierge, valet & housekeeping', 'Консьерж, валет и уборка 24/7', '7/24 konsiyerj, vale ve temizlik'),
+      L('80/20 flexible payment plan', 'Гибкий план оплаты 80/20', '80/20 esnek ödeme planı'),
+      L('Eligible for UAE Golden Visa', 'Подходит для Golden Visa ОАЭ', 'BAE Altın Vize\'ye uygun'),
+      L('High rental yields & strong capital growth', 'Высокая доходность аренды и рост капитала', 'Yüksek kira getirisi ve güçlü sermaye artışı'),
+      L('Two metro stations on the doorstep', 'Две станции метро в шаговой доступности', 'Yanı başında iki metro istasyonu'),
+      L('Adjacent yacht marina & retail promenade', 'Рядом яхтенная марина и торговый променад', 'Yanında yat marinası ve alışveriş promenadı')
+    ],
+    blocks: [
+      {
+        name: L('Twin Residential Towers', 'Башни-близнецы', 'İkiz Konut Kuleleri'),
+        floors: 41,
+        units: 282,
+        layouts: '1, 2, 3, 4 BR Apartments + 4 BR Penthouses',
+        status: L('Off-plan, handover Q4 2029', 'Off-plan, сдача 4 кв. 2029', 'Proje aşaması, teslim 2029 4. Çeyrek'),
+        details: L('Branded interiors, sea & skyline views, hotel services', 'Брендированные интерьеры, виды на море и небоскрёбы, отельный сервис', 'Markalı iç mekanlar, deniz ve siluet manzarası, otel hizmetleri')
+      }
+    ],
+    nearby: [
+      L('5 min to Palm Jumeirah', '5 мин до Palm Jumeirah', 'Palm Jumeirah\'a 5 dk'),
+      L('10 min to Dubai Marina & JBR', '10 мин до Dubai Marina и JBR', 'Dubai Marina ve JBR\'a 10 dk'),
+      L('15 min to Mall of the Emirates', '15 мин до Mall of the Emirates', 'Mall of the Emirates\'e 15 dk'),
+      L('20 min to Downtown & Burj Khalifa', '20 мин до Downtown и Burj Khalifa', 'Downtown ve Burj Khalifa\'ya 20 dk'),
+      L('25 min to DXB Airport', '25 мин до аэропорта DXB', 'DXB Havalimanı\'na 25 dk'),
+      L('Two metro stations within walking distance', 'Две станции метро в шаговой доступности', 'Yürüme mesafesinde iki metro istasyonu'),
+      L('Yacht marina & beach promenade adjacent', 'Яхтенная марина и пляжный променад рядом', 'Yat marinası ve plaj promenadı bitişikte'),
+      L('Sheikh Zayed Road direct access', 'Прямой выезд на Sheikh Zayed Road', 'Sheikh Zayed Road\'a doğrudan erişim')
+    ],
+    amenities: [
+      L('1.5 km private white-sand beach', 'Частный пляж 1,5 км белого песка', '1,5 km beyaz kumlu özel plaj'),
+      L('Infinity edge swimming pool', 'Бассейн-инфинити', 'Sonsuzluk havuzu'),
+      L('Children\'s pool & play areas', 'Детский бассейн и игровые зоны', 'Çocuk havuzu ve oyun alanları'),
+      L('5-star spa & wellness center', 'Спа и велнес-центр 5*', '5 yıldızlı spa ve sağlık merkezi'),
+      L('State-of-the-art fitness center', 'Современный фитнес-центр', 'Son teknoloji fitness merkezi'),
+      L('Signature restaurants & lounges', 'Фирменные рестораны и лаунжи', 'İmza restoranlar ve loungeler'),
+      L('Beach club & cabanas', 'Бич-клаб и кабанас', 'Plaj kulübü ve cabanalar'),
+      L('24/7 concierge & valet', 'Консьерж и валет 24/7', '7/24 konsiyerj ve vale'),
+      L('Housekeeping & in-residence dining', 'Уборка и ресторанное обслуживание в резиденции', 'Temizlik ve konut içi yemek hizmeti'),
+      L('Yacht & beach access', 'Доступ к яхтам и пляжу', 'Yat ve plaj erişimi'),
+      L('Underground valet parking', 'Подземная парковка с валетом', 'Yeraltı vale otopark'),
+      L('Smart home technology', 'Технология «умный дом»', 'Akıllı ev teknolojisi')
+    ]
+  },
+  {
+    id: '9',
+    title: 'Hyper-Luxury Branded Tower — Business Bay',
+    location: 'Dubai',
+    address: L('Business Bay, Downtown District, Dubai, UAE', 'Business Bay, район Downtown, Дубай, ОАЭ', 'Business Bay, Downtown Bölgesi, Dubai, BAE'),
+    price: 5200000,
+    bedrooms: 4,
+    bathrooms: 5,
+    area: 1382,
+    type: 'Residence',
+    image: 'p9-exterior.png',
+    gallery: ['p9-exterior.png', 'p9-interior.png', 'p9-amenities.png', 'p9-skyline.png'],
+    featured: true,
+    yearBuilt: 2026,
+    parking: 4,
+    floors: 52,
+    description: L(
+      'A pioneering hyper-luxury collaboration between a globally renowned automotive marque and one of Dubai\'s most distinguished developers, set in the heart of Business Bay. Two sculptural 52-storey towers — inspired by the contours of the French Riviera and the dunes of Dubai — house just 182 meticulously crafted residences from 2 to 4 bedrooms (162–1,382 m²). The signature Sky Mansion penthouses feature private car lifts that bring the resident\'s vehicle directly into the apartment — up to 20 parking bays for the highest unit. With Burj Khalifa views, members\' club amenities, riviera-inspired pool deck and a 70/30 payment plan, this is one of Dubai\'s most coveted off-plan addresses.',
+      'Пионерская hyper-luxury коллаборация всемирно известного автомобильного бренда с одним из самых уважаемых девелоперов Дубая, расположенная в сердце Business Bay. Две скульптурные 52-этажные башни, вдохновлённые контурами Французской Ривьеры и дюнами Дубая, вмещают всего 182 тщательно проработанных резиденции от 2 до 4 спален (162–1382 м²). Фирменные пентхаусы Sky Mansion оснащены частными автомобильными лифтами, доставляющими машину владельца прямо в апартаменты — до 20 парковочных мест для самого высокого юнита. С видами на Burj Khalifa, клубным сервисом, бассейном в стиле Ривьеры и планом оплаты 70/30 — один из самых желанных off-plan адресов Дубая.',
+      'Dünyaca ünlü bir otomotiv markası ile Dubai\'nin en seçkin geliştiricilerinden birinin Business Bay\'in kalbinde gerçekleştirdiği öncü hyper-luxury iş birliği. Fransız Rivierası\'nın hatlarından ve Dubai\'nin kumullarından ilham alan iki heykelsi 52 katlı kule, 2 ila 4 yatak odalı (162–1.382 m²) yalnızca 182 özenle tasarlanmış konut barındırır. İmza Sky Mansion çatı katları, sakinin aracını doğrudan daireye getiren özel araç asansörlerine sahiptir — en yüksek ünite için 20 park yerine kadar. Burj Khalifa manzarası, üye kulübü olanakları, Riviera esintili havuz katı ve 70/30 ödeme planı ile Dubai\'nin en çok aranan proje aşamasındaki adreslerinden biri.'
+    ),
+    features: [
+      L('Iconic branded twin tower (52 floors)', 'Знаковые брендированные башни-близнецы (52 этажа)', 'İkonik markalı ikiz kule (52 kat)'),
+      L('Only 182 ultra-exclusive residences', 'Всего 182 ультра-эксклюзивные резиденции', 'Yalnızca 182 ultra özel konut'),
+      L('Sky Mansion penthouses with private car lifts', 'Пентхаусы Sky Mansion с частными авто-лифтами', 'Özel araç asansörlü Sky Mansion çatı katları'),
+      L('Up to 20 parking bays per penthouse', 'До 20 парковочных мест на пентхаус', 'Çatı katı başına 20\'ye kadar park yeri'),
+      L('Custom designer furniture & finishes', 'Дизайнерская мебель и отделка на заказ', 'Özel tasarımcı mobilya ve yüzeyler'),
+      L('Burj Khalifa & Downtown skyline views', 'Виды на Burj Khalifa и Downtown', 'Burj Khalifa ve Downtown silüet manzarası'),
+      L('Riviera-inspired pool deck & beach', 'Бассейн в стиле Ривьеры и пляж', 'Riviera esintili havuz katı ve plaj'),
+      L('Members-only club & cigar lounge', 'Клубный сервис и сигарный лаунж', 'Üyelere özel kulüp ve puro salonu'),
+      L('Spa, gym & wellness sanctuary', 'Спа, фитнес и велнес-святилище', 'Spa, spor salonu ve sağlık alanı'),
+      L('70/30 payment plan, handover 2026', 'План оплаты 70/30, сдача 2026', '70/30 ödeme planı, teslim 2026'),
+      L('Eligible for UAE Golden Visa', 'Подходит для Golden Visa ОАЭ', 'BAE Altın Vize\'ye uygun'),
+      L('Walking distance to Dubai Canal & Downtown', 'Пешком до Dubai Canal и Downtown', 'Dubai Canal ve Downtown\'a yürüme mesafesi')
+    ],
+    blocks: [
+      {
+        name: L('Twin Branded Towers', 'Брендированные башни-близнецы', 'Markalı İkiz Kuleler'),
+        floors: 52,
+        units: 182,
+        layouts: '2, 3, 4 BR Residences + Sky Mansion Penthouses',
+        status: L('Off-plan, handover Q4 2026', 'Off-plan, сдача 4 кв. 2026', 'Proje aşaması, teslim 2026 4. Çeyrek'),
+        details: L('162–1,382 m², custom interiors, private car lifts in penthouses', '162–1382 м², интерьеры на заказ, частные авто-лифты в пентхаусах', '162–1.382 m², özel iç mekanlar, çatı katlarında özel araç asansörleri')
+      }
+    ],
+    nearby: [
+      L('5 min to Burj Khalifa & Dubai Mall', '5 мин до Burj Khalifa и Dubai Mall', 'Burj Khalifa ve Dubai Mall\'a 5 dk'),
+      L('Walking distance to Dubai Canal', 'Пешком до Dubai Canal', 'Dubai Canal\'a yürüme mesafesi'),
+      L('10 min to DIFC business district', '10 мин до DIFC', 'DIFC iş merkezine 10 dk'),
+      L('15 min to Dubai Marina', '15 мин до Dubai Marina', 'Dubai Marina\'ya 15 dk'),
+      L('15 min to DXB Airport', '15 мин до аэропорта DXB', 'DXB Havalimanı\'na 15 dk'),
+      L('Direct Sheikh Zayed Road access', 'Прямой выезд на Sheikh Zayed Road', 'Sheikh Zayed Road\'a doğrudan erişim'),
+      L('Business Bay Metro nearby', 'Метро Business Bay рядом', 'Business Bay Metro yakınında'),
+      L('Top international schools nearby', 'Ведущие международные школы рядом', 'Önde gelen uluslararası okullar yakında')
+    ],
+    amenities: [
+      L('Riviera-inspired pool deck', 'Бассейн в стиле Ривьеры', 'Riviera esintili havuz katı'),
+      L('Private members\' club', 'Частный клуб для резидентов', 'Özel üye kulübü'),
+      L('Cigar & whiskey lounge', 'Сигарный и виски лаунж', 'Puro ve viski salonu'),
+      L('Spa, sauna & hammam', 'Спа, сауна и хамам', 'Spa, sauna ve hamam'),
+      L('Fully equipped fitness center', 'Полностью оборудованный фитнес-центр', 'Tam donanımlı fitness merkezi'),
+      L('Yoga & meditation studio', 'Студия йоги и медитации', 'Yoga ve meditasyon stüdyosu'),
+      L('Private car gallery & lifts', 'Частная авто-галерея и лифты', 'Özel araç galerisi ve asansörleri'),
+      L('Signature restaurants', 'Фирменные рестораны', 'İmza restoranlar'),
+      L('24/7 concierge & valet', 'Консьерж и валет 24/7', '7/24 konsiyerj ve vale'),
+      L('Housekeeping services', 'Услуги уборки', 'Temizlik hizmetleri'),
+      L('Smart home technology', 'Технология «умный дом»', 'Akıllı ev teknolojisi'),
+      L('Private elevator access (penthouses)', 'Частный лифт (пентхаусы)', 'Özel asansör erişimi (çatı katları)')
+    ]
+  },
+  {
+    id: '10',
+    title: 'Designer Landmark Tower — Meydan',
+    location: 'Dubai',
+    address: L('Meydan Horizon, Mohammed Bin Rashid City, Dubai, UAE', 'Meydan Horizon, Mohammed Bin Rashid City, Дубай, ОАЭ', 'Meydan Horizon, Mohammed Bin Rashid City, Dubai, BAE'),
+    price: 545000,
+    bedrooms: 3,
+    bathrooms: 3,
+    area: 180,
+    type: 'Residence',
+    image: 'p10-exterior.png',
+    gallery: ['p10-exterior.png', 'p10-lobby.png', 'p10-interior.png', 'p10-pool.png'],
+    featured: true,
+    yearBuilt: 2029,
+    parking: 2,
+    floors: 40,
+    description: L(
+      'A AED 1 billion landmark off-plan tower in Meydan, designed in collaboration with one of the world\'s most acclaimed architecture studios known for its flowing parametric forms. The 40-storey mixed-use development combines residential apartments, retail and offices with sculptural curves that crown the Dubai skyline. Just 10 minutes from Downtown Dubai, the project offers panoramic views of Burj Khalifa, the racecourse and the Crystal Lagoon. With a 20/40/40 payment plan, penthouses up to AED 20M and starting prices from AED 2M, it is one of the most architecturally ambitious off-plan launches in Dubai.',
+      'Знаковый off-plan комплекс стоимостью 1 миллиард AED в Meydan, разработанный в сотрудничестве с одной из самых признанных в мире архитектурных студий, известной своими плавными параметрическими формами. 40-этажный многофункциональный проект объединяет жилые апартаменты, ритейл и офисы со скульптурными изгибами, венчающими горизонт Дубая. Всего в 10 минутах от Downtown Dubai, проект предлагает панорамные виды на Burj Khalifa, ипподром и Crystal Lagoon. С планом оплаты 20/40/40, пентхаусами до 20 млн AED и стартовыми ценами от 2 млн AED — это один из самых архитектурно амбициозных off-plan запусков Dubai.',
+      'Akışkan parametrik formlarıyla tanınan dünyaca ünlü mimarlık stüdyolarından biriyle iş birliğinde tasarlanan, Meydan\'da 1 milyar AED değerinde simge niteliğinde proje aşamasında bir kule. 40 katlı karma kullanımlı geliştirme; konut daireleri, perakende ve ofisleri Dubai silüetini taçlandıran heykelsi eğrilerle birleştirir. Downtown Dubai\'ye sadece 10 dakika mesafede olan proje; Burj Khalifa, hipodrom ve Crystal Lagoon manzaraları sunar. 20/40/40 ödeme planı, 20 milyon AED\'ye kadar çatı katları ve 2 milyon AED\'den başlayan fiyatlarıyla Dubai\'nin mimari açıdan en iddialı proje aşaması lansmanlarından biridir.'
+    ),
+    features: [
+      L('Designed by world-renowned architecture studio', 'Разработано всемирно известной архитектурной студией', 'Dünyaca ünlü mimarlık stüdyosu tarafından tasarlanmıştır'),
+      L('Iconic 40-storey sculptural tower', 'Знаковая скульптурная 40-этажная башня', 'İkonik 40 katlı heykelsi kule'),
+      L('AED 1 Billion landmark development', 'Знаковый проект на 1 млрд AED', '1 Milyar AED simge niteliğinde proje'),
+      L('Mixed-use: residential, retail, office', 'Многофункциональный: жильё, ритейл, офисы', 'Karma kullanım: konut, perakende, ofis'),
+      L('Burj Khalifa & racecourse views', 'Виды на Burj Khalifa и ипподром', 'Burj Khalifa ve hipodrom manzarası'),
+      L('Parametric flowing architecture', 'Плавная параметрическая архитектура', 'Parametrik akışkan mimari'),
+      L('Smart home technology in every unit', 'Технология «умный дом» в каждой квартире', 'Her dairede akıllı ev teknolojisi'),
+      L('Wellness-centric design & amenities', 'Дизайн и удобства, ориентированные на велнес', 'Sağlık odaklı tasarım ve olanaklar'),
+      L('Branded interiors & high-end finishes', 'Брендированные интерьеры и премиум-отделка', 'Markalı iç mekanlar ve üst düzey yüzeyler'),
+      L('20/40/40 flexible payment plan', 'Гибкий план оплаты 20/40/40', '20/40/40 esnek ödeme planı'),
+      L('Eligible for UAE Golden Visa', 'Подходит для Golden Visa ОАЭ', 'BAE Altın Vize\'ye uygun'),
+      L('Strong rental demand & capital growth', 'Высокий арендный спрос и рост капитала', 'Güçlü kira talebi ve sermaye artışı')
+    ],
+    blocks: [
+      {
+        name: L('Designer Mixed-Use Tower', 'Дизайнерская многофункциональная башня', 'Tasarımcı Karma Kullanımlı Kule'),
+        floors: 40,
+        units: 0,
+        layouts: 'Studios, 1, 2, 3 BR + Penthouses',
+        status: L('Construction Q1 2026, handover Q2 2029', 'Старт стройки 1 кв. 2026, сдача 2 кв. 2029', 'İnşaat 2026 1. Çeyrek, teslim 2029 2. Çeyrek'),
+        details: L('Apartments from AED 2M, penthouses up to AED 20M', 'Апартаменты от 2 млн AED, пентхаусы до 20 млн AED', '2 milyon AED\'den daireler, 20 milyon AED\'ye kadar çatı katları')
+      }
+    ],
+    nearby: [
+      L('10 min to Downtown Dubai & Burj Khalifa', '10 мин до Downtown и Burj Khalifa', 'Downtown Dubai ve Burj Khalifa\'ya 10 dk'),
+      L('Direct view of Meydan Racecourse', 'Прямой вид на ипподром Meydan', 'Meydan Hipodromu\'na doğrudan manzara'),
+      L('5 min to Crystal Lagoon', '5 мин до Crystal Lagoon', 'Crystal Lagoon\'a 5 dk'),
+      L('15 min to Dubai International Airport', '15 мин до международного аэропорта Дубая', 'Dubai Uluslararası Havalimanı\'na 15 dk'),
+      L('20 min to DIFC', '20 мин до DIFC', 'DIFC\'ye 20 dk'),
+      L('Equestrian & polo facilities nearby', 'Конные и поло-объекты рядом', 'Atçılık ve polo tesisleri yakında'),
+      L('Top international schools', 'Ведущие международные школы', 'Önde gelen uluslararası okullar'),
+      L('Sheikh Zayed & Al Khail Road access', 'Доступ к Sheikh Zayed и Al Khail Road', 'Sheikh Zayed ve Al Khail Road erişimi')
+    ],
+    amenities: [
+      L('Sculptural rooftop pool deck', 'Скульптурный бассейн на крыше', 'Heykelsi çatı havuzu katı'),
+      L('Infinity edge pool with skyline view', 'Бассейн-инфинити с видом на небоскрёбы', 'Silüet manzaralı sonsuzluk havuzu'),
+      L('State-of-the-art fitness center', 'Современный фитнес-центр', 'Son teknoloji fitness merkezi'),
+      L('Spa, sauna & treatment rooms', 'Спа, сауна и процедурные кабинеты', 'Spa, sauna ve tedavi odaları'),
+      L('Yoga & wellness studio', 'Студия йоги и велнес', 'Yoga ve sağlık stüdyosu'),
+      L('Designer lobby & lounge', 'Дизайнерское лобби и лаунж', 'Tasarımcı lobi ve salon'),
+      L('Co-working & business center', 'Коворкинг и бизнес-центр', 'Ortak çalışma ve iş merkezi'),
+      L('Retail promenade on-site', 'Торговый променад на территории', 'Yerleşkede alışveriş promenadı'),
+      L('Signature dining outlets', 'Фирменные рестораны', 'İmza yemek noktaları'),
+      L('24/7 concierge & security', 'Консьерж и охрана 24/7', '7/24 konsiyerj ve güvenlik'),
+      L('Smart home & building management', 'Умный дом и управление зданием', 'Akıllı ev ve bina yönetimi'),
+      L('Underground parking & EV charging', 'Подземная парковка и зарядка EV', 'Yeraltı otopark ve EV şarjı')
+    ]
   }
 ];
 
-export const locations = ['Istanbul', 'Batumi', 'Bodrum'];
+export const locations = ['Istanbul', 'Batumi', 'Bodrum', 'Dubai'];
 export const propertyTypes = ['Residence', 'Villa'];
